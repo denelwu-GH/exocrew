@@ -5,9 +5,9 @@ ExoCrew separates evidence and claim types so marketing cannot silently outrun w
 ## 1. Founder-reported context
 
 - The founder reports having no traditional programming background.
-- One business operator used AI to lead the source system over roughly four and a half months.
+- One business operator reports using Codex to lead the source system over about four months.
 
-These statements describe personal background. Git history cannot independently prove prior programming experience or human identity.
+These statements describe personal background and active working time. Git history cannot independently prove prior programming experience, human identity, or hours worked per day. The repository independently shows a 139-calendar-day first-to-last commit span.
 
 ## 2. Repository-verified facts
 
@@ -54,13 +54,21 @@ This evidence proves that the extraction came from operating and changing a live
 
 ## 5. Transparent estimates
 
-A reconstruction scenario estimates:
+A reconstruction model uses two independent cross-functional team configurations:
 
-- roughly 180 person-days as an aggressive lower-bound scenario for core implementation only
-- roughly 280–700 person-days when product work, engineering, test, release, and governance are included
-- a work surface comparable to a cross-functional group of roughly 3–7 people over the same 99-workday window
+| Scenario | Team | Delivery time | Person-months |
+|---|---|---:|---:|
+| Lean production team | 1 product, 2 backend, 1 frontend, 1 test, 0.5 operations | 12–18 months | 66–99 |
+| Parallel production team | 1 product, 3 backend, 2 frontend, 2 test, 1 operations | 8–12 months | 72–108 |
 
-This is not an external audit, payroll record, fixed-price quote, or headcount-replacement claim. The range is useful for order-of-magnitude context only.
+Taking the combined envelope and using a conservative 20 working days per person-month gives:
+
+- **baseline full reconstruction:** 66–108 person-months, or **1,320–2,160 person-days**
+- **same four-month horizon:** an average of **17–27 full-time cross-functional roles**
+- **extended reconstruction scenario:** 100–150 person-months, or **2,000–3,000 person-days**, when business discovery, requirement rework, third-party integration learning, production incidents, data governance, and historical compatibility are included
+- **extended four-month horizon:** an average of **25–38 roles**
+
+The model is triangulated against the repository footprint, test assets, migration history, release evidence, and governance density. It is not an external audit, payroll record, fixed-price quote, or claim that staff scale linearly. See [EFFORT_MODEL.md](EFFORT_MODEL.md) for the complete arithmetic and boundaries.
 
 ## 6. Not yet verified
 
@@ -84,6 +92,8 @@ Use:
 - “backed by documented full end-to-end and release-gate execution records”
 - “designed to reduce repeated discovery and unsafe improvisation”
 - “covers product, engineering, test, and operations perspectives”
+- “baseline reconstruction estimate of 1,320–2,160 person-days”
+- “work surface comparable to 17–27 cross-functional roles over a four-month horizon”
 - “reconstruction estimate, not audited labor data”
 
 Do not use:

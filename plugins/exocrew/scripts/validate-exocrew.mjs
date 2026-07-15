@@ -23,6 +23,7 @@ const textExtensions = new Set([
   ".js",
   ".ts",
   ".txt",
+  ".svg",
 ]);
 
 function tokenHash(value) {
@@ -106,7 +107,10 @@ export async function validateFramework(root) {
     "README.md",
     "README.zh-CN.md",
     "docs/EVIDENCE.md",
+    "docs/EFFORT_MODEL.md",
     "docs/BENCHMARK.md",
+    "docs/assets/effort-comparison.svg",
+    "docs/assets/effort-comparison.zh-CN.svg",
     "LICENSE",
   ];
   const errors = [];

@@ -16,7 +16,7 @@ ExoCrew is industry-agnostic and technology-stack-agnostic. It is not tied to ed
 
 ## The story behind it
 
-The founder reports having no traditional programming background. With AI assistance, one business operator drove a real, complex business administration system for roughly four and a half months.
+The founder reports having no traditional programming background. With Codex, one business operator drove a real, complex business administration system in about four months; the first-to-last Git evidence spans 139 calendar days.
 
 **This was not a demo, hackathon prototype, or speculative reference architecture.** The source system completed real production deployment and is actively used for day-to-day enterprise operations, including operational data workflows and enterprise business notifications. ExoCrew was distilled from the work of keeping that running system correct, testable, recoverable, and safe to change.
 
@@ -31,6 +31,10 @@ A read-only repository audit tied to one committed baseline found:
 - 90 hard gates, 249 architecture decisions, 64 formal runbooks, 17 domain skills, and 573 release or repair retrospectives
 
 Those numbers and historical execution records describe the production experience from which ExoCrew was distilled. They do **not** mean this repository contains that application, that every test passes forever, or that every retrospective represents a production release. See [Evidence and claim boundaries](docs/EVIDENCE.md).
+
+![One builder with Codex compared with a traditional delivery team](docs/assets/effort-comparison.svg)
+
+The transparent reconstruction model combines two independent team configurations with reasonable delivery timelines. It estimates **1,320–2,160 person-days**, or **17–27 full-time cross-functional roles over the same four-month horizon**, for a baseline full rebuild. An extended scenario including discovery, third-party integration learning, production incidents, data governance, and historical compatibility is **2,000–3,000 person-days**, or **25–38 roles**. See the [calculation and assumptions](docs/EFFORT_MODEL.md).
 
 ## What you install
 
@@ -97,7 +101,7 @@ The starter creates one decision source, current task state, hard constraints, a
 
 ExoCrew is designed to reduce repeated discovery, missing boundaries, weak testing, unsafe data changes, and release improvisation. Exact speed, quality, and pitfall-reduction percentages are not yet claimed. The project includes a [30-task paired benchmark](docs/BENCHMARK.md) so future claims can be measured instead of invented.
 
-A transparent reconstruction model estimates that the source system covered roughly 280–700 person-days across product, engineering, test, release, and governance. This is a scenario model, not audited payroll data and not a headcount-replacement claim.
+The reconstruction estimate describes the source project's work surface. It does not prove that ExoCrew gives another user a specific speed-up. Measured ExoCrew adoption claims still require the paired benchmark.
 
 ## Design principles
 
@@ -113,6 +117,7 @@ A transparent reconstruction model estimates that the source system covered roug
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Evidence and claim boundaries](docs/EVIDENCE.md)
+- [Effort model and assumptions](docs/EFFORT_MODEL.md)
 - [30-task benchmark](docs/BENCHMARK.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security](SECURITY.md)
