@@ -1,0 +1,36 @@
+{
+  "name": "exocrew",
+  "version": "0.1.0",
+  "description": "An AI delivery exoskeleton for solo builders and small teams.",
+  "author": {
+    "name": "denelwu-GH",
+    "url": "https://github.com/denelwu-GH"
+  },
+  "homepage": "https://github.com/denelwu-GH/exocrew",
+  "repository": "https://github.com/denelwu-GH/exocrew",
+  "license": "MIT",
+  "keywords": [
+    "ai-delivery",
+    "codex",
+    "engineering-guardrails",
+    "product-development",
+    "testing",
+    "release-governance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ExoCrew",
+    "shortDescription": "Install a disciplined AI delivery crew.",
+    "longDescription": "ExoCrew adds product thinking, engineering guardrails, test evidence, and safe operations to AI-assisted software delivery.",
+    "developerName": "denelwu-GH",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://github.com/denelwu-GH/exocrew",
+    "defaultPrompt": [
+      "Turn this idea into a safe, testable delivery plan.",
+      "Review this change across product, engineering, test, and operations.",
+      "Prepare this project for a controlled release with rollback evidence."
+    ],
+    "brandColor": "#7C3AED"
+  }
+}

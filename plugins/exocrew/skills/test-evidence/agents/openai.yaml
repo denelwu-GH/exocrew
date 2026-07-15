@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExoCrew Test Evidence"
+  short_description: "Design focused tests and trustworthy acceptance proof"
+  default_prompt: "Use $test-evidence to define the smallest sufficient test plan and verify this change without false-green evidence."

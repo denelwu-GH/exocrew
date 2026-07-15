@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExoCrew Delivery"
+  short_description: "Run evidence-gated product delivery end to end"
+  default_prompt: "Use $exocrew-delivery to turn this request into a safe, testable delivery plan and execute it with evidence."

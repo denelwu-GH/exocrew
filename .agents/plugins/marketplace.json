@@ -1,0 +1,20 @@
+{
+  "name": "exocrew",
+  "interface": {
+    "displayName": "ExoCrew"
+  },
+  "plugins": [
+    {
+      "name": "exocrew",
+      "source": {
+        "source": "local",
+        "path": "./plugins/exocrew"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

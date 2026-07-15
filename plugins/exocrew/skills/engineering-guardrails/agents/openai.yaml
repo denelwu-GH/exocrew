@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExoCrew Engineering Guardrails"
+  short_description: "Keep AI-generated code maintainable and coherent"
+  default_prompt: "Use $engineering-guardrails to review and implement this change with clear contracts and architecture boundaries."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExoCrew Safe Operations"
+  short_description: "Govern data changes releases rollbacks and recovery"
+  default_prompt: "Use $safe-operations to plan this operational change with dry-run, rollback, and post-verification evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExoCrew Product Brief"
+  short_description: "Turn ideas into bounded, testable product briefs"
+  default_prompt: "Use $product-brief to turn this idea into a clear product brief with boundaries and acceptance criteria."
