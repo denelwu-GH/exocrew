@@ -1,127 +1,147 @@
+<div align="center">
+
 # ExoCrew
 
-[![quality-gates](https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml/badge.svg)](https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml)
+### The delivery exoskeleton for the AI era
 
-## The AI delivery exoskeleton
+## Install the team you do not have.
 
-**Install the team you do not have.**
+**One non-programmer used Codex to drive a complex enterprise operations system into real production in about four months.**
 
-ExoCrew turns an AI coding agent into a more disciplined delivery partner. It adds four perspectives that solo builders usually have to hold alone: product thinking, engineering structure, test evidence, and safe operations.
+ExoCrew packages the hard-won product judgment, engineering guardrails, testing skepticism, and operational discipline learned along the way — and installs them into your AI workflow.
 
-It is not a code generator, a no-code platform, or a promise that one person replaces an entire company. It is a reusable system of questions, gates, templates, and stop conditions that helps people move from idea to production without treating speed as permission to skip safety.
+**Not another prompt pack. An AI delivery crew that knows what to ask, what to protect, what to verify, and when not to ship.**
 
-ExoCrew is industry-agnostic and technology-stack-agnostic. It is not tied to education, e-commerce, or any other specific domain. It can support enterprise back-office systems, SaaS products, internal tools, operational management systems, and other software that must remain maintainable, testable, and safe to release.
+<p>
+  <a href="https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml"><img alt="Quality gates" src="https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml/badge.svg"></a>
+  <img alt="Distilled from production" src="https://img.shields.io/badge/source-production_distilled-0F766E.svg">
+  <img alt="5 installable skills" src="https://img.shields.io/badge/installable_skills-5-7C3AED.svg">
+  <img alt="1,869 mainline commits" src="https://img.shields.io/badge/mainline_commits-1%2C869-2563EB.svg">
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
+</p>
 
-[中文说明](README.zh-CN.md)
+**[Install in 30 seconds](#install-in-30-seconds) · [Meet the crew](#five-roles-one-delivery-system) · [See the proof](#proof-behind-the-story) · [简体中文](README.zh-CN.md)**
 
-## The story behind it
+</div>
 
-The founder reports having no traditional programming background. With Codex, one business operator drove a real, complex business administration system in about four months; the first-to-last Git evidence spans 139 calendar days.
+![ExoCrew installs five delivery roles into an AI workflow](docs/assets/install-the-crew.svg)
 
-**This was not a demo, hackathon prototype, or speculative reference architecture.** The source system completed real production deployment and is actively used for day-to-day enterprise operations, including operational data workflows and enterprise business notifications. ExoCrew was distilled from the work of keeping that running system correct, testable, recoverable, and safe to change.
+<p align="center"><strong>One builder owns the vision. ExoCrew helps AI deliver like a complete team.</strong></p>
 
-A read-only repository audit tied to one committed baseline found:
+## AI can write code. It cannot own delivery for you.
 
-- 139 calendar days of Git history and 1,869 mainline commits
-- 25 operator-facing entry points and 401 explicit HTTP operations
-- 125 data models and 145 database migrations
-- about 244,799 physical lines of runtime code
-- 466 tracked test/spec files, about 116,871 test-source lines, and 9,264 assertion calls
-- a documented full end-to-end run of 88 passed, 22 skipped, and 0 failed, followed by a successful release preflight
-- 90 hard gates, 249 architecture decisions, 64 formal runbooks, 17 domain skills, and 573 release or repair retrospectives
+The hard part is not getting AI to produce another page.
 
-Those numbers and historical execution records describe the production experience from which ExoCrew was distilled. They do **not** mean this repository contains that application, that every test passes forever, or that every retrospective represents a production release. See [Evidence and claim boundaries](docs/EVIDENCE.md).
+The hard part is keeping business boundaries intact, architecture maintainable, tests meaningful, data changes reversible, releases recoverable, and every hard-won decision available to the next task.
 
-![One builder with Codex compared with a traditional delivery team](docs/assets/effort-comparison.svg)
+**You do not need more generated code. You need a team that can carry code all the way to delivery.**
 
-The transparent reconstruction model combines two independent team configurations with reasonable delivery timelines. It estimates **1,320–2,160 person-days**, or **17–27 full-time cross-functional roles over the same four-month horizon**, for a baseline full rebuild. An extended scenario including discovery, third-party integration learning, production incidents, data governance, and historical compatibility is **2,000–3,000 person-days**, or **25–38 roles**. See the [calculation and assumptions](docs/EFFORT_MODEL.md).
+## Five roles. One delivery system.
 
-## What you install
-
-| Skill | Role | What it protects |
+| Role | Skill | What it gives you |
 |---|---|---|
-| `exocrew-delivery` | Delivery lead | Scope, approval gates, routing, evidence, closure |
-| `product-brief` | Product | Value, users, boundaries, alternatives, acceptance criteria |
-| `engineering-guardrails` | Engineering | Contracts, architecture, single sources of truth, maintainability |
-| `test-evidence` | Test | Risk-based verification, strong assertions, false-green prevention |
-| `safe-operations` | Operations | Dry-run, migration, release, rollback, post-verification |
+| Delivery lead | `exocrew-delivery` | Carries complex work from a vague request to verified closure |
+| Product lead | `product-brief` | Makes AI clarify users, value, boundaries, and acceptance before writing |
+| Engineering lead | `engineering-guardrails` | Protects architecture, contracts, and sources of truth as the system grows |
+| Test lead | `test-evidence` | Turns “it passed” into defensible evidence and catches false-green results |
+| Operations lead | `safe-operations` | Gives data changes, migrations, and releases a dry-run, verification, and safe way back |
 
-## Install as a Codex plugin
+These are not five chat personalities. They are five executable delivery disciplines.
+
+![ExoCrew delivery path from vague idea to reversible release](docs/assets/idea-to-production.svg)
+
+## Install in 30 seconds
 
 ```bash
 codex plugin marketplace add denelwu-GH/exocrew
 codex plugin add exocrew@exocrew
 ```
 
-Start a new Codex task after installation so the skills are discovered.
-
-Example prompts:
+Start a new Codex task, then say:
 
 ```text
-Use $exocrew-delivery to turn this request into a safe, testable delivery plan.
-Use $product-brief to define the users, boundaries, and acceptance criteria.
-Use $engineering-guardrails to review this implementation before it grows.
-Use $test-evidence to design the smallest sufficient verification plan.
-Use $safe-operations to prepare a dry-run, rollback, and post-verification package.
+Use $exocrew-delivery to carry this request from a vague idea to a safe,
+verified release. Define the users, boundaries, and acceptance criteria first;
+then implement, verify, prepare rollback, and close the work with evidence.
 ```
 
-## Install standalone skills
+## Distilled from real production
 
-Clone the repository, then preview the installation:
+I am not a programmer.
+
+With Codex, I drove a complex enterprise operations system into real production in about four months. It remains in active enterprise use for day-to-day operations, real data-governance workflows, and business notifications.
+
+The Git evidence spans 139 calendar days and includes 1,869 mainline commits, 25 operator entry points, 401 HTTP operations, 125 data models, and a documented trail of testing, migration, release, rollback, and data-governance work.
+
+The expensive lessons were never just about writing code. They came from business boundaries, architecture drift, false-green tests, historical data, and production releases.
+
+**ExoCrew turns those paid-for lessons into an installable delivery system.**
+
+## Proof behind the story
+
+| Evidence | Audited scale | Evidence | Audited scale |
+|---|---:|---|---:|
+| Git history span | **139 days** | Mainline commits | **1,869** |
+| Runtime + test source | **361.7k lines** | Test/spec files | **466** |
+| Hard gates + architecture decisions | **90 + 249** | Runbooks + release/repair retros | **64 + 573** |
+
+![One builder with Codex compared with a traditional delivery team](docs/assets/effort-comparison.svg)
+
+A transparent traditional-team reconstruction model estimates the same work surface at **1,320–2,160 person-days**, comparable to **17–27 cross-functional product, engineering, test, and operations roles working over the same roughly four-month horizon**.
+
+## Built for serious software delivery
+
+ExoCrew is industry-agnostic and technology-stack-agnostic. It is especially useful for:
+
+- solo builders and small teams using AI to ship real products;
+- enterprise back-office systems, SaaS, internal tools, and operations platforms;
+- projects that have grown from “it runs” into “we cannot afford to improvise”;
+- software with real data, database migrations, continuous testing, and production releases.
+
+## More ways to use ExoCrew
+
+<details>
+<summary><strong>Install the five skills standalone</strong></summary>
+
+Clone the repository, preview the change, then apply it explicitly:
 
 ```bash
 node plugins/exocrew/scripts/install-skills.mjs
-```
-
-Apply it only after reviewing the plan:
-
-```bash
 node plugins/exocrew/scripts/install-skills.mjs --apply
 ```
 
-The default target is `${CODEX_HOME}/skills`, or `${HOME}/.codex/skills` when `CODEX_HOME` is unset. Existing skills are never overwritten unless `--force` is explicit; forced replacements are backed up first.
+Existing skills are not overwritten by default. Explicit `--force` replacements are backed up first.
 
-## Bootstrap a governed project
+</details>
 
-Preview the starter files:
+<details>
+<summary><strong>Bootstrap a governed project</strong></summary>
 
 ```bash
 node plugins/exocrew/scripts/bootstrap-project.mjs --target ./my-project
-```
-
-Apply after reviewing:
-
-```bash
 node plugins/exocrew/scripts/bootstrap-project.mjs --target ./my-project --apply
 ```
 
-The starter creates one decision source, current task state, hard constraints, an index, and templates for worklogs, decisions, releases, and lessons. It is a governance scaffold, not a substitute for your project's business truth.
+The starter creates one decision source, current task state, hard constraints, an index, and templates for worklogs, decisions, releases, and lessons.
 
-## What ExoCrew can honestly promise
+</details>
 
-ExoCrew is designed to reduce repeated discovery, missing boundaries, weak testing, unsafe data changes, and release improvisation. Exact speed, quality, and pitfall-reduction percentages are not yet claimed. The project includes a [30-task paired benchmark](docs/BENCHMARK.md) so future claims can be measured instead of invented.
+## Evidence notes and current boundaries
 
-The reconstruction estimate describes the source project's work surface. It does not prove that ExoCrew gives another user a specific speed-up. Measured ExoCrew adoption claims still require the paired benchmark.
+ExoCrew was distilled from real production delivery. The repository, test, commit, and governance figures above come from a version-bound read-only audit. The traditional-team comparison is a transparent reconstruction model, not audited labor data or a promise of adoption speed-up. ExoCrew does not currently claim a fixed acceleration multiplier, defect-reduction percentage, or headcount replacement; adoption impact will be measured through the public 30-task paired benchmark.
 
-## Design principles
+**[Full evidence](docs/EVIDENCE.md) · [Effort model](docs/EFFORT_MODEL.md) · [Benchmark](docs/BENCHMARK.md) · [Architecture](docs/ARCHITECTURE.md)**
 
-1. Evidence before confidence.
-2. Read-only diagnosis before mutation.
-3. Explicit approval before consequential writes.
-4. One source of truth for every durable rule.
-5. Targeted verification before broad test expansion.
-6. Dry-run, rollback, and post-verification for operational change.
-7. A scaffold is not production proof.
+---
 
-## Project map
+<div align="center">
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [Evidence and claim boundaries](docs/EVIDENCE.md)
-- [Effort model and assumptions](docs/EFFORT_MODEL.md)
-- [30-task benchmark](docs/BENCHMARK.md)
-- [Contributing](CONTRIBUTING.md)
-- [Security](SECURITY.md)
+### Stop asking one AI to improvise as product, engineering, test, and operations.
 
-## License
+## Install a delivery crew that knows how to work together.
 
-MIT
+**[Install in 30 seconds](#install-in-30-seconds) · [Meet the crew](#five-roles-one-delivery-system) · [Star ExoCrew](https://github.com/denelwu-GH/exocrew)**
+
+MIT License
+
+</div>

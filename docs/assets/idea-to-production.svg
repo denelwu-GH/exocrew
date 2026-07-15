@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">ExoCrew delivery path from idea to production</title>
+  <desc id="desc">A vague idea moves through product boundaries, engineering, test evidence, release gates, and production post-verification.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.58" stop-color="#0b1830"/>
+      <stop offset="1" stop-color="#111b36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="560" rx="30" fill="url(#bg)"/>
+  <circle cx="624" cy="269" r="235" fill="url(#glow)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
+    <text x="64" y="70" fill="#f8fafc" font-size="34" font-weight="700" text-anchor="start">From one idea to real production</text>
+    <text x="64" y="106" fill="#9aabc2" font-size="17" font-weight="400" text-anchor="start">ExoCrew leaves inspectable, resumable, and reversible evidence at every stage</text>
+    <path d="M96 172 L1098 172" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+    <text x="64" y="178" fill="#f8fafc" font-size="14" font-weight="700">EXOCREW DELIVERY</text>
+    <g filter="url(#shadow)">
+        <rect x="64" y="218" width="142" height="184" rx="20" fill="#101d33" stroke="#64748b" stroke-opacity="0.65"/>
+        <circle cx="135" cy="262" r="24" fill="#64748b" fill-opacity="0.18" stroke="#64748b"/>
+        <text x="135" y="269" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">01</text>
+        <text x="135" y="319" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">Vague idea</text>
+        <text x="135" y="350" fill="#9aabc2" font-size="11" text-anchor="middle">Do not code yet</text>
+
+      </g><path d="M206 310 L234 310" stroke="#2a3b57" stroke-width="3"/><path d="M222 300 L234 310 L222 320" fill="none" stroke="#2a3b57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)">
+        <rect x="241" y="218" width="142" height="184" rx="20" fill="#101d33" stroke="#22d3ee" stroke-opacity="0.65"/>
+        <circle cx="312" cy="262" r="24" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
+        <text x="312" y="269" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">02</text>
+        <text x="312" y="319" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">Product boundary</text>
+        <text x="312" y="350" fill="#9aabc2" font-size="11" text-anchor="middle">Users · value</text>
+<text x="312" y="367" fill="#9aabc2" font-size="11" text-anchor="middle">scope · acceptance</text>
+
+      </g><path d="M383 310 L411 310" stroke="#2a3b57" stroke-width="3"/><path d="M399 300 L411 310 L399 320" fill="none" stroke="#2a3b57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)">
+        <rect x="418" y="218" width="142" height="184" rx="20" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.65"/>
+        <circle cx="489" cy="262" r="24" fill="#3b82f6" fill-opacity="0.18" stroke="#3b82f6"/>
+        <text x="489" y="269" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">03</text>
+        <text x="489" y="319" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">Engineering</text>
+        <text x="489" y="350" fill="#9aabc2" font-size="11" text-anchor="middle">Contracts · structure</text>
+<text x="489" y="367" fill="#9aabc2" font-size="11" text-anchor="middle">sources of truth</text>
+
+      </g><path d="M560 310 L588 310" stroke="#2a3b57" stroke-width="3"/><path d="M576 300 L588 310 L576 320" fill="none" stroke="#2a3b57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)">
+        <rect x="595" y="218" width="142" height="184" rx="20" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.65"/>
+        <circle cx="666" cy="262" r="24" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf"/>
+        <text x="666" y="269" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">04</text>
+        <text x="666" y="319" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">Test evidence</text>
+        <text x="666" y="350" fill="#9aabc2" font-size="11" text-anchor="middle">Risk · assertions</text>
+<text x="666" y="367" fill="#9aabc2" font-size="11" text-anchor="middle">regression evidence</text>
+
+      </g><path d="M737 310 L765 310" stroke="#2a3b57" stroke-width="3"/><path d="M753 300 L765 310 L753 320" fill="none" stroke="#2a3b57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)">
+        <rect x="772" y="218" width="142" height="184" rx="20" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.65"/>
+        <circle cx="843" cy="262" r="24" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b"/>
+        <text x="843" y="269" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">05</text>
+        <text x="843" y="319" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">Release gate</text>
+        <text x="843" y="350" fill="#9aabc2" font-size="11" text-anchor="middle">Dry-run · rollback</text>
+<text x="843" y="367" fill="#9aabc2" font-size="11" text-anchor="middle">explicit approval</text>
+<rect x="797" y="374" width="92" height="22" rx="11" fill="#fb7185" fill-opacity="0.16"/><text x="843" y="390" fill="#fb7185" font-size="11" font-weight="700" text-anchor="middle">STOP IF UNSAFE</text>
+      </g><path d="M914 310 L942 310" stroke="#2a3b57" stroke-width="3"/><path d="M930 300 L942 310 L930 320" fill="none" stroke="#2a3b57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#shadow)">
+        <rect x="949" y="218" width="142" height="184" rx="20" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.65"/>
+        <circle cx="1020" cy="262" r="24" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+        <text x="1020" y="269" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">06</text>
+        <text x="1020" y="319" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">Post-verify</text>
+        <text x="1020" y="350" fill="#9aabc2" font-size="11" text-anchor="middle">Confirm real</text>
+<text x="1020" y="367" fill="#9aabc2" font-size="11" text-anchor="middle">runtime state</text>
+
+      </g>
+    <line x1="64" y1="454" x2="1136" y2="454" stroke="#2a3b57"/>
+    <text x="600" y="500" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">Make AI write less blindly—and deliver more deliberately</text>
+    <text x="600" y="530" fill="#9aabc2" font-size="14" text-anchor="middle">Clarify first · prove behavior · prepare rollback · verify production</text>
+  </g>
+</svg>

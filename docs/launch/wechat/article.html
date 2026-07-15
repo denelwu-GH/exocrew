@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我不懂代码，却用 Codex 做出了真实上线的企业系统：现在，我把背后的“团队”开源了</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#eef2f7;color:#111827}.toolbar{position:sticky;top:0;z-index:10;display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:14px 18px;background:#08111f;color:#e5e7eb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif}.toolbar button{border:0;border-radius:999px;padding:10px 18px;background:#8b5cf6;color:white;font-size:15px;font-weight:700;cursor:pointer}.toolbar button:nth-child(2){background:#0f766e}.toolbar button:disabled{opacity:.45;cursor:not-allowed}.toolbar span{font-size:13px;color:#cbd5e1}
+  </style>
+</head>
+<body>
+
+<article id="wechat-article" style="box-sizing:border-box;max-width:760px;margin:0 auto;padding:34px 22px;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;">
+  <p style="margin:0 0 26px;color:#7c3aed;font-size:15px;line-height:1.7;font-weight:700;letter-spacing:.08em;">EXOCREW · AI 时代的交付外骨骼</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">我不是程序员。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">我也没有一支产品、研发、测试和运维团队。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">但我有一个真实的业务问题，也有一个很朴素的想法：既然 AI 已经会写代码，一个完全不懂代码的人，能不能借助它，把一套复杂的企业系统真正做出来？</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">不是做一个能演示的页面，不是参加比赛的原型，而是一套能够真实上线、承载日常业务、处理真实数据，并且可以持续修改、测试、发布和回滚的系统。</p>
+  <blockquote style="margin:26px 0;padding:20px 24px;background:#111827;color:#f9fafb;border-radius:12px;font-size:19px;line-height:1.75;font-weight:700;">我决定试一次。</blockquote>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">AI 写出代码，只是最容易的一步</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">刚开始，AI 的速度让人兴奋。描述一个页面，它很快就能写出来；提出一个功能，它也能给出看起来完整的代码。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">但系统一旦开始变复杂，真正的问题才刚刚出现。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">一个看似简单的需求，背后可能牵动数据模型、接口契约、权限边界、历史数据和多个页面。一个“测试通过”，可能只是按钮能点，并不代表关键业务链路真的正确。一次普通的数据迁移，如果没有预演、验证和回滚，可能直接影响正在运行的业务。</p>
+  <blockquote style="margin:26px 0;padding:20px 24px;background:#111827;color:#f9fafb;border-radius:12px;font-size:19px;line-height:1.75;font-weight:700;">AI 会生成代码，但它不会天然替你承担交付责任。</blockquote>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">它需要有人告诉它，需求必须先问清哪些边界；架构里哪些规则不能退；测试究竟要证明什么；上线之前又在哪些情况下必须停止。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">传统公司用一整支团队解决这些问题，而我只有一个人。</p>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">这不是 Demo，它真的在企业里运行</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">约四个月后，这套系统完成了真实生产上线。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">它现在正在企业端运行，承载日常运营、真实数据治理和企业业务信息推送。也正因为它真的在使用，才会有持续的数据迁移、测试记录、发布日志、故障修复和治理沉淀。</p>
+  <p style="margin:28px 0;text-align:center;"><img src="https://raw.githubusercontent.com/denelwu-GH/exocrew/main/docs/launch/wechat/images/01-proof.png" alt="真实生产系统的工程规模证据" style="display:block;width:100%;height:auto;border:0;border-radius:10px;"></p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">从第一次提交到当前审计版本，Git 首尾留痕跨度为 139 个自然日。完整工程包含 361,670 行运行与测试源码、1,869 次主线提交、466 个测试文件、125 个数据模型、145 份数据库迁移，以及 90 条不能随意跨越的硬门禁。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">这些数字不是为了把项目包装得更大。它们真正说明的是：这不是一次“让 AI 写个网页”的尝试，而是一场完整的软件交付实验。</p>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">一个人背后，需要多大的工作面</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">如果把相同的复杂度交给传统团队完整重建，需要产品、后端、前端、测试和运维共同参与。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">依据两套传统团队配置和合理交付周期交叉测算，基础完整重建约需要 1,320–2,160 人天，相当于 17–27 个跨职能角色同期工作约四个月。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">而我的真实投入是：1 个人 + Codex，约 4 个月。</p>
+  <p style="margin:28px 0;text-align:center;"><img src="https://raw.githubusercontent.com/denelwu-GH/exocrew/main/docs/launch/wechat/images/04-comparison.png" alt="一个人借助 Codex 与传统团队工作量对比" style="display:block;width:100%;height:auto;border:0;border-radius:10px;"></p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">这说明，当个人执行力被 AI 放大，一个人已经有机会覆盖过去需要完整团队协作的复杂交付工作面。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">但真正让这种能力能够持续的，不只是模型生成代码的速度，更是一整套来自真实项目的交付约束：什么必须先问清，什么不能随意改，什么必须被测试证明，以及什么时候不能上线。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">这套约束，后来有了一个名字：ExoCrew。</p>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">ExoCrew：装上你还没有的那支团队</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">ExoCrew 的意思，是 AI 时代的交付外骨骼。它不是代码生成器，也不是一句万能提示词。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">它是一套可以安装到 AI 编程代理里的交付框架，把传统团队中最重要的五种检查视角，装进你的工作流。</p>
+  <p style="margin:28px 0;text-align:center;"><img src="https://raw.githubusercontent.com/denelwu-GH/exocrew/main/docs/launch/wechat/images/02-team.png" alt="ExoCrew 的五个交付角色" style="display:block;width:100%;height:auto;border:0;border-radius:10px;"></p>
+  <section style="margin:16px 0;padding:18px 20px;border-left:4px solid #8b5cf6;background:#f5f3ff;border-radius:0 10px 10px 0;"><h3 style="margin:0 0 8px;color:#111827;font-size:19px;line-height:1.5;font-weight:700;">交付负责人</h3><p style="margin:0;color:#4b5563;font-size:16px;line-height:1.85;">先判断任务属于需求、实现、验证还是发布；拆清责任，标记风险，设置停止条件，并确保事情真正收尾。</p></section>
+  <section style="margin:16px 0;padding:18px 20px;border-left:4px solid #8b5cf6;background:#f5f3ff;border-radius:0 10px 10px 0;"><h3 style="margin:0 0 8px;color:#111827;font-size:19px;line-height:1.5;font-weight:700;">产品经理</h3><p style="margin:0;color:#4b5563;font-size:16px;line-height:1.85;">把一句模糊的“我想做个功能”，变成用户、价值、业务边界、异常场景和验收标准。</p></section>
+  <section style="margin:16px 0;padding:18px 20px;border-left:4px solid #8b5cf6;background:#f5f3ff;border-radius:0 10px 10px 0;"><h3 style="margin:0 0 8px;color:#111827;font-size:19px;line-height:1.5;font-weight:700;">研发负责人</h3><p style="margin:0;color:#4b5563;font-size:16px;line-height:1.85;">守住架构、字段契约、单一真值、异常可见性和变更影响面，阻止代码在增长中失控。</p></section>
+  <section style="margin:16px 0;padding:18px 20px;border-left:4px solid #8b5cf6;background:#f5f3ff;border-radius:0 10px 10px 0;"><h3 style="margin:0 0 8px;color:#111827;font-size:19px;line-height:1.5;font-weight:700;">测试负责人</h3><p style="margin:0;color:#4b5563;font-size:16px;line-height:1.85;">按风险设计验证，对“看起来通过”保持怀疑，用关键链路和强断言证明功能真的可用。</p></section>
+  <section style="margin:16px 0;padding:18px 20px;border-left:4px solid #8b5cf6;background:#f5f3ff;border-radius:0 10px 10px 0;"><h3 style="margin:0 0 8px;color:#111827;font-size:19px;line-height:1.5;font-weight:700;">运维负责人</h3><p style="margin:0;color:#4b5563;font-size:16px;line-height:1.85;">对数据变更、迁移、发布、回滚和上线后验证保持敬畏，知道哪些操作必须先停下来。</p></section>
+  <blockquote style="margin:26px 0;padding:20px 24px;background:#111827;color:#f9fafb;border-radius:12px;font-size:19px;line-height:1.75;font-weight:700;">这五个角色不是五个聊天人格，而是五套可以真正执行的交付动作。</blockquote>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">从一句想法，到真实生产</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">ExoCrew 不会替你跳过过程。它会让每一步都产生可以检查、继续和回滚的结果：先把想法变成有边界的需求，再守住工程结构，用证据证明关键行为，准备发布和回滚，最后确认线上真实状态。</p>
+  <p style="margin:28px 0;text-align:center;"><img src="https://raw.githubusercontent.com/denelwu-GH/exocrew/main/docs/launch/wechat/images/03-flow.png" alt="ExoCrew 从想法到真实生产的交付路径" style="display:block;width:100%;height:auto;border:0;border-radius:10px;"></p>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">谁适合使用 ExoCrew</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">如果你正在一个人或用小团队借助 AI 开发企业后台、SaaS、内部工具、运营管理系统，或者项目已经从“能运行”走到了“不能再乱改”，ExoCrew 会很适合你。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">它不限定教育、电商或任何特定行业，也不绑定某一种技术栈。尤其适合没有完整技术团队，却正在推进一个越来越真实、越来越复杂产品的人。</p>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">30 秒，把团队装进 Codex</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">在终端执行：</p>
+  <pre style="margin:22px 0;padding:20px;overflow-wrap:anywhere;white-space:pre-wrap;background:#08111f;color:#e5e7eb;border-radius:12px;font-size:14px;line-height:1.8;"><code>codex plugin marketplace add denelwu-GH/exocrew
+codex plugin add exocrew@exocrew</code></pre>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">安装后，新建一个 Codex 任务，就可以让 ExoCrew 的完整交付角色进入工作流。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">GitHub：https://github.com/denelwu-GH/exocrew</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">项目采用 MIT License，任何人都可以免费使用、学习和改进。</p>
+  <h2 style="margin:42px 0 18px;color:#111827;font-size:24px;line-height:1.45;font-weight:700;">超级个体，不是一个人硬扛所有角色</h2>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">我依然不是程序员。ExoCrew 也不会让一个人突然拥有所有专家的知识。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">但 AI 时代真正重要的变化，也许从来不是“每个人都会写代码”，而是一个普通人终于可以借助 AI，获得过去只有团队才能提供的工作方式。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">像产品经理一样问清边界；像工程师一样守住结构；像测试人员一样怀疑结果；像运维人员一样敬畏上线；像交付负责人一样把事情真正做完。</p>
+  <blockquote style="margin:26px 0;padding:20px 24px;background:#111827;color:#f9fafb;border-radius:12px;font-size:19px;line-height:1.75;font-weight:700;">一个人，不等于孤军奋战。一个人，也可以拥有一支被正确组织起来的 AI 团队。</blockquote>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">这就是我开源 ExoCrew 的原因。</p>
+  <p style="margin:0 0 18px;color:#374151;font-size:17px;line-height:1.95;letter-spacing:.02em;">如果它能让下一个普通人少走一些我已经走过的弯路，让一个真实的想法更安全地变成真实产品，那么这四个月踩过的坑，就有了更大的价值。</p>
+  <section style="margin:44px 0 0;padding:26px;background:#f3f4f6;border-radius:12px;"><p style="margin:0 0 8px;color:#111827;font-size:19px;line-height:1.75;font-weight:700;">Install the team you don’t have.<br>装上你还没有的那支团队。</p><p style="margin:0;color:#6b7280;font-size:13px;line-height:1.75;">数据口径说明：文中的 1,320–2,160 人天 / 17–27 个跨职能角色为对源系统传统团队完整重建工作面的透明估算，用于描述 ExoCrew 的经验来源，不代表安装后必然获得相同比例的提速。完整依据见 GitHub 项目中的 EFFORT_MODEL.md 和 EVIDENCE.md。</p></section>
+</article>
+
+</body>
+</html>

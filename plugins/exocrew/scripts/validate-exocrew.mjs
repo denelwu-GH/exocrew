@@ -24,6 +24,7 @@ const textExtensions = new Set([
   ".ts",
   ".txt",
   ".svg",
+  ".html",
 ]);
 
 function tokenHash(value) {
@@ -111,6 +112,28 @@ export async function validateFramework(root) {
     "docs/BENCHMARK.md",
     "docs/assets/effort-comparison.svg",
     "docs/assets/effort-comparison.zh-CN.svg",
+    "docs/assets/install-the-crew.svg",
+    "docs/assets/install-the-crew.zh-CN.svg",
+    "docs/assets/idea-to-production.svg",
+    "docs/assets/idea-to-production.zh-CN.svg",
+    "docs/launch/README.md",
+    "docs/launch/xiaohongshu/01-cover.png",
+    "docs/launch/xiaohongshu/02-story.png",
+    "docs/launch/xiaohongshu/03-problem.png",
+    "docs/launch/xiaohongshu/04-team.png",
+    "docs/launch/xiaohongshu/05-comparison.png",
+    "docs/launch/xiaohongshu/06-cta.png",
+    "docs/launch/xiaohongshu/caption.md",
+    "docs/launch/wechat/cover-900x383.png",
+    "docs/launch/wechat/images/01-proof.png",
+    "docs/launch/wechat/images/02-team.png",
+    "docs/launch/wechat/images/03-flow.png",
+    "docs/launch/wechat/images/04-comparison.png",
+    "docs/launch/wechat/article.md",
+    "docs/launch/wechat/article.html",
+    "docs/launch/wechat/wechat-copy.html",
+    "tools/generate-launch-assets.mjs",
+    "tools/generate-launch-copy.mjs",
     "LICENSE",
   ];
   const errors = [];

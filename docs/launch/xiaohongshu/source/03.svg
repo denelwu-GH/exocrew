@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">ExoCrew 小红书发布图 3</title>
+  <desc id="desc">AI 会写代码，但不会自动替你负责。生成代码只需要一句话，交付真实产品需要一支团队的纪律。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.58" stop-color="#0b1830"/>
+      <stop offset="1" stop-color="#111b36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" rx="0" fill="url(#bg)"/>
+  <circle cx="468" cy="576" r="378" fill="url(#glow)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
+    <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+    <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">03 / 06</text>
+    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">代码生成 ≠ 真实交付</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">AI 会写代码</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">但不会自动替你负责</text>
+    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">生成代码只需要一句话，交付真实产品需要一支团队的纪律。</text>
+        <rect x="54" y="490" width="792" height="96" rx="20" fill="#101d33"/>
+      <circle cx="102" cy="538" r="24" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
+      <path d="M94 530 L110 546 M110 530 L94 546" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+      <text x="148" y="531" fill="#f8fafc" font-size="22" font-weight="700">需求边界</text>
+      <text x="148" y="560" fill="#9aabc2" font-size="18">没想清就开工</text>
+<rect x="54" y="612" width="792" height="96" rx="20" fill="#101d33"/>
+      <circle cx="102" cy="660" r="24" fill="#3b82f6" fill-opacity="0.18" stroke="#3b82f6"/>
+      <path d="M94 652 L110 668 M110 652 L94 668" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+      <text x="148" y="653" fill="#f8fafc" font-size="22" font-weight="700">工程结构</text>
+      <text x="148" y="682" fill="#9aabc2" font-size="18">功能越多越混乱</text>
+<rect x="54" y="734" width="792" height="96" rx="20" fill="#101d33"/>
+      <circle cx="102" cy="782" r="24" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf"/>
+      <path d="M94 774 L110 790 M110 774 L94 790" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/>
+      <text x="148" y="775" fill="#f8fafc" font-size="22" font-weight="700">测试结果</text>
+      <text x="148" y="804" fill="#9aabc2" font-size="18">看起来通过的假绿</text>
+<rect x="54" y="856" width="792" height="96" rx="20" fill="#101d33"/>
+      <circle cx="102" cy="904" r="24" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+      <path d="M94 896 L110 912 M110 896 L94 912" stroke="#fb7185" stroke-width="3" stroke-linecap="round"/>
+      <text x="148" y="897" fill="#f8fafc" font-size="22" font-weight="700">生产发布</text>
+      <text x="148" y="926" fill="#9aabc2" font-size="18">没有预演和回滚</text>
+    <rect x="54" y="1000" width="792" height="58" rx="29" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+    <text x="450" y="1037" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">真正缺的，不是代码生成器，是完整交付团队。</text>
+    <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
+    <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">让 AI 知道什么时候必须停下来</text>
+  </g>
+</svg>

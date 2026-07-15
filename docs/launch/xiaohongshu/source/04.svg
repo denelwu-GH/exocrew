@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">ExoCrew 小红书发布图 4</title>
+  <desc id="desc">你缺的不是更多提示词，是五个交付角色。不是五个聊天人格，是五套真正能执行的交付动作。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.58" stop-color="#0b1830"/>
+      <stop offset="1" stop-color="#111b36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" rx="0" fill="url(#bg)"/>
+  <circle cx="468" cy="576" r="378" fill="url(#glow)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
+    <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+    <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">04 / 06</text>
+    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">五个可安装 Skills</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">你缺的不是更多提示词</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">是五个交付角色</text>
+    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">不是五个聊天人格，是五套真正能执行的交付动作。</text>
+    <rect x="54" y="450" width="792" height="88" rx="20" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.45"/>
+      <circle cx="100" cy="494" r="25" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+      <text x="100" y="501" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">DL</text>
+      <text x="145" y="487" fill="#f8fafc" font-size="21" font-weight="700">交付负责人</text>
+      <text x="145" y="515" fill="#9aabc2" font-size="17">拆任务 · 控风险 · 盯收尾</text>
+<rect x="54" y="562" width="792" height="88" rx="20" fill="#101d33" stroke="#22d3ee" stroke-opacity="0.45"/>
+      <circle cx="100" cy="606" r="25" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
+      <text x="100" y="613" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">PM</text>
+      <text x="145" y="599" fill="#f8fafc" font-size="21" font-weight="700">产品经理</text>
+      <text x="145" y="627" fill="#9aabc2" font-size="17">问清用户 · 价值 · 边界 · 验收</text>
+<rect x="54" y="674" width="792" height="88" rx="20" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.45"/>
+      <circle cx="100" cy="718" r="25" fill="#3b82f6" fill-opacity="0.18" stroke="#3b82f6"/>
+      <text x="100" y="725" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">EN</text>
+      <text x="145" y="711" fill="#f8fafc" font-size="21" font-weight="700">研发负责人</text>
+      <text x="145" y="739" fill="#9aabc2" font-size="17">守住架构 · 契约 · 单一真值</text>
+<rect x="54" y="786" width="792" height="88" rx="20" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.45"/>
+      <circle cx="100" cy="830" r="25" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf"/>
+      <text x="100" y="837" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">QA</text>
+      <text x="145" y="823" fill="#f8fafc" font-size="21" font-weight="700">测试负责人</text>
+      <text x="145" y="851" fill="#9aabc2" font-size="17">识别假绿 · 证明关键链路</text>
+<rect x="54" y="898" width="792" height="88" rx="20" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.45"/>
+      <circle cx="100" cy="942" r="25" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b"/>
+      <text x="100" y="949" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">OP</text>
+      <text x="145" y="935" fill="#f8fafc" font-size="21" font-weight="700">运维负责人</text>
+      <text x="145" y="963" fill="#9aabc2" font-size="17">预演 · 发布 · 回滚 · 验证</text>
+    <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
+    <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">一个目标 · 五种视角 · 一个交付闭环</text>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 {
   "name": "exocrew",
-  "version": "0.1.2",
-  "description": "An industry-agnostic AI delivery exoskeleton for solo builders and small teams.",
+  "version": "0.1.3",
+  "description": "Install the team you do not have: production-distilled delivery skills for AI coding agents.",
   "author": {
     "name": "denelwu-GH",
     "url": "https://github.com/denelwu-GH"
@@ -15,13 +15,14 @@
     "engineering-guardrails",
     "product-development",
     "testing",
-    "release-governance"
+    "release-governance",
+    "solo-builder"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "ExoCrew",
-    "shortDescription": "Install a disciplined AI delivery crew.",
-    "longDescription": "ExoCrew adds product thinking, engineering guardrails, test evidence, and safe operations to AI-assisted software delivery across industries and technology stacks.",
+    "shortDescription": "Install the team you do not have.",
+    "longDescription": "Production-distilled product thinking, engineering guardrails, test evidence, and safe operations for AI-assisted software delivery.",
     "developerName": "denelwu-GH",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
