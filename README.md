@@ -10,6 +10,8 @@ ExoCrew turns an AI coding agent into a more disciplined delivery partner. It ad
 
 It is not a code generator, a no-code platform, or a promise that one person replaces an entire company. It is a reusable system of questions, gates, templates, and stop conditions that helps people move from idea to production without treating speed as permission to skip safety.
 
+ExoCrew is industry-agnostic and technology-stack-agnostic. It is not tied to education, e-commerce, or any other specific domain. It can support enterprise back-office systems, SaaS products, internal tools, operational management systems, and other software that must remain maintainable, testable, and safe to release.
+
 [中文说明](README.zh-CN.md)
 
 ## The story behind it

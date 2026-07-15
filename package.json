@@ -1,9 +1,9 @@
 {
   "name": "exocrew",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
-  "description": "AI delivery exoskeleton for solo builders and small teams.",
+  "description": "Industry-agnostic AI delivery exoskeleton for solo builders and small teams.",
   "scripts": {
     "validate": "node plugins/exocrew/scripts/validate-exocrew.mjs .",
     "test:scan": "node plugins/exocrew/scripts/test-public-scan.mjs",

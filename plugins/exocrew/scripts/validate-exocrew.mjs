@@ -120,10 +120,17 @@ export async function validateFramework(root) {
     const plugin = JSON.parse(
       await readFile(path.join(root, "plugins/exocrew/.codex-plugin/plugin.json"), "utf8"),
     );
+    const packageManifest = JSON.parse(
+      await readFile(path.join(root, "package.json"), "utf8"),
+    );
     const marketplace = JSON.parse(
       await readFile(path.join(root, ".agents/plugins/marketplace.json"), "utf8"),
     );
-    if (plugin.name !== "exocrew" || plugin.version !== "0.1.0") {
+    if (
+      plugin.name !== "exocrew" ||
+      plugin.version !== packageManifest.version ||
+      !/^\d+\.\d+\.\d+$/.test(plugin.version)
+    ) {
       errors.push({ file: "plugins/exocrew/.codex-plugin/plugin.json", rule: "plugin-identity" });
     }
     const entry = marketplace.plugins?.find((candidate) => candidate.name === "exocrew");
