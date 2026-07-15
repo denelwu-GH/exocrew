@@ -212,7 +212,97 @@ ${index === 4 ? `<rect x="${x + 25}" y="374" width="92" height="22" rx="11" fill
   });
 }
 
-function xhsFrame({ index, kicker, headline, subhead, body, footer }) {
+function ecosystemMap(language) {
+  const zh = language === "zh";
+  const labels = zh
+    ? {
+        title: "ExoCrew 在 AI 软件交付生态中的位置",
+        subtitle: "模型提供智能，编程代理执行动作，ExoCrew 约束交付，流水线执行发布",
+        model: "基础模型",
+        modelDetail: "推理 · 生成 · 判断",
+        agent: "AI 编程代理",
+        agentDetail: "Codex · Claude Code · Cursor · Copilot · OpenCode",
+        exocrew: "EXOCREW · 生产交付 HARNESS",
+        exocrewDetail: "产品边界 · 工程门禁 · 测试证据 · 安全运维 · 交付收口",
+        pipeline: "CI/CD 与软件交付平台",
+        pipelineDetail: "GitHub Actions · Harness.io · 你的发布体系",
+        mechanisms: "上下文与能力机制",
+        mechanismItems: ["Agent Skills", "AGENTS.md", "Rules", "MCP / Tools"],
+        companions: "互补方法与工作流",
+        companionItems: ["Spec Kit", "OpenSpec", "BMAD", "Superpowers"],
+        footer: "Harness Engineering 是模型周围的完整系统；ExoCrew 提供其中可安装的交付纪律与证据层。",
+      }
+    : {
+        title: "Where ExoCrew fits in the AI software delivery stack",
+        subtitle: "Models provide intelligence. Coding agents act. ExoCrew governs delivery. Pipelines ship.",
+        model: "FOUNDATION MODELS",
+        modelDetail: "Reason · generate · judge",
+        agent: "AI CODING AGENTS",
+        agentDetail: "Codex · Claude Code · Cursor · Copilot · OpenCode",
+        exocrew: "EXOCREW · PRODUCTION DELIVERY HARNESS",
+        exocrewDetail: "Product boundaries · engineering gates · test evidence · safe operations · closure",
+        pipeline: "CI/CD & SOFTWARE DELIVERY PLATFORMS",
+        pipelineDetail: "GitHub Actions · Harness.io · your release stack",
+        mechanisms: "CONTEXT & CAPABILITY",
+        mechanismItems: ["Agent Skills", "AGENTS.md", "Rules", "MCP / Tools"],
+        companions: "COMPLEMENTARY METHODS",
+        companionItems: ["Spec Kit", "OpenSpec", "BMAD", "Superpowers"],
+        footer: "Harness engineering is the whole system around the model. ExoCrew is the delivery-discipline and evidence layer inside it.",
+      };
+
+  const sideList = (items, x, startY, color) =>
+    items
+      .map(
+        (item, index) => `<rect x="${x}" y="${startY + index * 48}" width="150" height="34" rx="17" fill="${color}" fill-opacity="0.12" stroke="${color}" stroke-opacity="0.5"/>
+      <text x="${x + 75}" y="${startY + 22 + index * 48}" fill="${colors.white}" font-size="12" font-weight="700" text-anchor="middle">${escapeXml(item)}</text>`,
+      )
+      .join("\n");
+
+  const body = `    ${lines([labels.title], { x: 54, y: 66, size: 32, gap: 0, weight: 700 })}
+    ${lines([labels.subtitle], { x: 54, y: 101, size: 16, gap: 0, fill: colors.muted, weight: 400 })}
+
+    <text x="123" y="170" fill="${colors.muted}" font-size="12" font-weight="700" text-anchor="middle">${escapeXml(labels.mechanisms)}</text>
+    <rect x="42" y="190" width="162" height="290" rx="22" fill="${colors.panel}" stroke="${colors.cyan}" stroke-opacity="0.45"/>
+    ${sideList(labels.mechanismItems, 48, 222, colors.cyan)}
+
+    <text x="1077" y="170" fill="${colors.muted}" font-size="12" font-weight="700" text-anchor="middle">${escapeXml(labels.companions)}</text>
+    <rect x="996" y="190" width="162" height="290" rx="22" fill="${colors.panel}" stroke="${colors.amber}" stroke-opacity="0.45"/>
+    ${sideList(labels.companionItems, 1002, 222, colors.amber)}
+
+    <rect x="238" y="142" width="724" height="68" rx="18" fill="${colors.panel}" stroke="${colors.faint}"/>
+    <text x="268" y="173" fill="${colors.white}" font-size="17" font-weight="700">${escapeXml(labels.model)}</text>
+    <text x="268" y="194" fill="${colors.muted}" font-size="13">${escapeXml(labels.modelDetail)}</text>
+
+    <path d="M600 210 L600 230" stroke="${colors.line}" stroke-width="3"/><path d="M592 222 L600 231 L608 222" fill="none" stroke="${colors.cyan}" stroke-width="2"/>
+    <rect x="238" y="232" width="724" height="78" rx="18" fill="${colors.panel}" stroke="${colors.cyan}" stroke-opacity="0.65"/>
+    <text x="268" y="265" fill="${colors.white}" font-size="17" font-weight="700">${escapeXml(labels.agent)}</text>
+    <text x="268" y="290" fill="${colors.muted}" font-size="13">${escapeXml(labels.agentDetail)}</text>
+
+    <path d="M600 310 L600 332" stroke="${colors.line}" stroke-width="3"/><path d="M592 324 L600 333 L608 324" fill="none" stroke="${colors.purple}" stroke-width="2"/>
+    <rect x="224" y="334" width="752" height="124" rx="24" fill="${colors.purple}" fill-opacity="0.17" stroke="${colors.purple}" stroke-width="3" filter="url(#shadow)"/>
+    <text x="600" y="375" fill="${colors.white}" font-size="21" font-weight="700" text-anchor="middle">${escapeXml(labels.exocrew)}</text>
+    <text x="600" y="405" fill="${colors.white}" font-size="13" text-anchor="middle">${escapeXml(labels.exocrewDetail)}</text>
+    <rect x="457" y="420" width="286" height="24" rx="12" fill="${colors.teal}" fill-opacity="0.14" stroke="${colors.teal}" stroke-opacity="0.65"/>
+    <text x="600" y="437" fill="${colors.white}" font-size="11" font-weight="700" text-anchor="middle">${zh ? "CODEX 原生安装 · 其它工具为生态对比" : "CODEX-NATIVE · OTHER TOOLS SHOWN AS ECOSYSTEM CONTEXT"}</text>
+
+    <path d="M600 458 L600 480" stroke="${colors.line}" stroke-width="3"/><path d="M592 472 L600 481 L608 472" fill="none" stroke="${colors.teal}" stroke-width="2"/>
+    <rect x="238" y="482" width="724" height="78" rx="18" fill="${colors.panel}" stroke="${colors.teal}" stroke-opacity="0.65"/>
+    <text x="268" y="515" fill="${colors.white}" font-size="17" font-weight="700">${escapeXml(labels.pipeline)}</text>
+    <text x="268" y="540" fill="${colors.muted}" font-size="13">${escapeXml(labels.pipelineDetail)}</text>
+
+    <line x1="42" y1="594" x2="1158" y2="594" stroke="${colors.line}"/>
+    <text x="600" y="628" fill="${colors.white}" font-size="14" font-weight="700" text-anchor="middle">${escapeXml(labels.footer)}</text>`;
+
+  return svg({
+    width: 1200,
+    height: 660,
+    title: labels.title,
+    desc: labels.footer,
+    body,
+  });
+}
+
+function xhsFrame({ index, total = 6, kicker, headline, subhead, body, footer }) {
   return svg({
     width: 900,
     height: 1200,
@@ -220,7 +310,7 @@ function xhsFrame({ index, kicker, headline, subhead, body, footer }) {
     title: `ExoCrew 小红书发布图 ${index}`,
     desc: `${headline.join("，")}。${subhead ?? ""}`,
     body: `    <rect x="54" y="54" width="118" height="38" rx="19" fill="${colors.purple}" fill-opacity="0.18" stroke="${colors.purple}"/>
-    <text x="113" y="80" fill="${colors.white}" font-size="16" font-weight="700" text-anchor="middle">${String(index).padStart(2, "0")} / 06</text>
+    <text x="113" y="80" fill="${colors.white}" font-size="16" font-weight="700" text-anchor="middle">${String(index).padStart(2, "0")} / ${String(total).padStart(2, "0")}</text>
     <text x="846" y="80" fill="${colors.muted}" font-size="16" text-anchor="end">${escapeXml(kicker)}</text>
     ${lines(headline, { x: 54, y: 182, size: 54, gap: 70, weight: 700 })}
     ${subhead ? lines([subhead], { x: 54, y: 182 + headline.length * 70 + 12, size: 22, gap: 0, fill: colors.muted, weight: 400 }) : ""}
@@ -383,6 +473,86 @@ function xhsCards() {
   return [card1, card2, card3, card4, card5, card6];
 }
 
+function ecosystemSocialCards() {
+  const stack = [
+    ["01", "基础模型", "提供推理与生成", colors.faint],
+    ["02", "AI 编程代理", "Codex · Claude Code · Cursor", colors.cyan],
+    ["03", "Skills / Rules / MCP", "提供上下文、规则与工具", colors.blue],
+    ["04", "ExoCrew", "约束产品、工程、测试与运维交付", colors.purple],
+    ["05", "CI/CD 平台", "执行构建、审批、部署与观测", colors.teal],
+  ];
+  const stackBody = stack
+    .map((item, index) => {
+      const y = 430 + index * 126;
+      return `<rect x="72" y="${y}" width="756" height="98" rx="22" fill="${item[3]}" fill-opacity="${index === 3 ? "0.22" : "0.11"}" stroke="${item[3]}" stroke-width="${index === 3 ? 3 : 1.5}"/>
+      <circle cx="122" cy="${y + 49}" r="25" fill="${item[3]}" fill-opacity="0.22" stroke="${item[3]}"/>
+      <text x="122" y="${y + 56}" fill="${colors.white}" font-size="16" font-weight="700" text-anchor="middle">${item[0]}</text>
+      <text x="168" y="${y + 42}" fill="${colors.white}" font-size="22" font-weight="700">${escapeXml(item[1])}</text>
+      <text x="168" y="${y + 72}" fill="${colors.muted}" font-size="16">${escapeXml(item[2])}</text>`;
+    })
+    .join("\n");
+  const card1 = xhsFrame({
+    index: 1,
+    total: 3,
+    kicker: "AI 开发生态说明书",
+    headline: ["AI Agent、Skill、", "Harness、Spec、CI/CD", "到底有什么区别？"],
+    subhead: "别再把不同层级的工具放进同一个排行榜",
+    body: stackBody,
+    footer: "ExoCrew · Production Delivery Harness",
+  });
+
+  const card2 = xhsFrame({
+    index: 2,
+    total: 3,
+    kicker: "ExoCrew 在哪里起作用",
+    headline: ["Agent 负责写和执行", "ExoCrew 负责", "把事情真正交付"],
+    subhead: "不是替代 Codex，而是给它装上完整交付纪律",
+    body: `    <rect x="74" y="448" width="752" height="106" rx="24" fill="${colors.cyan}" fill-opacity="0.12" stroke="${colors.cyan}"/>
+    <text x="450" y="490" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">CODING AGENT</text>
+    <text x="450" y="526" fill="${colors.muted}" font-size="17" text-anchor="middle">读取仓库 · 修改文件 · 运行命令 · 调用工具</text>
+    <path d="M450 554 L450 615" stroke="${colors.line}" stroke-width="4"/><path d="M438 602 L450 616 L462 602" fill="none" stroke="${colors.purple}" stroke-width="3"/>
+    <rect x="54" y="618" width="792" height="240" rx="28" fill="${colors.purple}" fill-opacity="0.20" stroke="${colors.purple}" stroke-width="3" filter="url(#shadow)"/>
+    <text x="450" y="674" fill="${colors.white}" font-size="29" font-weight="700" text-anchor="middle">EXOCREW · 生产交付 HARNESS</text>
+    ${[
+      ["产品边界", 164, 748, colors.cyan],
+      ["工程门禁", 307, 748, colors.blue],
+      ["测试证据", 450, 748, colors.teal],
+      ["安全运维", 593, 748, colors.amber],
+      ["交付收口", 736, 748, colors.purple],
+    ]
+      .map(([label, x, y, color]) => `<circle cx="${x}" cy="${y}" r="48" fill="${color}" fill-opacity="0.16" stroke="${color}"/><text x="${x}" y="${y + 7}" fill="${colors.white}" font-size="16" font-weight="700" text-anchor="middle">${label}</text>`)
+      .join("\n")}
+    <text x="450" y="826" fill="${colors.muted}" font-size="16" text-anchor="middle">Codex 原生安装 · 五个可执行 Skills · 从真实生产交付提炼</text>
+    <path d="M450 858 L450 917" stroke="${colors.line}" stroke-width="4"/><path d="M438 904 L450 918 L462 904" fill="none" stroke="${colors.teal}" stroke-width="3"/>
+    <rect x="150" y="920" width="600" height="86" rx="43" fill="${colors.teal}" fill-opacity="0.14" stroke="${colors.teal}"/>
+    <text x="450" y="974" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">有边界 · 有证据 · 能发布 · 能回滚</text>`,
+    footer: "github.com/denelwu-GH/exocrew",
+  });
+
+  const card3 = xhsFrame({
+    index: 3,
+    total: 3,
+    kicker: "Harness 不是只有一个意思",
+    headline: ["Harness Engineering", "不等于", "Harness.io"],
+    subhead: "一个是工程类目，一个是企业软件交付平台",
+    body: `    <rect x="54" y="448" width="792" height="220" rx="28" fill="${colors.purple}" fill-opacity="0.16" stroke="${colors.purple}"/>
+    <text x="92" y="500" fill="${colors.white}" font-size="25" font-weight="700">HARNESS ENGINEERING</text>
+    <text x="92" y="542" fill="${colors.muted}" font-size="17">模型周围的上下文、工具、规则、验证循环与运行环境</text>
+    <text x="92" y="596" fill="${colors.white}" font-size="18" font-weight="700">ExoCrew 属于这里：</text>
+    <text x="92" y="628" fill="${colors.muted}" font-size="17">提供可安装的交付纪律与证据层</text>
+    <rect x="54" y="700" width="792" height="220" rx="28" fill="${colors.teal}" fill-opacity="0.13" stroke="${colors.teal}"/>
+    <text x="92" y="752" fill="${colors.white}" font-size="25" font-weight="700">HARNESS.IO</text>
+    <text x="92" y="794" fill="${colors.muted}" font-size="17">企业 CI/CD、软件交付、治理、安全、可观测性与流水线 Agents</text>
+    <text x="92" y="848" fill="${colors.white}" font-size="18" font-weight="700">ExoCrew 不替代它：</text>
+    <text x="92" y="880" fill="${colors.muted}" font-size="17">帮助形成更安全、更容易进入流水线的变更包</text>
+    <rect x="170" y="970" width="560" height="62" rx="31" fill="${colors.amber}" fill-opacity="0.15" stroke="${colors.amber}"/>
+    <text x="450" y="1009" fill="${colors.white}" font-size="20" font-weight="700" text-anchor="middle">不同层级，可以组合，不是互相替代</text>`,
+    footer: "公平比较 · 无官方隶属 · 不做通用排名",
+  });
+
+  return [card1, card2, card3];
+}
+
 function wechatCover() {
   return svg({
     width: 900,
@@ -455,12 +625,22 @@ await write("docs/assets/install-the-crew.svg", installCrew("en"));
 await write("docs/assets/install-the-crew.zh-CN.svg", installCrew("zh"));
 await write("docs/assets/idea-to-production.svg", ideaToProduction("en"));
 await write("docs/assets/idea-to-production.zh-CN.svg", ideaToProduction("zh"));
+await write("docs/assets/ai-delivery-ecosystem.svg", ecosystemMap("en"));
+await write("docs/assets/ai-delivery-ecosystem.zh-CN.svg", ecosystemMap("zh"));
 
 const cards = xhsCards();
 for (let index = 0; index < cards.length; index += 1) {
   await write(
     `docs/launch/xiaohongshu/source/${String(index + 1).padStart(2, "0")}.svg`,
     cards[index],
+  );
+}
+
+const ecosystemCards = ecosystemSocialCards();
+for (let index = 0; index < ecosystemCards.length; index += 1) {
+  await write(
+    `docs/launch/ecosystem/source/${String(index + 1).padStart(2, "0")}.svg`,
+    ecosystemCards[index],
   );
 }
 

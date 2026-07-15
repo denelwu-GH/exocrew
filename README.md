@@ -2,13 +2,13 @@
 
 # ExoCrew
 
-### The delivery exoskeleton for the AI era
+### The production delivery harness for AI coding agents
 
 ## Install the team you do not have.
 
 **One non-programmer used Codex to drive a complex enterprise operations system into real production in about four months.**
 
-ExoCrew packages the hard-won product judgment, engineering guardrails, testing skepticism, and operational discipline learned along the way — and installs them into your AI workflow.
+ExoCrew is a Codex-native, AI-era delivery exoskeleton. It packages the hard-won product judgment, engineering guardrails, testing skepticism, and operational discipline learned along the way — and installs them into your AI workflow.
 
 **Not another prompt pack. An AI delivery crew that knows what to ask, what to protect, what to verify, and when not to ship.**
 
@@ -20,7 +20,7 @@ ExoCrew packages the hard-won product judgment, engineering guardrails, testing 
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
 </p>
 
-**[Install in 30 seconds](#install-in-30-seconds) · [Meet the crew](#five-roles-one-delivery-system) · [See the proof](#proof-behind-the-story) · [简体中文](README.zh-CN.md)**
+**[Install in 30 seconds](#install-in-30-seconds) · [See where it fits](#where-exocrew-fits-in-the-ai-coding-stack) · [Meet the crew](#five-roles-one-delivery-system) · [简体中文](README.zh-CN.md)**
 
 </div>
 
@@ -35,6 +35,22 @@ The hard part is not getting AI to produce another page.
 The hard part is keeping business boundaries intact, architecture maintainable, tests meaningful, data changes reversible, releases recoverable, and every hard-won decision available to the next task.
 
 **You do not need more generated code. You need a team that can carry code all the way to delivery.**
+
+## Where ExoCrew fits in the AI coding stack
+
+Models provide intelligence. Coding agents execute. Spec-driven frameworks structure intent. CI/CD platforms run pipelines. **ExoCrew governs how work moves from a request to verified, reversible delivery.**
+
+![Where ExoCrew fits in the AI software delivery stack](docs/assets/ai-delivery-ecosystem.svg)
+
+| Tool or category | What it owns | Where ExoCrew fits |
+|---|---|---|
+| Codex, Claude Code, Cursor, Copilot, OpenCode | Coding-agent execution | The agent acts; ExoCrew supplies product, engineering, test, and operations discipline. The public package is Codex-native today |
+| Agent Skills, `AGENTS.md`, Rules, MCP | Context, reusable instructions, and tools | These are mechanisms; ExoCrew is the production-distilled delivery system installed through them |
+| [Spec Kit](https://github.com/github/spec-kit), [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Specifications, plans, tasks, and change intent | Keep spec-driven development; add ExoCrew for architecture, evidence, release safety, rollback, and closure |
+| [BMAD](https://github.com/bmad-code-org/BMAD-METHOD), [Superpowers](https://github.com/obra/superpowers) | Role-based methods and reusable development workflows | Use their broader methods; use ExoCrew when production delivery gates and cross-functional evidence are the missing layer |
+| Harness Engineering, [Harness.io](https://www.harness.io/), GitHub Actions | The full agent system, enterprise delivery platform, and CI/CD execution | ExoCrew is a delivery-discipline layer inside the wider harness; it prepares safer work for the pipeline rather than replacing it |
+
+**[What is an AI coding agent harness?](docs/AI_AGENT_HARNESS.md) · [Full ecosystem comparison](docs/COMPARISON.md)**
 
 ## Five roles. One delivery system.
 
@@ -130,7 +146,7 @@ The starter creates one decision source, current task state, hard constraints, a
 
 ExoCrew was distilled from real production delivery. The repository, test, commit, and governance figures above come from a version-bound read-only audit. The traditional-team comparison is a transparent reconstruction model, not audited labor data or a promise of adoption speed-up. ExoCrew does not currently claim a fixed acceleration multiplier, defect-reduction percentage, or headcount replacement; adoption impact will be measured through the public 30-task paired benchmark.
 
-**[Full evidence](docs/EVIDENCE.md) · [Effort model](docs/EFFORT_MODEL.md) · [Benchmark](docs/BENCHMARK.md) · [Architecture](docs/ARCHITECTURE.md)**
+**[Full evidence](docs/EVIDENCE.md) · [Effort model](docs/EFFORT_MODEL.md) · [Benchmark](docs/BENCHMARK.md) · [Architecture](docs/ARCHITECTURE.md) · [Harness guide](docs/AI_AGENT_HARNESS.md) · [Compare](docs/COMPARISON.md)**
 
 ---
 

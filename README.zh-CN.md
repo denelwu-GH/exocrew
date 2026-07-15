@@ -2,13 +2,13 @@
 
 # ExoCrew
 
-### AI 时代的交付外骨骼
+### 面向 AI 编程代理的生产交付 Harness
 
 ## 装上你还没有的那支团队。
 
 **一个不懂代码的人，用 Codex，在约四个月里把一套复杂企业业务系统真正推到了生产。**
 
-现在，我把这四个月踩过的坑、建立的门禁和跑通的交付方法，全部装进你的 AI 工作流。
+ExoCrew 是为 Codex 原生打包的 AI 时代交付外骨骼。现在，我把这四个月踩过的坑、建立的门禁和跑通的交付方法，全部装进你的 AI 工作流。
 
 **不是多一份提示词。是一支会追问需求、守住架构、怀疑测试、敬畏上线的 AI 交付团队。**
 
@@ -20,7 +20,7 @@
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
 </p>
 
-**[30 秒安装](#30-秒安装) · [看看装上了谁](#五个角色一条交付链) · [查看真实证据](#不只讲故事直接看证据) · [English](README.md)**
+**[30 秒安装](#30-秒安装) · [看看它处在哪一层](#exocrew-在-ai-开发生态中的位置) · [看看装上了谁](#五个角色一条交付链) · [English](README.md)**
 
 </div>
 
@@ -41,6 +41,22 @@
 - 一个任务做完以后，结论能不能留给下一次继续使用。
 
 **你缺的不是更多代码。你缺的是一支能够把代码带到真实交付的团队。**
+
+## ExoCrew 在 AI 开发生态中的位置
+
+模型提供智能，AI 编程代理执行动作，Spec-Driven Development 组织意图，CI/CD 平台执行流水线。**ExoCrew 负责把一个需求带到有证据、可回滚的真实交付。**
+
+![ExoCrew 在 AI 软件交付生态中的位置](docs/assets/ai-delivery-ecosystem.zh-CN.svg)
+
+| 工具或类目 | 它主要负责什么 | ExoCrew 补哪一层 |
+|---|---|---|
+| Codex、Claude Code、Cursor、Copilot、OpenCode | AI 编程代理执行 | Agent 负责行动；ExoCrew 补产品、研发、测试和运维纪律。当前公开包原生面向 Codex |
+| Agent Skills、`AGENTS.md`、Rules、MCP | 上下文、可复用指令与工具 | 它们是承载机制；ExoCrew 是安装进去的生产交付系统 |
+| [Spec Kit](https://github.com/github/spec-kit)、[OpenSpec](https://github.com/Fission-AI/OpenSpec) | 规格、计划、任务与变更意图 | 保留规格驱动开发，再用 ExoCrew 补架构、证据、发布安全、回滚和收口 |
+| [BMAD](https://github.com/bmad-code-org/BMAD-METHOD)、[Superpowers](https://github.com/obra/superpowers) | 角色化方法与可复用开发工作流 | 用它们覆盖广泛方法；缺生产交付门禁与跨职能证据时使用 ExoCrew |
+| Harness Engineering、[Harness.io](https://www.harness.io/)、GitHub Actions | 完整 Agent 系统、企业交付平台与 CI/CD 执行 | ExoCrew 是更大 Harness 中的交付纪律层，帮助形成更安全的流水线输入，而不是替代平台 |
+
+**[什么是 AI 编程代理 Harness？](docs/AI_AGENT_HARNESS.zh-CN.md) · [查看完整生态对比](docs/COMPARISON.zh-CN.md)**
 
 ## 五个角色，一条交付链
 
@@ -135,7 +151,7 @@ starter 会创建唯一决策源、任务态、硬约束、索引，以及工作
 
 ExoCrew 来自真实生产系统的交付经验。上面的代码、测试、提交和治理数字来自绑定版本的只读审计；传统团队工作量是透明重建模型，不是工时审计，也不是安装后的提速承诺。ExoCrew 当前不宣称固定的提速倍数、缺陷下降比例或可替代人数，采用效果将通过公开的 30 任务配对 Benchmark 测量。
 
-**[查看完整证据](docs/EVIDENCE.md) · [查看测算公式](docs/EFFORT_MODEL.md) · [查看 Benchmark](docs/BENCHMARK.md) · [查看架构](docs/ARCHITECTURE.md)**
+**[查看完整证据](docs/EVIDENCE.md) · [查看测算公式](docs/EFFORT_MODEL.md) · [查看 Benchmark](docs/BENCHMARK.md) · [查看架构](docs/ARCHITECTURE.md) · [Harness 指南](docs/AI_AGENT_HARNESS.zh-CN.md) · [生态对比](docs/COMPARISON.zh-CN.md)**
 
 ---
 

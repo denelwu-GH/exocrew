@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">ExoCrew 小红书发布图 3</title>
+  <desc id="desc">Harness Engineering，不等于，Harness.io。一个是工程类目，一个是企业软件交付平台</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.58" stop-color="#0b1830"/>
+      <stop offset="1" stop-color="#111b36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" rx="0" fill="url(#bg)"/>
+  <circle cx="468" cy="576" r="378" fill="url(#glow)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
+    <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+    <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">03 / 03</text>
+    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">Harness 不是只有一个意思</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">Harness Engineering</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">不等于</text>
+<text x="54" y="322" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">Harness.io</text>
+    <text x="54" y="404" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">一个是工程类目，一个是企业软件交付平台</text>
+        <rect x="54" y="448" width="792" height="220" rx="28" fill="#8b5cf6" fill-opacity="0.16" stroke="#8b5cf6"/>
+    <text x="92" y="500" fill="#f8fafc" font-size="25" font-weight="700">HARNESS ENGINEERING</text>
+    <text x="92" y="542" fill="#9aabc2" font-size="17">模型周围的上下文、工具、规则、验证循环与运行环境</text>
+    <text x="92" y="596" fill="#f8fafc" font-size="18" font-weight="700">ExoCrew 属于这里：</text>
+    <text x="92" y="628" fill="#9aabc2" font-size="17">提供可安装的交付纪律与证据层</text>
+    <rect x="54" y="700" width="792" height="220" rx="28" fill="#2dd4bf" fill-opacity="0.13" stroke="#2dd4bf"/>
+    <text x="92" y="752" fill="#f8fafc" font-size="25" font-weight="700">HARNESS.IO</text>
+    <text x="92" y="794" fill="#9aabc2" font-size="17">企业 CI/CD、软件交付、治理、安全、可观测性与流水线 Agents</text>
+    <text x="92" y="848" fill="#f8fafc" font-size="18" font-weight="700">ExoCrew 不替代它：</text>
+    <text x="92" y="880" fill="#9aabc2" font-size="17">帮助形成更安全、更容易进入流水线的变更包</text>
+    <rect x="170" y="970" width="560" height="62" rx="31" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b"/>
+    <text x="450" y="1009" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">不同层级，可以组合，不是互相替代</text>
+    <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
+    <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">公平比较 · 无官方隶属 · 不做通用排名</text>
+  </g>
+</svg>

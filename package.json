@@ -1,9 +1,9 @@
 {
   "name": "exocrew",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
-  "description": "Install the team you do not have: production-distilled delivery skills for AI coding agents.",
+  "description": "Codex-native production delivery harness with product, engineering, test, and operations skills for AI coding agents.",
   "scripts": {
     "generate:launch-svg": "node tools/generate-launch-assets.mjs",
     "generate:launch-copy": "node tools/generate-launch-copy.mjs",

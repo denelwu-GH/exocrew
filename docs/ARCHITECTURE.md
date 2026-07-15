@@ -2,6 +2,22 @@
 
 ExoCrew is distributed as a repository-local Codex marketplace containing one plugin and five independently invokable skills.
 
+## Position in the AI coding stack
+
+ExoCrew is a **delivery-discipline layer**, not a foundation model, coding-agent runtime, MCP server, specification engine, or CI/CD platform.
+
+```text
+foundation model
+  -> coding-agent runtime (Codex)
+  -> ExoCrew delivery skills
+  -> project tools, tests, and release evidence
+  -> CI/CD and software-delivery platform
+```
+
+Agent Skills and repository instructions are the delivery mechanisms. ExoCrew supplies the product, engineering, test, operations, and closure behavior carried through those mechanisms. Spec-driven frameworks can feed clearer intent into the same workflow; CI/CD platforms can enforce and execute the resulting release package.
+
+The public package is installed and validated for Codex today. Other coding agents and platforms are ecosystem context, not claimed native integrations. See [the AI agent harness guide](AI_AGENT_HARNESS.md) and [the ecosystem comparison](COMPARISON.md).
+
 ```text
 marketplace
 └── exocrew plugin
