@@ -32,7 +32,7 @@
     <text x="82" y="688" fill="#f8fafc" font-size="19" font-weight="700">exocrew@exocrew</text>
     <g>
       <rect x="54" y="764" width="238" height="72" rx="36" fill="#8b5cf6" fill-opacity="0.16" stroke="#8b5cf6"/><text x="173" y="808" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle">免费开源</text>
-      <rect x="331" y="764" width="238" height="72" rx="36" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf"/><text x="450" y="808" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle">5 个 Skills</text>
+      <rect x="331" y="764" width="238" height="72" rx="36" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf"/><text x="450" y="808" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle">6 个 Skills</text>
       <rect x="608" y="764" width="238" height="72" rx="36" fill="#f59e0b" fill-opacity="0.16" stroke="#f59e0b"/><text x="727" y="808" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle">MIT License</text>
     </g>
     <text x="450" y="922" fill="#f8fafc" font-size="29" font-weight="700" text-anchor="middle">github.com/denelwu-GH/exocrew</text>

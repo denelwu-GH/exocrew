@@ -23,6 +23,8 @@ If the motivation is weak or the proposed path is not the shortest route to valu
 
 If the object being changed, the business consequence, or the decision owner is still unknown, produce a decision brief and stop before implementation. Do not turn a convenient assumption into a durable product rule.
 
+For an existing system, also identify whether the desired outcome is a behavior-preserving port, internal refactor, technical modernization, production replacement, or reusable/public extraction. These modes have different compatibility, cost, and evidence requirements. Route the accepted choice to `$system-modernization`.
+
 ## Build the brief
 
 Use this order:
@@ -42,6 +44,7 @@ User-facing copy
 Acceptance criteria
 Dependencies and rollout
 Alternative and tradeoff
+Modernization mode and maintenance horizon, when applicable
 ```
 
 Load [references/brief-template.md](references/brief-template.md) when producing a reusable artifact.
@@ -99,5 +102,6 @@ Check:
 6. Acceptance criteria are independently testable.
 7. An alternative and its tradeoff are visible.
 8. The expected value justifies the implementation and operating cost.
+9. For existing-system work, the selected modernization mode and retained behavior are explicit.
 
 Hand the accepted brief to `$engineering-guardrails` and `$test-evidence`.

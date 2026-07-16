@@ -65,13 +65,13 @@ CI/CD platform
 
 [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) provides a broad, role-oriented method for AI-driven agile development. [Superpowers](https://github.com/obra/superpowers) provides an agentic skills framework and software-development methodology.
 
-ExoCrew is deliberately narrower. It is built around five delivery responsibilities and the failure modes encountered while one non-programmer used Codex to drive a real enterprise operations system into production: lost business boundaries, architecture drift, false-green tests, historical-data risk, unsafe releases, and missing closure evidence.
+ExoCrew is deliberately narrower. It is built around six delivery responsibilities and the failure modes encountered while one non-programmer used Codex to drive a real enterprise operations system into production: lost business boundaries, architecture drift, endless rewrite loops, false-green tests, historical-data risk, unsafe releases, and missing closure evidence.
 
 Choose based on the missing layer:
 
 - need a broad development methodology or skill ecosystem: evaluate BMAD or Superpowers;
 - need spec-centered requirements and task generation: evaluate Spec Kit or OpenSpec;
-- need production-derived product, engineering, test, and operations discipline inside Codex: install ExoCrew;
+- need production-derived product, engineering, modernization, test, and operations discipline inside Codex: install ExoCrew;
 - need governed enterprise pipelines and organizational controls: evaluate Harness.io or your existing delivery platform.
 
 ## Coming from Harness.io or GitHub Actions?
@@ -82,9 +82,10 @@ ExoCrew helps produce a change package with defined scope, evidence, release con
 
 ## What ExoCrew uniquely packages
 
-- one delivery lead that coordinates the full task rather than leaving five disconnected checklists;
+- one delivery lead that coordinates the full task rather than leaving six disconnected checklists;
 - product boundaries before implementation;
 - engineering rules that protect contracts and sources of truth;
+- modernization discipline that separates porting, refactoring, upgrading, replacing, and extracting while tracking parity and R0-R7 readiness;
 - risk-based testing that distinguishes execution from evidence;
 - dry-run, explicit apply, rollback, and post-verification for risky operations;
 - durable worklogs, decisions, release records, and lessons;

@@ -21,16 +21,17 @@
     <text x="48" y="58" fill="#8b5cf6" font-size="16" font-weight="700">EXOCREW · AI 时代的交付外骨骼</text>
     <text x="48" y="125" fill="#f8fafc" font-size="34" font-weight="700" text-anchor="start">一个人 + Codex，4 个月</text>
 <text x="48" y="177" fill="#f8fafc" font-size="34" font-weight="700" text-anchor="start">我把背后的 AI 交付团队开源了</text>
-    <text x="48" y="251" fill="#9aabc2" font-size="17">真实生产系统 · 五个交付角色 · 一套可安装的方法</text>
+    <text x="48" y="251" fill="#9aabc2" font-size="17">真实生产系统 · 六个交付角色 · 一套可安装的方法</text>
     <rect x="48" y="292" width="258" height="44" rx="22" fill="#8b5cf6"/>
     <text x="177" y="321" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">装上你还没有的那支团队</text>
     <circle cx="715" cy="186" r="92" fill="#13233d" stroke="#8b5cf6" stroke-width="3"/>
     <text x="715" y="179" fill="#f8fafc" font-size="30" font-weight="700" text-anchor="middle">EXO</text>
     <text x="715" y="213" fill="#9aabc2" font-size="18" text-anchor="middle">CREW</text>
-    <circle cx="627" cy="75" r="31" fill="#8b5cf6" fill-opacity="0.17" stroke="#8b5cf6"/><text x="627" y="81" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">交付</text><line x1="627" y1="75" x2="715" y2="186" stroke="#2a3b57"/>
-<circle cx="795" cy="75" r="31" fill="#22d3ee" fill-opacity="0.17" stroke="#22d3ee"/><text x="795" y="81" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">产品</text><line x1="795" y1="75" x2="715" y2="186" stroke="#2a3b57"/>
-<circle cx="841" cy="194" r="31" fill="#3b82f6" fill-opacity="0.17" stroke="#3b82f6"/><text x="841" y="200" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">研发</text><line x1="841" y1="194" x2="715" y2="186" stroke="#2a3b57"/>
-<circle cx="765" cy="306" r="31" fill="#2dd4bf" fill-opacity="0.17" stroke="#2dd4bf"/><text x="765" y="312" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">测试</text><line x1="765" y1="306" x2="715" y2="186" stroke="#2a3b57"/>
-<circle cx="619" cy="300" r="31" fill="#f59e0b" fill-opacity="0.17" stroke="#f59e0b"/><text x="619" y="306" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">运维</text><line x1="619" y1="300" x2="715" y2="186" stroke="#2a3b57"/>
+    <circle cx="622" cy="78" r="31" fill="#8b5cf6" fill-opacity="0.17" stroke="#8b5cf6"/><text x="622" y="84" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">交付</text><line x1="622" y1="78" x2="715" y2="186" stroke="#2a3b57"/>
+<circle cx="790" cy="75" r="31" fill="#22d3ee" fill-opacity="0.17" stroke="#22d3ee"/><text x="790" y="81" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">产品</text><line x1="790" y1="75" x2="715" y2="186" stroke="#2a3b57"/>
+<circle cx="846" cy="174" r="31" fill="#3b82f6" fill-opacity="0.17" stroke="#3b82f6"/><text x="846" y="180" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">研发</text><line x1="846" y1="174" x2="715" y2="186" stroke="#2a3b57"/>
+<circle cx="812" cy="292" r="31" fill="#fb7185" fill-opacity="0.17" stroke="#fb7185"/><text x="812" y="298" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">现代化</text><line x1="812" y1="292" x2="715" y2="186" stroke="#2a3b57"/>
+<circle cx="686" cy="326" r="31" fill="#2dd4bf" fill-opacity="0.17" stroke="#2dd4bf"/><text x="686" y="332" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">测试</text><line x1="686" y1="326" x2="715" y2="186" stroke="#2a3b57"/>
+<circle cx="590" cy="250" r="31" fill="#f59e0b" fill-opacity="0.17" stroke="#f59e0b"/><text x="590" y="256" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">运维</text><line x1="590" y1="250" x2="715" y2="186" stroke="#2a3b57"/>
   </g>
 </svg>

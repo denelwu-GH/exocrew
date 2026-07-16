@@ -1,6 +1,6 @@
 ---
 name: exocrew-delivery
-description: Orchestrate evidence-gated AI software delivery from an ambiguous request through product framing, implementation, verification, operational safety, and durable closeout. Use for complex features, cross-module changes, risky fixes, project setup, migration or release work, or any request that needs product, engineering, test, and operations perspectives coordinated without losing approval boundaries.
+description: Orchestrate evidence-gated AI software delivery from an ambiguous request through product framing, implementation, verification, operational safety, and durable closeout. Use for complex features, cross-module changes, risky fixes, project setup, modernization, migration or release work, or any request that needs product, engineering, modernization, test, and operations perspectives coordinated without losing approval boundaries.
 ---
 
 # ExoCrew Delivery
@@ -57,6 +57,7 @@ Capture:
 5. Acceptance evidence
 6. Stop conditions
 7. Authorization already granted
+8. Delivery or modernization mode when the work may port, refactor, modernize, replace, or extract an existing system
 
 Do not ask the user for facts that can be discovered safely.
 
@@ -83,6 +84,7 @@ When the project requires approval before mutation, wait for an explicit approva
 - Use `$engineering-guardrails` for architecture, contracts, state, maintainability, and implementation boundaries.
 - Use `$test-evidence` for risk-based verification and evidence quality.
 - Use `$safe-operations` for migrations, data changes, releases, rollback, recovery, and post-verification.
+- Use `$system-modernization` for ports, rewrites, framework upgrades, behavior parity, production replacement, and public extraction.
 
 Load [references/role-matrix.md](references/role-matrix.md) when a task crosses three or more roles. Load [references/evidence-model.md](references/evidence-model.md) when claims depend on multiple evidence surfaces.
 
@@ -110,8 +112,12 @@ Stop and ask for direction when:
 - production scope, expected counts, rollback, or ownership is ambiguous
 - continuing would broaden impact beyond the user's request
 - target files contain overlapping uncommitted work that cannot be safely preserved or isolated
+- the requested modernization mode or completion target changes materially during execution
+- the user explicitly stops, cancels, or abandons the objective
 
 Do not use uncertainty as an excuse to stop when safe read-only investigation can resolve it.
+
+An explicit cancellation overrides historical plans and automated continuation. Preserve current evidence, record the incomplete boundary, and stop new work without calling the objective complete.
 
 ## Close the work
 

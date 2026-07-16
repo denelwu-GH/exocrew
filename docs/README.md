@@ -1,6 +1,6 @@
 # Learn ExoCrew
 
-ExoCrew is a **Codex-native production delivery harness for AI coding agents**. It installs product judgment, engineering guardrails, test evidence, safe operations, and delivery closure into an AI-assisted software workflow.
+ExoCrew is a **Codex-native production delivery harness for AI coding agents**. It installs product judgment, engineering guardrails, system modernization, test evidence, safe operations, and delivery closure into an AI-assisted software workflow.
 
 ## Start here
 
@@ -9,6 +9,9 @@ ExoCrew is a **Codex-native production delivery harness for AI coding agents**. 
 - [ExoCrew compared with Harness Engineering, Harness.io, Spec Kit, OpenSpec, BMAD, Superpowers, and coding agents](COMPARISON.md)
 - [中文：ExoCrew 与 Harness、Spec Kit、OpenSpec、BMAD、Superpowers 的区别](COMPARISON.zh-CN.md)
 - [Architecture](ARCHITECTURE.md)
+- [System modernization skill](../plugins/exocrew/skills/system-modernization/SKILL.md)
+- [Modernization readiness ladder](../plugins/exocrew/skills/system-modernization/references/readiness-ladder.md)
+- [Old/new parity matrix](../plugins/exocrew/skills/system-modernization/references/parity-matrix.md)
 - [Production evidence](EVIDENCE.md)
 - [Traditional-team effort model](EFFORT_MODEL.md)
 - [Public paired benchmark design](BENCHMARK.md)

@@ -19,6 +19,14 @@ Create 30 matched tasks, five in each category:
 
 Each task must have a difficulty label, an expected evidence surface, an independent acceptance rubric, and a four-to-eight-hour maximum working window.
 
+Across the 30 tasks, include at least three modernization scenarios without increasing the task count:
+
+1. A cross-language or cross-runtime port that must preserve a declared API and durable side effects
+2. A framework or language upgrade that must improve the engineering baseline without replacing the public contract
+3. A public or reusable extraction that must preserve valuable invariants while excluding private history, paths, identifiers, and data
+
+Score these scenarios on mode selection, retained-contract accuracy, parity attribution, readiness-claim accuracy, and handoff quality in addition to their primary category rubric.
+
 ## Study design
 
 - Recruit participants with at least two experience bands, including first-time AI builders.

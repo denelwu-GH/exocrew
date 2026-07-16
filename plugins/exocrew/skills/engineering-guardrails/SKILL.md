@@ -16,6 +16,7 @@ Keep AI-assisted implementation coherent after the first successful demo. Put ea
 3. Check the working tree and preserve unrelated user changes.
 4. Identify the real root-cause layer before choosing a file to edit.
 5. Find existing shared services, schemas, mappers, helpers, and state machines before adding new ones.
+6. For modernization work, record the current green baseline and preserve it unless replacement is explicitly authorized.
 
 ## Define truth and contracts
 
@@ -69,6 +70,17 @@ Reject:
 - giant handlers or pages accumulating domain logic
 - weakened validation or assertions to make checks pass
 - unrelated cleanup bundled into a risky fix
+- a framework template that silently replaces working repository contracts
+- package moves, configuration-key changes, framework upgrades, and business rewrites combined without an inseparable reason
+
+## Build objective quality gates
+
+- Scope new gates to the agreed baseline; do not make all historical debt a blocker for a focused change.
+- Prefer semantic and structural checks over brittle wording checks.
+- Provide machine-readable output when other gates consume the result.
+- Derive totals from current generated truth rather than hard-coded historical counts.
+- Test a new gate failing for the intended reason before implementing it to green.
+- Register the gate in the real readiness or release path.
 
 ## Handle schema and migration changes
 
@@ -86,6 +98,8 @@ When changing persisted data:
 Hand the risk surface to `$test-evidence`. Start with changed behavior and affected contracts, then expand only when dependencies or failures justify it.
 
 If `$test-evidence` is unavailable, still record the minimum verification plan: changed behavior, affected contract or integration, critical user path, forbidden side effects, and checks not run.
+
+For cross-language or old/new implementation parity, route the comparison scope and readiness claim to `$system-modernization`; equal route counts or successful compilation are not behavior equivalence.
 
 ## Review output
 

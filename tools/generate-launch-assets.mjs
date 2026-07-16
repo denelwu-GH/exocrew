@@ -80,8 +80,8 @@ function installCrew(language) {
   const zh = language === "zh";
   const title = zh ? "装上你还没有的那支团队" : "Install the team you do not have";
   const subtitle = zh
-    ? "一个目标，五个交付角色，一个经过验证的结果"
-    : "One goal. Five delivery roles. One verified outcome.";
+    ? "一个目标，六个交付角色，一个经过验证的结果"
+    : "One goal. Six delivery roles. One verified outcome.";
   const roles = zh
     ? [
         ["DL", "交付负责人", "拆任务 · 管风险 · 盯收尾", colors.purple],
@@ -89,6 +89,7 @@ function installCrew(language) {
         ["EN", "研发负责人", "架构 · 契约 · 单一真值", colors.blue],
         ["QA", "测试负责人", "风险 · 强断言 · 回归证据", colors.teal],
         ["OP", "运维负责人", "预演 · 发布 · 回滚 · 验证", colors.amber],
+        ["MD", "现代化负责人", "迁移 · 等价 · 提炼 · 切换", colors.rose],
       ]
     : [
         ["DL", "Delivery lead", "Scope · risk · closure", colors.purple],
@@ -96,6 +97,7 @@ function installCrew(language) {
         ["EN", "Engineering lead", "Architecture · contracts · truth", colors.blue],
         ["QA", "Test lead", "Risk · assertions · evidence", colors.teal],
         ["OP", "Operations lead", "Dry-run · release · rollback", colors.amber],
+        ["MD", "Modernization lead", "Migrate · parity · extract · cutover", colors.rose],
       ];
   const body = `    ${lines([title], { x: 64, y: 70, size: 34, gap: 0, weight: 700 })}
     ${lines([subtitle], { x: 64, y: 105, size: 17, gap: 0, fill: colors.muted, weight: 400 })}
@@ -104,7 +106,8 @@ function installCrew(language) {
     <path d="M425 345 C500 345 500 334 542 334" fill="none" stroke="${colors.line}" stroke-width="2"/>
     <path d="M425 455 C500 455 500 362 542 362" fill="none" stroke="${colors.line}" stroke-width="2"/>
     <path d="M658 334 C728 334 735 235 780 235" fill="none" stroke="${colors.line}" stroke-width="2"/>
-    <path d="M658 362 C728 362 735 400 780 400" fill="none" stroke="${colors.line}" stroke-width="2"/>
+    <path d="M658 348 C728 348 735 306 780 306" fill="none" stroke="${colors.line}" stroke-width="2"/>
+    <path d="M658 362 C728 362 735 416 780 416" fill="none" stroke="${colors.line}" stroke-width="2"/>
 
     ${roleCard({ x: 64, y: 190, width: 361, color: roles[1][3], code: roles[1][0], title: roles[1][1], detail: roles[1][2] })}
     ${roleCard({ x: 64, y: 300, width: 361, color: roles[2][3], code: roles[2][0], title: roles[2][1], detail: roles[2][2] })}
@@ -120,11 +123,12 @@ function installCrew(language) {
       <text x="600" y="440" fill="${colors.white}" font-size="14" font-weight="700" text-anchor="middle">${zh ? "交付总控" : "DELIVERY CORE"}</text>
     </g>
 
-    ${roleCard({ x: 780, y: 190, width: 356, color: roles[0][3], code: roles[0][0], title: roles[0][1], detail: roles[0][2] })}
-    ${roleCard({ x: 780, y: 355, width: 356, color: roles[4][3], code: roles[4][0], title: roles[4][1], detail: roles[4][2] })}
+    ${roleCard({ x: 780, y: 150, width: 356, color: roles[0][3], code: roles[0][0], title: roles[0][1], detail: roles[0][2] })}
+    ${roleCard({ x: 780, y: 260, width: 356, color: roles[5][3], code: roles[5][0], title: roles[5][1], detail: roles[5][2] })}
+    ${roleCard({ x: 780, y: 370, width: 356, color: roles[4][3], code: roles[4][0], title: roles[4][1], detail: roles[4][2] })}
 
-    <path d="M958 282 L958 330" stroke="${colors.line}" stroke-width="2"/>
-    <path d="M946 318 L958 332 L970 318" fill="none" stroke="${colors.teal}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M958 462 L958 478" stroke="${colors.line}" stroke-width="2"/>
+    <path d="M946 468 L958 482 L970 468" fill="none" stroke="${colors.teal}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <rect x="820" y="488" width="316" height="76" rx="20" fill="${colors.teal}" fill-opacity="0.13" stroke="${colors.teal}"/>
     <circle cx="858" cy="526" r="20" fill="${colors.teal}"/>
     <path d="M848 526 L856 534 L870 516" fill="none" stroke="#042f2e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -133,7 +137,7 @@ function installCrew(language) {
 
     <line x1="64" y1="610" x2="1136" y2="610" stroke="${colors.line}"/>
     <g fill="${colors.muted}" font-size="14" text-anchor="middle">
-      <text x="250" y="654">${zh ? "5 个可安装 Skills" : "5 installable skills"}</text>
+      <text x="250" y="654">${zh ? "6 个可安装 Skills" : "6 installable skills"}</text>
       <text x="600" y="654">${zh ? "行业与技术栈无关" : "Stack and industry agnostic"}</text>
       <text x="950" y="654">${zh ? "从真实生产交付提炼" : "Distilled from production"}</text>
     </g>`;
@@ -142,8 +146,8 @@ function installCrew(language) {
     height: 700,
     title,
     desc: zh
-      ? "ExoCrew 将交付负责人、产品、研发、测试和运维五个交付角色装进一个 AI 工作流。"
-      : "ExoCrew installs delivery, product, engineering, test, and operations disciplines into one AI workflow.",
+      ? "ExoCrew 将交付、产品、研发、现代化、测试和运维六个交付角色装进一个 AI 工作流。"
+      : "ExoCrew installs delivery, product, engineering, modernization, test, and operations disciplines into one AI workflow.",
     body,
   }).replace("      <hexagon/>\n", "");
 }
@@ -404,26 +408,27 @@ function xhsCards() {
     ["交付负责人", "拆任务 · 控风险 · 盯收尾", colors.purple, "DL"],
     ["产品经理", "问清用户 · 价值 · 边界 · 验收", colors.cyan, "PM"],
     ["研发负责人", "守住架构 · 契约 · 单一真值", colors.blue, "EN"],
+    ["现代化负责人", "迁移 · 等价 · 提炼 · 切换", colors.rose, "MD"],
     ["测试负责人", "识别假绿 · 证明关键链路", colors.teal, "QA"],
     ["运维负责人", "预演 · 发布 · 回滚 · 验证", colors.amber, "OP"],
   ];
   const roleRowsSvg = roleRows
     .map((item, index) => {
-      const y = 450 + index * 112;
-      return `<rect x="54" y="${y}" width="792" height="88" rx="20" fill="${colors.panel}" stroke="${item[2]}" stroke-opacity="0.45"/>
-      <circle cx="100" cy="${y + 44}" r="25" fill="${item[2]}" fill-opacity="0.18" stroke="${item[2]}"/>
-      <text x="100" y="${y + 51}" fill="${colors.white}" font-size="15" font-weight="700" text-anchor="middle">${item[3]}</text>
-      <text x="145" y="${y + 37}" fill="${colors.white}" font-size="21" font-weight="700">${item[0]}</text>
-      <text x="145" y="${y + 65}" fill="${colors.muted}" font-size="17">${item[1]}</text>`;
+      const y = 432 + index * 96;
+      return `<rect x="54" y="${y}" width="792" height="76" rx="18" fill="${colors.panel}" stroke="${item[2]}" stroke-opacity="0.45"/>
+      <circle cx="98" cy="${y + 38}" r="23" fill="${item[2]}" fill-opacity="0.18" stroke="${item[2]}"/>
+      <text x="98" y="${y + 44}" fill="${colors.white}" font-size="14" font-weight="700" text-anchor="middle">${item[3]}</text>
+      <text x="140" y="${y + 32}" fill="${colors.white}" font-size="20" font-weight="700">${item[0]}</text>
+      <text x="140" y="${y + 57}" fill="${colors.muted}" font-size="16">${item[1]}</text>`;
     })
     .join("\n");
   const card4 = xhsFrame({
     index: 4,
-    kicker: "五个可安装 Skills",
-    headline: ["你缺的不是更多提示词", "是五个交付角色"],
-    subhead: "不是五个聊天人格，是五套真正能执行的交付动作。",
+    kicker: "六个可安装 Skills",
+    headline: ["你缺的不是更多提示词", "是六个交付角色"],
+    subhead: "不是六个聊天人格，是六套真正能执行的交付动作。",
     body: roleRowsSvg,
-    footer: "一个目标 · 五种视角 · 一个交付闭环",
+    footer: "一个目标 · 六种视角 · 一个交付闭环",
   });
 
   const card5 = xhsFrame({
@@ -462,7 +467,7 @@ function xhsCards() {
     <text x="82" y="688" fill="${colors.white}" font-size="19" font-weight="700">exocrew@exocrew</text>
     <g>
       <rect x="54" y="764" width="238" height="72" rx="36" fill="${colors.purple}" fill-opacity="0.16" stroke="${colors.purple}"/><text x="173" y="808" fill="${colors.white}" font-size="21" font-weight="700" text-anchor="middle">免费开源</text>
-      <rect x="331" y="764" width="238" height="72" rx="36" fill="${colors.teal}" fill-opacity="0.16" stroke="${colors.teal}"/><text x="450" y="808" fill="${colors.white}" font-size="21" font-weight="700" text-anchor="middle">5 个 Skills</text>
+      <rect x="331" y="764" width="238" height="72" rx="36" fill="${colors.teal}" fill-opacity="0.16" stroke="${colors.teal}"/><text x="450" y="808" fill="${colors.white}" font-size="21" font-weight="700" text-anchor="middle">6 个 Skills</text>
       <rect x="608" y="764" width="238" height="72" rx="36" fill="${colors.amber}" fill-opacity="0.16" stroke="${colors.amber}"/><text x="727" y="808" fill="${colors.white}" font-size="21" font-weight="700" text-anchor="middle">MIT License</text>
     </g>
     <text x="450" y="922" fill="${colors.white}" font-size="29" font-weight="700" text-anchor="middle">github.com/denelwu-GH/exocrew</text>
@@ -478,7 +483,7 @@ function ecosystemSocialCards() {
     ["01", "基础模型", "提供推理与生成", colors.faint],
     ["02", "AI 编程代理", "Codex · Claude Code · Cursor", colors.cyan],
     ["03", "Skills / Rules / MCP", "提供上下文、规则与工具", colors.blue],
-    ["04", "ExoCrew", "约束产品、工程、测试与运维交付", colors.purple],
+    ["04", "ExoCrew", "约束产品、工程、现代化、测试与运维交付", colors.purple],
     ["05", "CI/CD 平台", "执行构建、审批、部署与观测", colors.teal],
   ];
   const stackBody = stack
@@ -514,15 +519,16 @@ function ecosystemSocialCards() {
     <rect x="54" y="618" width="792" height="240" rx="28" fill="${colors.purple}" fill-opacity="0.20" stroke="${colors.purple}" stroke-width="3" filter="url(#shadow)"/>
     <text x="450" y="674" fill="${colors.white}" font-size="29" font-weight="700" text-anchor="middle">EXOCREW · 生产交付 HARNESS</text>
     ${[
-      ["产品边界", 164, 748, colors.cyan],
-      ["工程门禁", 307, 748, colors.blue],
-      ["测试证据", 450, 748, colors.teal],
-      ["安全运维", 593, 748, colors.amber],
-      ["交付收口", 736, 748, colors.purple],
+      ["产品边界", 120, 748, colors.cyan],
+      ["工程门禁", 252, 748, colors.blue],
+      ["现代化", 384, 748, colors.rose],
+      ["测试证据", 516, 748, colors.teal],
+      ["安全运维", 648, 748, colors.amber],
+      ["交付收口", 780, 748, colors.purple],
     ]
-      .map(([label, x, y, color]) => `<circle cx="${x}" cy="${y}" r="48" fill="${color}" fill-opacity="0.16" stroke="${color}"/><text x="${x}" y="${y + 7}" fill="${colors.white}" font-size="16" font-weight="700" text-anchor="middle">${label}</text>`)
+      .map(([label, x, y, color]) => `<circle cx="${x}" cy="${y}" r="42" fill="${color}" fill-opacity="0.16" stroke="${color}"/><text x="${x}" y="${y + 6}" fill="${colors.white}" font-size="14" font-weight="700" text-anchor="middle">${label}</text>`)
       .join("\n")}
-    <text x="450" y="826" fill="${colors.muted}" font-size="16" text-anchor="middle">Codex 原生安装 · 五个可执行 Skills · 从真实生产交付提炼</text>
+    <text x="450" y="826" fill="${colors.muted}" font-size="16" text-anchor="middle">Codex 原生安装 · 六个可执行 Skills · 从真实生产交付提炼</text>
     <path d="M450 858 L450 917" stroke="${colors.line}" stroke-width="4"/><path d="M438 904 L450 918 L462 904" fill="none" stroke="${colors.teal}" stroke-width="3"/>
     <rect x="150" y="920" width="600" height="86" rx="43" fill="${colors.teal}" fill-opacity="0.14" stroke="${colors.teal}"/>
     <text x="450" y="974" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">有边界 · 有证据 · 能发布 · 能回滚</text>`,
@@ -562,18 +568,19 @@ function wechatCover() {
     desc: "一个人加 Codex，四个月做出真实生产系统，现在把背后的 AI 交付团队开源了。",
     body: `    <text x="48" y="58" fill="${colors.purple}" font-size="16" font-weight="700">EXOCREW · AI 时代的交付外骨骼</text>
     ${lines(["一个人 + Codex，4 个月", "我把背后的 AI 交付团队开源了"], { x: 48, y: 125, size: 34, gap: 52, weight: 700 })}
-    <text x="48" y="251" fill="${colors.muted}" font-size="17">真实生产系统 · 五个交付角色 · 一套可安装的方法</text>
+    <text x="48" y="251" fill="${colors.muted}" font-size="17">真实生产系统 · 六个交付角色 · 一套可安装的方法</text>
     <rect x="48" y="292" width="258" height="44" rx="22" fill="${colors.purple}"/>
     <text x="177" y="321" fill="${colors.white}" font-size="17" font-weight="700" text-anchor="middle">装上你还没有的那支团队</text>
     <circle cx="715" cy="186" r="92" fill="${colors.panel2}" stroke="${colors.purple}" stroke-width="3"/>
     <text x="715" y="179" fill="${colors.white}" font-size="30" font-weight="700" text-anchor="middle">EXO</text>
     <text x="715" y="213" fill="${colors.muted}" font-size="18" text-anchor="middle">CREW</text>
     ${[
-      ["交付", 627, 75, colors.purple],
-      ["产品", 795, 75, colors.cyan],
-      ["研发", 841, 194, colors.blue],
-      ["测试", 765, 306, colors.teal],
-      ["运维", 619, 300, colors.amber],
+      ["交付", 622, 78, colors.purple],
+      ["产品", 790, 75, colors.cyan],
+      ["研发", 846, 174, colors.blue],
+      ["现代化", 812, 292, colors.rose],
+      ["测试", 686, 326, colors.teal],
+      ["运维", 590, 250, colors.amber],
     ]
       .map(([label, x, y, color]) => `<circle cx="${x}" cy="${y}" r="31" fill="${color}" fill-opacity="0.17" stroke="${color}"/><text x="${x}" y="${y + 6}" fill="${colors.white}" font-size="14" font-weight="700" text-anchor="middle">${label}</text><line x1="${x}" y1="${y}" x2="715" y2="186" stroke="${colors.line}"/>`)
       .join("\n")}`,

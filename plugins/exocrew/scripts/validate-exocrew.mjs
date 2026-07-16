@@ -103,6 +103,11 @@ export async function validateFramework(root) {
     "plugins/exocrew/skills/engineering-guardrails/SKILL.md",
     "plugins/exocrew/skills/test-evidence/SKILL.md",
     "plugins/exocrew/skills/safe-operations/SKILL.md",
+    "plugins/exocrew/skills/system-modernization/SKILL.md",
+    "plugins/exocrew/skills/system-modernization/references/mode-decision.md",
+    "plugins/exocrew/skills/system-modernization/references/readiness-ladder.md",
+    "plugins/exocrew/skills/system-modernization/references/parity-matrix.md",
+    "plugins/exocrew/skills/system-modernization/references/handoff-package.md",
     "plugins/exocrew/assets/starter-project/AGENTS.md",
     "plugins/exocrew/assets/starter-project/PROJECT_DECISIONS.md",
     "README.md",
@@ -186,6 +191,7 @@ export async function validateFramework(root) {
       "engineering-guardrails",
       "test-evidence",
       "safe-operations",
+      "system-modernization",
     ];
     for (const skill of skillNames) {
       const skillPath = path.join(root, `plugins/exocrew/skills/${skill}/SKILL.md`);
@@ -199,6 +205,43 @@ export async function validateFramework(root) {
       if (!openai.includes(`$${skill}`)) {
         errors.push({ file: path.relative(root, openaiPath), rule: "default-prompt-skill-name" });
       }
+    }
+
+    const modernizationPath = path.join(
+      root,
+      "plugins/exocrew/skills/system-modernization/SKILL.md",
+    );
+    const modernization = await readFile(modernizationPath, "utf8");
+    const modernizationContracts = [
+      ["migrating between stacks", "trigger-cross-language-migration"],
+      ["framework or language upgrades", "trigger-framework-upgrade"],
+      ["open-source extractions", "trigger-public-extraction"],
+      ["| Port |", "mode-port"],
+      ["| Refactor |", "mode-refactor"],
+      ["| Modernize |", "mode-modernize"],
+      ["| Replace |", "mode-replace"],
+      ["| Extract |", "mode-extract"],
+      ["references/readiness-ladder.md", "readiness-ladder-link"],
+      ["references/parity-matrix.md", "parity-matrix-link"],
+      ["references/handoff-package.md", "handoff-package-link"],
+      ["explicitly stops, cancels, or abandons", "cancellation-contract"],
+    ];
+    for (const [fragment, rule] of modernizationContracts) {
+      if (!modernization.includes(fragment)) {
+        errors.push({ file: path.relative(root, modernizationPath), rule });
+      }
+    }
+
+    const deliveryPath = path.join(root, "plugins/exocrew/skills/exocrew-delivery/SKILL.md");
+    const delivery = await readFile(deliveryPath, "utf8");
+    if (!delivery.includes("$system-modernization")) {
+      errors.push({ file: path.relative(root, deliveryPath), rule: "modernization-routing" });
+    }
+
+    const starterPath = path.join(root, "plugins/exocrew/assets/starter-project/AGENTS.md");
+    const starter = await readFile(starterPath, "utf8");
+    if (!starter.includes("distinguish port, refactor, modernization, replacement, and extraction")) {
+      errors.push({ file: path.relative(root, starterPath), rule: "modernization-mode-contract" });
     }
   }
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">装上你还没有的那支团队</title>
-  <desc id="desc">ExoCrew 将交付负责人、产品、研发、测试和运维五个交付角色装进一个 AI 工作流。</desc>
+  <desc id="desc">ExoCrew 将交付、产品、研发、现代化、测试和运维六个交付角色装进一个 AI 工作流。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -19,13 +19,14 @@
   <circle cx="624" cy="336" r="294" fill="url(#glow)"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
     <text x="64" y="70" fill="#f8fafc" font-size="34" font-weight="700" text-anchor="start">装上你还没有的那支团队</text>
-    <text x="64" y="105" fill="#9aabc2" font-size="17" font-weight="400" text-anchor="start">一个目标，五个交付角色，一个经过验证的结果</text>
+    <text x="64" y="105" fill="#9aabc2" font-size="17" font-weight="400" text-anchor="start">一个目标，六个交付角色，一个经过验证的结果</text>
 
     <path d="M425 235 C500 235 500 306 542 306" fill="none" stroke="#2a3b57" stroke-width="2"/>
     <path d="M425 345 C500 345 500 334 542 334" fill="none" stroke="#2a3b57" stroke-width="2"/>
     <path d="M425 455 C500 455 500 362 542 362" fill="none" stroke="#2a3b57" stroke-width="2"/>
     <path d="M658 334 C728 334 735 235 780 235" fill="none" stroke="#2a3b57" stroke-width="2"/>
-    <path d="M658 362 C728 362 735 400 780 400" fill="none" stroke="#2a3b57" stroke-width="2"/>
+    <path d="M658 348 C728 348 735 306 780 306" fill="none" stroke="#2a3b57" stroke-width="2"/>
+    <path d="M658 362 C728 362 735 416 780 416" fill="none" stroke="#2a3b57" stroke-width="2"/>
 
     <g filter="url(#shadow)">
     <rect x="64" y="190" width="361" height="92" rx="18" fill="#101d33" stroke="#22d3ee" stroke-opacity="0.58"/>
@@ -59,22 +60,29 @@
     </g>
 
     <g filter="url(#shadow)">
-    <rect x="780" y="190" width="356" height="92" rx="18" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.58"/>
-    <circle cx="822" cy="236" r="24" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
-    <text x="822" y="243" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">DL</text>
-    <text x="862" y="227" fill="#f8fafc" font-size="18" font-weight="700">交付负责人</text>
-    <text x="862" y="254" fill="#9aabc2" font-size="14">拆任务 · 管风险 · 盯收尾</text>
+    <rect x="780" y="150" width="356" height="92" rx="18" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.58"/>
+    <circle cx="822" cy="196" r="24" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+    <text x="822" y="203" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">DL</text>
+    <text x="862" y="187" fill="#f8fafc" font-size="18" font-weight="700">交付负责人</text>
+    <text x="862" y="214" fill="#9aabc2" font-size="14">拆任务 · 管风险 · 盯收尾</text>
   </g>
     <g filter="url(#shadow)">
-    <rect x="780" y="355" width="356" height="92" rx="18" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.58"/>
-    <circle cx="822" cy="401" r="24" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b"/>
-    <text x="822" y="408" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">OP</text>
-    <text x="862" y="392" fill="#f8fafc" font-size="18" font-weight="700">运维负责人</text>
-    <text x="862" y="419" fill="#9aabc2" font-size="14">预演 · 发布 · 回滚 · 验证</text>
+    <rect x="780" y="260" width="356" height="92" rx="18" fill="#101d33" stroke="#fb7185" stroke-opacity="0.58"/>
+    <circle cx="822" cy="306" r="24" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+    <text x="822" y="313" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">MD</text>
+    <text x="862" y="297" fill="#f8fafc" font-size="18" font-weight="700">现代化负责人</text>
+    <text x="862" y="324" fill="#9aabc2" font-size="14">迁移 · 等价 · 提炼 · 切换</text>
+  </g>
+    <g filter="url(#shadow)">
+    <rect x="780" y="370" width="356" height="92" rx="18" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.58"/>
+    <circle cx="822" cy="416" r="24" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b"/>
+    <text x="822" y="423" fill="#f8fafc" font-size="17" font-weight="700" text-anchor="middle">OP</text>
+    <text x="862" y="407" fill="#f8fafc" font-size="18" font-weight="700">运维负责人</text>
+    <text x="862" y="434" fill="#9aabc2" font-size="14">预演 · 发布 · 回滚 · 验证</text>
   </g>
 
-    <path d="M958 282 L958 330" stroke="#2a3b57" stroke-width="2"/>
-    <path d="M946 318 L958 332 L970 318" fill="none" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M958 462 L958 478" stroke="#2a3b57" stroke-width="2"/>
+    <path d="M946 468 L958 482 L970 468" fill="none" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <rect x="820" y="488" width="316" height="76" rx="20" fill="#2dd4bf" fill-opacity="0.13" stroke="#2dd4bf"/>
     <circle cx="858" cy="526" r="20" fill="#2dd4bf"/>
     <path d="M848 526 L856 534 L870 516" fill="none" stroke="#042f2e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -83,7 +91,7 @@
 
     <line x1="64" y1="610" x2="1136" y2="610" stroke="#2a3b57"/>
     <g fill="#9aabc2" font-size="14" text-anchor="middle">
-      <text x="250" y="654">5 个可安装 Skills</text>
+      <text x="250" y="654">6 个可安装 Skills</text>
       <text x="600" y="654">行业与技术栈无关</text>
       <text x="950" y="654">从真实生产交付提炼</text>
     </g>

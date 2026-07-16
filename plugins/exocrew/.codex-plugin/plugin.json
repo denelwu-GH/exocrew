@@ -1,7 +1,7 @@
 {
   "name": "exocrew",
-  "version": "0.1.4",
-  "description": "Codex-native production delivery harness with product, engineering, test, and operations skills for AI coding agents.",
+  "version": "0.1.5",
+  "description": "Codex-native production delivery harness with product, engineering, modernization, test, and operations skills for AI coding agents.",
   "author": {
     "name": "denelwu-GH",
     "url": "https://github.com/denelwu-GH"
@@ -17,6 +17,10 @@
     "ai-coding-agent",
     "codex",
     "engineering-guardrails",
+    "system-modernization",
+    "software-modernization",
+    "migration-governance",
+    "contract-parity",
     "product-development",
     "testing",
     "release-governance",
@@ -26,14 +30,15 @@
   "interface": {
     "displayName": "ExoCrew",
     "shortDescription": "Production delivery harness for coding agents.",
-    "longDescription": "A Codex-native production delivery harness with product thinking, engineering guardrails, test evidence, safe operations, and verified closure for AI-assisted software delivery.",
+    "longDescription": "A Codex-native production delivery harness with product thinking, engineering guardrails, system modernization, test evidence, safe operations, and verified closure for AI-assisted software delivery.",
     "developerName": "denelwu-GH",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://github.com/denelwu-GH/exocrew",
     "defaultPrompt": [
       "Turn this idea into a safe, testable delivery plan.",
-      "Review this change across product, engineering, test, and operations.",
+      "Review this change across product, engineering, modernization, test, and operations.",
+      "Modernize this system without losing contracts, parity, or cutover evidence.",
       "Prepare this project for a controlled release with rollback evidence."
     ],
     "brandColor": "#7C3AED"

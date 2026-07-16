@@ -4,7 +4,7 @@
 
 Codex、Claude Code、Cursor、GitHub Copilot、OpenCode、OpenHands 负责执行软件任务；Agent Skills、`AGENTS.md`、Rules、Hooks 和 MCP 用来定制行为或增加能力；Spec Kit 和 OpenSpec 负责规格驱动开发；BMAD 和 Superpowers 提供开发方法与可复用工作流；Harness.io 和 GitHub Actions 负责软件交付流水线。
 
-**ExoCrew 补的是跨职能交付纪律：把一个需求带过产品边界、工程门禁、测试证据、安全运维，最后形成可验证、可回滚的收口。**
+**ExoCrew 补的是跨职能交付纪律：把一个需求带过产品边界、工程门禁、系统现代化、测试证据、安全运维，最后形成可验证、可回滚的收口。**
 
 ## 快速对比
 
@@ -65,13 +65,13 @@ CI/CD 平台
 
 [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) 是覆盖面较广的角色化 AI 敏捷开发方法。[Superpowers](https://github.com/obra/superpowers) 是 Agent Skills 框架和软件开发方法论。
 
-ExoCrew 刻意做得更聚焦：围绕五种交付责任，以及一个不懂代码的人借助 Codex 把真实企业业务系统推向生产时遇到的问题——业务边界丢失、架构漂移、测试假绿、历史数据风险、不安全发布和缺少收口证据。
+ExoCrew 刻意做得更聚焦：围绕六种交付责任，以及一个不懂代码的人借助 Codex 把真实企业业务系统推向生产时遇到的问题——业务边界丢失、架构漂移、反复重写、测试假绿、历史数据风险、不安全发布和缺少收口证据。
 
 可以按缺失层选择：
 
 - 缺广泛的开发方法或 Skills 生态：评估 BMAD、Superpowers；
 - 缺规格驱动的需求与任务生成：评估 Spec Kit、OpenSpec；
-- 缺 Codex 内的产品、研发、测试和运维交付纪律：安装 ExoCrew；
+- 缺 Codex 内的产品、研发、现代化、测试和运维交付纪律：安装 ExoCrew；
 - 缺企业级流水线与组织治理：评估 Harness.io 或已有交付平台。
 
 ## 如果你已经在用 Harness.io 或 GitHub Actions
@@ -82,9 +82,10 @@ ExoCrew 帮助形成范围明确、有验证证据、具备发布条件、回滚
 
 ## ExoCrew 特别打包了什么
 
-- 一个负责全局统筹的交付负责人，而不是五份互不相连的检查清单；
+- 一个负责全局统筹的交付负责人，而不是六份互不相连的检查清单；
 - 实现前先明确产品边界；
 - 保护架构、契约和单一真值的工程门禁；
+- 区分搬运、重构、现代化、替换和提炼，并跟踪 parity 与 R0-R7 成熟度的现代化纪律；
 - 区分“命令执行过”和“结果被证明”的风险测试；
 - 面向高风险操作的 dry-run、明确 apply、rollback 和 postverify；
 - 可长期留存的 worklog、决策、发布记录与经验；

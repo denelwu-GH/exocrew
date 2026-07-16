@@ -91,7 +91,7 @@ Use:
 - “distilled from a production-deployed system used in real enterprise operations”
 - “backed by documented full end-to-end and release-gate execution records”
 - “designed to reduce repeated discovery and unsafe improvisation”
-- “covers product, engineering, test, and operations perspectives”
+- “covers product, engineering, modernization, test, and operations perspectives”
 - “baseline reconstruction estimate of 1,320–2,160 person-days”
 - “work surface comparable to 17–27 cross-functional roles over a four-month horizon”
 - “reconstruction estimate, not audited labor data”

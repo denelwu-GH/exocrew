@@ -1,6 +1,6 @@
 # Architecture
 
-ExoCrew is distributed as a repository-local Codex marketplace containing one plugin and five independently invokable skills.
+ExoCrew is distributed as a repository-local Codex marketplace containing one plugin and six independently invokable skills.
 
 ## Position in the AI coding stack
 
@@ -24,6 +24,7 @@ marketplace
     ├── exocrew-delivery        orchestration and approval gates
     ├── product-brief           value, scope, boundaries, acceptance
     ├── engineering-guardrails architecture and contract discipline
+    ├── system-modernization   ports, upgrades, parity, readiness, extraction, cutover
     ├── test-evidence           risk-based verification and evidence quality
     └── safe-operations         data, migration, release, rollback, recovery
 ```
@@ -39,6 +40,7 @@ request
   -> classify risk and evidence surface
   -> clarify value, scope, non-goals, and acceptance
   -> inspect project truth
+  -> lock port, refactor, modernize, replace, or extract mode when an existing system is changing
   -> propose plan, tests, constraints, alternative, rollback
   -> obtain approval for consequential writes
   -> implement the smallest coherent change
@@ -46,6 +48,8 @@ request
   -> perform controlled operations when authorized
   -> close with evidence, residual risk, and durable learning
 ```
+
+Modernization readiness is intentionally separate from evidence strength. The R0-R7 ladder describes how far a port, refactor, upgrade, replacement, or extraction has progressed; E0-E4 describes what kind of evidence supports the claim. A locally functional R3 target can have strong local E2 evidence without being R6 cutover-ready.
 
 ## Starter project
 

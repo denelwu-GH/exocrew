@@ -15,16 +15,16 @@ ExoCrew is a Codex-native, AI-era delivery exoskeleton. It packages the hard-won
 <p>
   <a href="https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml"><img alt="Quality gates" src="https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml/badge.svg"></a>
   <img alt="Distilled from production" src="https://img.shields.io/badge/source-production_distilled-0F766E.svg">
-  <img alt="5 installable skills" src="https://img.shields.io/badge/installable_skills-5-7C3AED.svg">
+  <img alt="6 installable skills" src="https://img.shields.io/badge/installable_skills-6-7C3AED.svg">
   <img alt="1,869 mainline commits" src="https://img.shields.io/badge/mainline_commits-1%2C869-2563EB.svg">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
 </p>
 
-**[Install in 30 seconds](#install-in-30-seconds) · [See where it fits](#where-exocrew-fits-in-the-ai-coding-stack) · [Meet the crew](#five-roles-one-delivery-system) · [简体中文](README.zh-CN.md)**
+**[Install in 30 seconds](#install-in-30-seconds) · [See where it fits](#where-exocrew-fits-in-the-ai-coding-stack) · [Meet the crew](#six-roles-one-delivery-system) · [简体中文](README.zh-CN.md)**
 
 </div>
 
-![ExoCrew installs five delivery roles into an AI workflow](docs/assets/install-the-crew.svg)
+![ExoCrew installs six delivery roles into an AI workflow](docs/assets/install-the-crew.svg)
 
 <p align="center"><strong>One builder owns the vision. ExoCrew helps AI deliver like a complete team.</strong></p>
 
@@ -44,7 +44,7 @@ Models provide intelligence. Coding agents execute. Spec-driven frameworks struc
 
 | Tool or category | What it owns | Where ExoCrew fits |
 |---|---|---|
-| Codex, Claude Code, Cursor, Copilot, OpenCode | Coding-agent execution | The agent acts; ExoCrew supplies product, engineering, test, and operations discipline. The public package is Codex-native today |
+| Codex, Claude Code, Cursor, Copilot, OpenCode | Coding-agent execution | The agent acts; ExoCrew supplies product, engineering, modernization, test, and operations discipline. The public package is Codex-native today |
 | Agent Skills, `AGENTS.md`, Rules, MCP | Context, reusable instructions, and tools | These are mechanisms; ExoCrew is the production-distilled delivery system installed through them |
 | [Spec Kit](https://github.com/github/spec-kit), [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Specifications, plans, tasks, and change intent | Keep spec-driven development; add ExoCrew for architecture, evidence, release safety, rollback, and closure |
 | [BMAD](https://github.com/bmad-code-org/BMAD-METHOD), [Superpowers](https://github.com/obra/superpowers) | Role-based methods and reusable development workflows | Use their broader methods; use ExoCrew when production delivery gates and cross-functional evidence are the missing layer |
@@ -52,17 +52,18 @@ Models provide intelligence. Coding agents execute. Spec-driven frameworks struc
 
 **[What is an AI coding agent harness?](docs/AI_AGENT_HARNESS.md) · [Full ecosystem comparison](docs/COMPARISON.md)**
 
-## Five roles. One delivery system.
+## Six roles. One delivery system.
 
 | Role | Skill | What it gives you |
 |---|---|---|
 | Delivery lead | `exocrew-delivery` | Carries complex work from a vague request to verified closure |
 | Product lead | `product-brief` | Makes AI clarify users, value, boundaries, and acceptance before writing |
 | Engineering lead | `engineering-guardrails` | Protects architecture, contracts, and sources of truth as the system grows |
+| Modernization lead | `system-modernization` | Keeps ports, rewrites, upgrades, parity, extraction, and cutover from becoming endless rework |
 | Test lead | `test-evidence` | Turns “it passed” into defensible evidence and catches false-green results |
 | Operations lead | `safe-operations` | Gives data changes, migrations, and releases a dry-run, verification, and safe way back |
 
-These are not five chat personalities. They are five executable delivery disciplines.
+These are not six chat personalities. They are six executable delivery disciplines.
 
 ![ExoCrew delivery path from vague idea to reversible release](docs/assets/idea-to-production.svg)
 
@@ -80,6 +81,22 @@ Use $exocrew-delivery to carry this request from a vague idea to a safe,
 verified release. Define the users, boundaries, and acceptance criteria first;
 then implement, verify, prepare rollback, and close the work with evidence.
 ```
+
+For a migration, rewrite, framework upgrade, or public extraction, say:
+
+```text
+Use $system-modernization to choose whether this is a port, refactor,
+modernization, replacement, or extraction. Preserve the declared contracts,
+track readiness and parity, and do not claim cutover readiness without evidence.
+```
+
+## Modernize without endless rework
+
+Existing systems fail differently from greenfield projects. “Make it run,” “make it maintainable,” “replace production,” and “publish a clean open-source core” are not the same objective.
+
+`system-modernization` forces that decision before implementation. It then tracks the work from **R0 intent** through local functionality, contract parity, real-environment readiness, cutover preparation, and **R7 production verification**. Route counts and green local tests stay useful evidence—but they cannot masquerade as replacement readiness.
+
+**Stop rewriting. Start proving equivalence.**
 
 ## Distilled from real production
 
@@ -103,7 +120,7 @@ The expensive lessons were never just about writing code. They came from busines
 
 ![One builder with Codex compared with a traditional delivery team](docs/assets/effort-comparison.svg)
 
-A transparent traditional-team reconstruction model estimates the same work surface at **1,320–2,160 person-days**, comparable to **17–27 cross-functional product, engineering, test, and operations roles working over the same roughly four-month horizon**.
+A transparent traditional-team reconstruction model estimates the same work surface at **1,320–2,160 person-days**, comparable to **17–27 cross-functional product, engineering, test, and operations roles working over the same roughly four-month horizon**. The modernization lead is an installable responsibility distilled from that work, not an additional headcount claim.
 
 ## Built for serious software delivery
 
@@ -117,7 +134,7 @@ ExoCrew is industry-agnostic and technology-stack-agnostic. It is especially use
 ## More ways to use ExoCrew
 
 <details>
-<summary><strong>Install the five skills standalone</strong></summary>
+<summary><strong>Install the six skills standalone</strong></summary>
 
 Clone the repository, preview the change, then apply it explicitly:
 
@@ -152,11 +169,11 @@ ExoCrew was distilled from real production delivery. The repository, test, commi
 
 <div align="center">
 
-### Stop asking one AI to improvise as product, engineering, test, and operations.
+### Stop asking one AI to improvise as product, engineering, modernization, test, and operations.
 
 ## Install a delivery crew that knows how to work together.
 
-**[Install in 30 seconds](#install-in-30-seconds) · [Meet the crew](#five-roles-one-delivery-system) · [Star ExoCrew](https://github.com/denelwu-GH/exocrew)**
+**[Install in 30 seconds](#install-in-30-seconds) · [Meet the crew](#six-roles-one-delivery-system) · [Star ExoCrew](https://github.com/denelwu-GH/exocrew)**
 
 MIT License
 

@@ -21,13 +21,14 @@ OpenAI describes **harness engineering** as the systems, scaffolding, repository
 
 ## Where ExoCrew fits
 
-ExoCrew is not a foundation model, coding-agent runtime, MCP server, or CI/CD platform. It is a **production delivery harness layer** packaged as five installable Codex skills:
+ExoCrew is not a foundation model, coding-agent runtime, MCP server, or CI/CD platform. It is a **production delivery harness layer** packaged as six installable Codex skills:
 
 1. `exocrew-delivery` coordinates scope, risk, evidence, and closure.
 2. `product-brief` turns a vague request into users, value, boundaries, and acceptance.
 3. `engineering-guardrails` protects architecture, contracts, and sources of truth.
-4. `test-evidence` matches verification depth to risk and rejects false-green evidence.
-5. `safe-operations` governs data changes, migrations, releases, rollback, and post-verification.
+4. `system-modernization` governs ports, rewrites, framework upgrades, parity, extraction, readiness, and replacement.
+5. `test-evidence` matches verification depth to risk and rejects false-green evidence.
+6. `safe-operations` governs data changes, migrations, releases, rollback, and post-verification.
 
 These skills do not replace the coding agent. They change how the agent approaches delivery.
 
@@ -62,7 +63,8 @@ You probably need one when:
 - tests pass but you still do not trust the result;
 - the system has real data, migrations, users, or production releases;
 - decisions are repeatedly lost between tasks;
-- one person is covering product, engineering, test, and operations.
+- one person is covering product, engineering, modernization, test, and operations.
+- an old system is being ported, modernized, replaced, or distilled into a clean reusable core.
 
 ## Is ExoCrew cross-agent compatible?
 

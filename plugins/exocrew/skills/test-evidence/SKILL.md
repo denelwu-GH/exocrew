@@ -53,6 +53,15 @@ For state changes, verify before, action, after, audit, and idempotent retry beh
 - Keep skipped, flaky, timed-out, and not-run checks visible.
 - Attribute a failure before expanding tests or changing product code.
 - Distinguish harness failure from product failure.
+- For old/new parity, also distinguish contract-decision gaps, fixture defects, environment/toolchain failures, and missing external evidence.
+
+## Control time-sensitive evidence
+
+- Use a controlled clock or relative dates for sliding-window rules.
+- Keep fixed historical dates only when historical compatibility is the subject under test.
+- Name timezone and precision requirements explicitly.
+- Check fixture age and environment drift before rewriting product logic after a previously green test fails.
+- Derive changing aggregate expectations from current generated truth rather than hard-coded historical counts.
 
 ## Execute efficiently
 
@@ -62,6 +71,8 @@ For state changes, verify before, action, after, audit, and idempotent retry beh
 4. Run broad suites only when risk, policy, or failure evidence requires them.
 
 Do not spend time on unrelated failures without recording them as follow-up.
+
+For system ports, framework upgrades, or replacements, use `$system-modernization` to define the parity matrix and readiness target before selecting tests.
 
 ## Report evidence
 
