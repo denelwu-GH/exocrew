@@ -1,15 +1,16 @@
 {
   "name": "exocrew",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "type": "module",
-  "description": "Codex-native production delivery harness with product, engineering, modernization, test, and operations skills for AI coding agents.",
+  "description": "Codex-native production delivery harness with delivery, product, engineering, modernization, test, and operations skills for AI coding agents.",
   "scripts": {
     "generate:launch-svg": "node tools/generate-launch-assets.mjs",
     "generate:launch-copy": "node tools/generate-launch-copy.mjs",
     "validate": "node plugins/exocrew/scripts/validate-exocrew.mjs .",
+    "test:contracts": "node plugins/exocrew/scripts/test-framework-contracts.mjs",
     "test:scan": "node plugins/exocrew/scripts/test-public-scan.mjs",
-    "test": "npm run validate && npm run test:scan"
+    "test": "npm run validate && npm run test:contracts && npm run test:scan"
   },
   "engines": {
     "node": ">=20"

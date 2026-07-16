@@ -82,6 +82,16 @@ Reject:
 - Test a new gate failing for the intended reason before implementing it to green.
 - Register the gate in the real readiness or release path.
 
+## Govern concurrency and races
+
+Load [references/concurrency-race-matrix.md](references/concurrency-race-matrix.md) whenever two commands, retries, workers, rebuilds, callbacks, or old/new runtimes can touch the same durable truth.
+
+- Inventory concurrent command pairs and the unsafe interleaving for each pair.
+- Name the durable arbiter: database invariant, transaction, lock or serialization owner, idempotency key, or reconciliation rule.
+- Define which contender wins, how the loser fails visibly, and what audit evidence remains.
+- Verify controlled interleavings and forbidden side effects; UI disabling or in-memory flags are not sufficient durable protection.
+- For high-risk state machines or multi-system writes, require an independent adversarial verification pass through `$test-evidence` before closure.
+
 ## Handle schema and migration changes
 
 When changing persisted data:

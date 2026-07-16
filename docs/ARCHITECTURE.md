@@ -14,7 +14,7 @@ foundation model
   -> CI/CD and software-delivery platform
 ```
 
-Agent Skills and repository instructions are the delivery mechanisms. ExoCrew supplies the product, engineering, test, operations, and closure behavior carried through those mechanisms. Spec-driven frameworks can feed clearer intent into the same workflow; CI/CD platforms can enforce and execute the resulting release package.
+Agent Skills and repository instructions are the delivery mechanisms. ExoCrew supplies delivery coordination, product, engineering, modernization, test, and operations behavior through those mechanisms. Spec-driven frameworks can feed clearer intent into the same workflow; CI/CD platforms can enforce and execute the resulting release package.
 
 The public package is installed and validated for Codex today. Other coding agents and platforms are ecosystem context, not claimed native integrations. See [the AI agent harness guide](AI_AGENT_HARNESS.md) and [the ecosystem comparison](COMPARISON.md).
 

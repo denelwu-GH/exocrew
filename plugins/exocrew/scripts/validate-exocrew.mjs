@@ -99,8 +99,10 @@ export async function validateFramework(root) {
     ".agents/plugins/marketplace.json",
     "plugins/exocrew/.codex-plugin/plugin.json",
     "plugins/exocrew/skills/exocrew-delivery/SKILL.md",
+    "plugins/exocrew/skills/exocrew-delivery/references/role-matrix.md",
     "plugins/exocrew/skills/product-brief/SKILL.md",
     "plugins/exocrew/skills/engineering-guardrails/SKILL.md",
+    "plugins/exocrew/skills/engineering-guardrails/references/concurrency-race-matrix.md",
     "plugins/exocrew/skills/test-evidence/SKILL.md",
     "plugins/exocrew/skills/safe-operations/SKILL.md",
     "plugins/exocrew/skills/system-modernization/SKILL.md",
@@ -108,6 +110,8 @@ export async function validateFramework(root) {
     "plugins/exocrew/skills/system-modernization/references/readiness-ladder.md",
     "plugins/exocrew/skills/system-modernization/references/parity-matrix.md",
     "plugins/exocrew/skills/system-modernization/references/handoff-package.md",
+    "plugins/exocrew/skills/system-modernization/references/extraction-scope-matrix.md",
+    "plugins/exocrew/skills/system-modernization/references/traceability-ledger.md",
     "plugins/exocrew/assets/starter-project/AGENTS.md",
     "plugins/exocrew/assets/starter-project/PROJECT_DECISIONS.md",
     "README.md",
@@ -224,6 +228,8 @@ export async function validateFramework(root) {
       ["references/readiness-ladder.md", "readiness-ladder-link"],
       ["references/parity-matrix.md", "parity-matrix-link"],
       ["references/handoff-package.md", "handoff-package-link"],
+      ["references/extraction-scope-matrix.md", "extraction-scope-matrix-link"],
+      ["references/traceability-ledger.md", "traceability-ledger-link"],
       ["explicitly stops, cancels, or abandons", "cancellation-contract"],
     ];
     for (const [fragment, rule] of modernizationContracts) {
@@ -232,10 +238,130 @@ export async function validateFramework(root) {
       }
     }
 
+    const modernizationOpenaiPath = path.join(
+      root,
+      "plugins/exocrew/skills/system-modernization/agents/openai.yaml",
+    );
+    const modernizationOpenai = await readFile(modernizationOpenaiPath, "utf8");
+    if (
+      !/preserv/i.test(modernizationOpenai) ||
+      !/simplif/i.test(modernizationOpenai) ||
+      !/(?:target|destination|outcome)/i.test(modernizationOpenai) ||
+      /before replacement/i.test(modernizationOpenai)
+    ) {
+      errors.push({
+        file: path.relative(root, modernizationOpenaiPath),
+        rule: "modernization-default-prompt-scope",
+      });
+    }
+
+    const extractionPath = path.join(
+      root,
+      "plugins/exocrew/skills/system-modernization/references/extraction-scope-matrix.md",
+    );
+    const extraction = await readFile(extractionPath, "utf8");
+    const extractionContracts = [
+      ["| Keep |", "extraction-keep"],
+      ["| Simplify |", "extraction-simplify"],
+      ["| Pluginize |", "extraction-pluginize"],
+      ["| Exclude |", "extraction-exclude"],
+      ["Source module or responsibility", "extraction-module-boundary"],
+      ["public-boundary scanning", "extraction-public-scan"],
+    ];
+    for (const [fragment, rule] of extractionContracts) {
+      if (!extraction.includes(fragment)) {
+        errors.push({ file: path.relative(root, extractionPath), rule });
+      }
+    }
+
+    const traceabilityPath = path.join(
+      root,
+      "plugins/exocrew/skills/system-modernization/references/traceability-ledger.md",
+    );
+    const traceability = await readFile(traceabilityPath, "utf8");
+    const traceabilityContracts = [
+      ["| Runtime blocker |", "traceability-runtime-blocker"],
+      ["| Parity blocker |", "traceability-parity-blocker"],
+      ["| Evidence debt |", "traceability-evidence-debt"],
+      ["| Deferred scope |", "traceability-deferred-scope"],
+      ["| External blocker |", "traceability-external-blocker"],
+      ["Source responsibility", "traceability-source-target-matrix"],
+      ["Keep evidence fresh", "traceability-evidence-freshness"],
+    ];
+    for (const [fragment, rule] of traceabilityContracts) {
+      if (!traceability.includes(fragment)) {
+        errors.push({ file: path.relative(root, traceabilityPath), rule });
+      }
+    }
+
     const deliveryPath = path.join(root, "plugins/exocrew/skills/exocrew-delivery/SKILL.md");
     const delivery = await readFile(deliveryPath, "utf8");
     if (!delivery.includes("$system-modernization")) {
       errors.push({ file: path.relative(root, deliveryPath), rule: "modernization-routing" });
+    }
+
+    const roleMatrixPath = path.join(
+      root,
+      "plugins/exocrew/skills/exocrew-delivery/references/role-matrix.md",
+    );
+    const roleMatrix = await readFile(roleMatrixPath, "utf8");
+    const roleContracts = [
+      ["| Delivery lead |", "role-delivery"],
+      ["| Product |", "role-product"],
+      ["| Engineering |", "role-engineering"],
+      ["| Modernization |", "role-modernization"],
+      ["| Test |", "role-test"],
+      ["| Operations |", "role-operations"],
+    ];
+    for (const [fragment, rule] of roleContracts) {
+      if (!roleMatrix.includes(fragment)) {
+        errors.push({ file: path.relative(root, roleMatrixPath), rule });
+      }
+    }
+    const roleRows = roleMatrix.match(
+      /^\| (?:Delivery lead|Product|Engineering|Modernization|Test|Operations) \|/gm,
+    ) ?? [];
+    if (roleRows.length !== 6) {
+      errors.push({ file: path.relative(root, roleMatrixPath), rule: "role-count-six" });
+    }
+
+    const engineeringPath = path.join(
+      root,
+      "plugins/exocrew/skills/engineering-guardrails/SKILL.md",
+    );
+    const engineering = await readFile(engineeringPath, "utf8");
+    if (!engineering.includes("references/concurrency-race-matrix.md")) {
+      errors.push({ file: path.relative(root, engineeringPath), rule: "engineering-concurrency-link" });
+    }
+    if (!engineering.includes("independent adversarial")) {
+      errors.push({ file: path.relative(root, engineeringPath), rule: "engineering-adversarial-review" });
+    }
+
+    const concurrencyPath = path.join(
+      root,
+      "plugins/exocrew/skills/engineering-guardrails/references/concurrency-race-matrix.md",
+    );
+    const concurrency = await readFile(concurrencyPath, "utf8");
+    const concurrencyContracts = [
+      ["Execute / execute", "concurrency-duplicate-execute"],
+      ["Execute / cancel", "concurrency-execute-cancel"],
+      ["Rebuild / live write", "concurrency-rebuild-live-write"],
+      ["database constraints", "concurrency-durable-constraint"],
+      ["independent reviewer", "concurrency-independent-review"],
+    ];
+    for (const [fragment, rule] of concurrencyContracts) {
+      if (!concurrency.includes(fragment)) {
+        errors.push({ file: path.relative(root, concurrencyPath), rule });
+      }
+    }
+
+    const testEvidencePath = path.join(root, "plugins/exocrew/skills/test-evidence/SKILL.md");
+    const testEvidence = await readFile(testEvidencePath, "utf8");
+    if (!testEvidence.includes("independent adversarial pass")) {
+      errors.push({ file: path.relative(root, testEvidencePath), rule: "test-adversarial-pass" });
+    }
+    if (!testEvidence.includes("$engineering-guardrails")) {
+      errors.push({ file: path.relative(root, testEvidencePath), rule: "test-concurrency-routing" });
     }
 
     const starterPath = path.join(root, "plugins/exocrew/assets/starter-project/AGENTS.md");

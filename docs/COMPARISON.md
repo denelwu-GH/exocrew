@@ -4,7 +4,7 @@ The short answer: **these tools live at different layers and usually work better
 
 Codex, Claude Code, Cursor, GitHub Copilot, OpenCode, and OpenHands execute software tasks. Agent Skills, `AGENTS.md`, rules, hooks, and MCP customize their behavior and capabilities. Spec Kit and OpenSpec structure specifications. BMAD and Superpowers provide development methods and reusable workflows. Harness.io and GitHub Actions operate software-delivery pipelines.
 
-**ExoCrew supplies the cross-functional delivery discipline that moves a request through product boundaries, engineering guardrails, test evidence, safe operations, and verified closure.**
+**ExoCrew supplies the cross-functional delivery discipline that moves a request through product boundaries, engineering guardrails, modernization decisions, test evidence, safe operations, and verified closure.**
 
 ## Quick comparison
 

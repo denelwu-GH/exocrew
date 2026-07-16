@@ -33,6 +33,8 @@ Choose one primary mode before implementation:
 
 Load [references/mode-decision.md](references/mode-decision.md) when the user mixes goals, changes the maintenance horizon, or asks for a rewrite without defining what must remain compatible.
 
+For Extract mode, load [references/extraction-scope-matrix.md](references/extraction-scope-matrix.md) before implementation. Classify each source capability as Keep, Simplify, Pluginize, or Exclude. Preserve reusable invariants while removing private identity, data, infrastructure, and implementation history; extraction is not production replacement.
+
 Do not silently change mode. If the work moves from porting to modernization, local implementation to production replacement, or private migration to public extraction, stop consequential work, show the changed cost and acceptance criteria, and obtain the required decision or approval.
 
 ## Establish the modernization brief
@@ -50,6 +52,8 @@ Record:
 - cutover, publication, rollback, and cancellation conditions
 
 Treat a convenient short-term choice as decision debt when it is not the intended long-term architecture. Give it an owner, removal condition, and latest acceptable removal point.
+
+Load [references/traceability-ledger.md](references/traceability-ledger.md) when work spans multiple batches, source responsibilities, or evidence surfaces. Classify unresolved items as runtime blockers, parity blockers, evidence debt, deferred scope, or external blockers instead of treating one undifferentiated backlog as readiness.
 
 ## Preserve the baseline
 
@@ -95,6 +99,8 @@ Never translate local tests, route coverage, or a green migration workspace dire
 - Enforce the agreed new baseline without sweeping unrelated historical debt into scope.
 - Prefer semantic and structural checks over brittle wording checks.
 - Register the gate in the actual readiness or release path; an orphan script is documentation, not governance.
+- Reuse evidence only when the artifact, claim, environment, inputs, and time boundary still match; otherwise mark it stale and lower the supported claim.
+- Use lightweight gates for documentation-only changes only when executable behavior, contracts, and registered gates are unchanged; lightweight evidence cannot promote runtime readiness.
 
 ## Handle time-sensitive verification
 
@@ -112,7 +118,7 @@ If the user explicitly stops, cancels, or abandons the objective, that instructi
 ## Route supporting work
 
 - Use `$product-brief` when value, users, retained workflows, or extraction scope is unclear.
-- Use `$engineering-guardrails` for architecture, contracts, state, and implementation quality.
+- Use `$engineering-guardrails` for architecture, contracts, state, implementation quality, and concurrency or race control.
 - Use `$test-evidence` for parity design, regression depth, and evidence claims.
 - Use `$safe-operations` for real data, cutover, deployment, rollback, or publication.
 - Use `$exocrew-delivery` when the modernization crosses three or more roles or requires staged approval.

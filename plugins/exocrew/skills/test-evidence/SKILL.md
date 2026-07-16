@@ -45,6 +45,8 @@ Assert business outcomes and forbidden side effects, not merely:
 
 For state changes, verify before, action, after, audit, and idempotent retry behavior when relevant.
 
+For high-risk state machines, durable concurrent writes, money, entitlements, authorization, or irreversible multi-system effects, use two passes: an implementation-focused verification pass and an independent adversarial pass. Give the independent pass the contract, change artifact, and raw evidence—not the intended conclusion—and require it to search for missed interleavings and forbidden side effects. Route concurrency protection to `$engineering-guardrails` before declaring the tests sufficient.
+
 ## Prevent false green
 
 - Do not skip, weaken, or widen assertions to make a test pass.
@@ -72,7 +74,7 @@ For state changes, verify before, action, after, audit, and idempotent retry beh
 
 Do not spend time on unrelated failures without recording them as follow-up.
 
-For system ports, framework upgrades, or replacements, use `$system-modernization` to define the parity matrix and readiness target before selecting tests.
+For system ports, framework upgrades, replacements, or public extractions, use `$system-modernization` to define the parity or extraction matrix and readiness target before selecting tests.
 
 ## Report evidence
 

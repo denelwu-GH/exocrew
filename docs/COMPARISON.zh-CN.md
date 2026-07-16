@@ -71,7 +71,7 @@ ExoCrew 刻意做得更聚焦：围绕六种交付责任，以及一个不懂代
 
 - 缺广泛的开发方法或 Skills 生态：评估 BMAD、Superpowers；
 - 缺规格驱动的需求与任务生成：评估 Spec Kit、OpenSpec；
-- 缺 Codex 内的产品、研发、现代化、测试和运维交付纪律：安装 ExoCrew；
+- 缺 Codex 内的交付总控，以及产品、研发、现代化、测试和运维纪律：安装 ExoCrew；
 - 缺企业级流水线与组织治理：评估 Harness.io 或已有交付平台。
 
 ## 如果你已经在用 Harness.io 或 GitHub Actions

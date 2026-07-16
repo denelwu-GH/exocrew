@@ -44,7 +44,7 @@ Models provide intelligence. Coding agents execute. Spec-driven frameworks struc
 
 | Tool or category | What it owns | Where ExoCrew fits |
 |---|---|---|
-| Codex, Claude Code, Cursor, Copilot, OpenCode | Coding-agent execution | The agent acts; ExoCrew supplies product, engineering, modernization, test, and operations discipline. The public package is Codex-native today |
+| Codex, Claude Code, Cursor, Copilot, OpenCode | Coding-agent execution | The agent acts; ExoCrew supplies delivery coordination plus product, engineering, modernization, test, and operations discipline. The public package is Codex-native today |
 | Agent Skills, `AGENTS.md`, Rules, MCP | Context, reusable instructions, and tools | These are mechanisms; ExoCrew is the production-distilled delivery system installed through them |
 | [Spec Kit](https://github.com/github/spec-kit), [OpenSpec](https://github.com/Fission-AI/OpenSpec) | Specifications, plans, tasks, and change intent | Keep spec-driven development; add ExoCrew for architecture, evidence, release safety, rollback, and closure |
 | [BMAD](https://github.com/bmad-code-org/BMAD-METHOD), [Superpowers](https://github.com/obra/superpowers) | Role-based methods and reusable development workflows | Use their broader methods; use ExoCrew when production delivery gates and cross-functional evidence are the missing layer |
@@ -95,6 +95,8 @@ track readiness and parity, and do not claim cutover readiness without evidence.
 Existing systems fail differently from greenfield projects. “Make it run,” “make it maintainable,” “replace production,” and “publish a clean open-source core” are not the same objective.
 
 `system-modernization` forces that decision before implementation. It then tracks the work from **R0 intent** through local functionality, contract parity, real-environment readiness, cutover preparation, and **R7 production verification**. Route counts and green local tests stay useful evidence—but they cannot masquerade as replacement readiness.
+
+For public extraction, it classifies every source capability as **Keep, Simplify, Pluginize, or Exclude**. For high-risk state changes, the engineering and test roles add a concurrency/race matrix plus an independent adversarial pass, so a first green run cannot hide duplicate execution, cancellation races, rebuild collisions, or missing durable constraints.
 
 **Stop rewriting. Start proving equivalence.**
 

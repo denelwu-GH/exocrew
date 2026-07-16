@@ -1,4 +1,4 @@
 interface:
   display_name: "System Modernization"
-  short_description: "Govern migrations, upgrades, parity, and cutover"
-  default_prompt: "Use $system-modernization to choose the right modernization mode, preserve contracts, and prove readiness before replacement."
+  short_description: "Govern migrations, extraction, parity, and cutover"
+  default_prompt: "Use $system-modernization to choose the right modernization mode, preserve or simplify the right contracts, and prove readiness for its intended destination."

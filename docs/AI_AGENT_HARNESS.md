@@ -63,7 +63,7 @@ You probably need one when:
 - tests pass but you still do not trust the result;
 - the system has real data, migrations, users, or production releases;
 - decisions are repeatedly lost between tasks;
-- one person is covering product, engineering, modernization, test, and operations.
+- one person is coordinating delivery while covering product, engineering, modernization, test, and operations.
 - an old system is being ported, modernized, replaced, or distilled into a clean reusable core.
 
 ## Is ExoCrew cross-agent compatible?
