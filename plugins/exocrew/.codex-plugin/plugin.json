@@ -1,7 +1,7 @@
 {
   "name": "exocrew",
   "version": "0.1.6",
-  "description": "Codex-native production delivery harness with delivery, product, engineering, modernization, test, and operations skills for AI coding agents.",
+  "description": "Give beginners and solo builders an AI delivery crew that takes software from a clear task contract through implementation, testing, release, and rollback.",
   "author": {
     "name": "denelwu-GH",
     "url": "https://github.com/denelwu-GH"
@@ -29,13 +29,14 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "ExoCrew",
-    "shortDescription": "Production delivery harness for coding agents.",
-    "longDescription": "A Codex-native production delivery harness with product thinking, engineering guardrails, system modernization, test evidence, safe operations, and verified closure for AI-assisted software delivery.",
+    "shortDescription": "Ship working software with AI, even if you do not code.",
+    "longDescription": "Turn a brief into working, tested, releasable software with plain-language checkpoints, engineering guardrails, cross-agent review, browser acceptance, rollback, and verified production closure.",
     "developerName": "denelwu-GH",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://github.com/denelwu-GH/exocrew",
     "defaultPrompt": [
+      "I do not code. Use ExoCrew to turn this idea into a working, tested project. Explain decisions in plain language and protect all high-risk operations.",
       "Turn this idea into a safe, testable delivery plan.",
       "Review this change across product, engineering, modernization, test, and operations.",
       "Modernize this system without losing contracts, parity, or cutover evidence.",

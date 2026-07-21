@@ -2,15 +2,15 @@
 
 # ExoCrew
 
-### The production delivery harness for AI coding agents
+### Zero coding experience? Take a working project from idea to a safe release.
 
-## Install the team you do not have.
+## Do not wait to become a programmer. Give Codex the delivery team it is missing.
 
 **One non-programmer used Codex to drive a complex enterprise operations system into real production in about four months.**
 
-ExoCrew is a Codex-native, AI-era delivery exoskeleton. It packages the hard-won product judgment, engineering guardrails, testing skepticism, and operational discipline learned along the way — and installs them into your AI workflow.
+ExoCrew is a Codex-native software-delivery exoskeleton. It packages the hard-won product judgment, engineering guardrails, testing skepticism, and operational discipline learned along the way and installs them into your AI workflow.
 
-**Not another prompt pack. An AI delivery crew that knows what to ask, what to protect, what to verify, and when not to ship.**
+**It will not turn a beginner into a programmer overnight. It gives you a complete product, engineering, test, security, and operations method for directing AI to deliver real software from day one.**
 
 <p>
   <a href="https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml"><img alt="Quality gates" src="https://github.com/denelwu-GH/exocrew/actions/workflows/quality-gates.yml/badge.svg"></a>
@@ -20,7 +20,7 @@ ExoCrew is a Codex-native, AI-era delivery exoskeleton. It packages the hard-won
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
 </p>
 
-**[Install in 30 seconds](#install-in-30-seconds) · [See where it fits](#where-exocrew-fits-in-the-ai-coding-stack) · [Meet the crew](#six-roles-one-delivery-system) · [简体中文](README.zh-CN.md)**
+**[Install in 30 seconds](#install-in-30-seconds) · [See idea to production](#from-one-sentence-to-production-a-workflow-beginners-can-control) · [Meet the crew](#six-roles-one-delivery-system) · [简体中文](README.zh-CN.md)**
 
 </div>
 
@@ -28,13 +28,31 @@ ExoCrew is a Codex-native, AI-era delivery exoskeleton. It packages the hard-won
 
 <p align="center"><strong>One builder owns the vision. ExoCrew helps AI deliver like a complete team.</strong></p>
 
-## AI can write code. It cannot own delivery for you.
+## From one sentence to production: a workflow beginners can control
+
+You define the problem and make the important decisions. ExoCrew requires the AI to supply boundaries, evidence, and a way back at every stage.
+
+| Delivery stage | What ExoCrew requires from AI | What you gain |
+|---|---|---|
+| **1. Software task contract** | Define goals, non-goals, protected behavior, and acceptance criteria | Know what “done” means before work starts |
+| **2. Read-only reconnaissance** | Map architecture, dependencies, data flow, and blast radius before editing | Prevent blind changes to a project the AI has not understood |
+| **3. Safety boundaries** | Protect secrets, databases, production operations, and external writes | Keep vague instructions from triggering risky actions |
+| **4. Minimal implementation** | Find the source of truth, generated files, and migration boundaries; change in stages | Make the smallest correct change without breaking existing behavior |
+| **5. Complete testing** | Cover unit, integration, E2E, happy, failure, boundary, and regression cases | Stop treating a green command as proof that the product works |
+| **6. Browser acceptance** | Inspect console, network, empty states, error states, and mobile behavior | Verify the real interface, not just the source code |
+| **7. Cross-agent review** | Run independent architecture, implementation, test, and security reviews | Reduce the blind spots of one AI approving its own work |
+| **8. Git and release** | Inspect status and diffs; create small commits, rollback points, and a release candidate | Keep every change explainable, reviewable, and reversible |
+| **9. Production closure** | Deploy, smoke-test, monitor, alert, roll back, and capture lessons | Move from “runs locally” to “owned in production” |
+
+**You do not need to understand every line of code on day one. You do need four answers: what will change, what will not, where the evidence is, and how to get back. ExoCrew makes the AI give you those answers.**
+
+## Making AI write code is not the same as delivering a project
 
 The hard part is not getting AI to produce another page.
 
 The hard part is keeping business boundaries intact, architecture maintainable, tests meaningful, data changes reversible, releases recoverable, and every hard-won decision available to the next task.
 
-**You do not need more generated code. You need a team that can carry code all the way to delivery.**
+**You do not need more generated code. You need a delivery system that lets a beginner judge whether the project is actually ready to ship.**
 
 ## Where ExoCrew fits in the AI coding stack
 
@@ -171,9 +189,9 @@ ExoCrew was distilled from real production delivery. The repository, test, commi
 
 <div align="center">
 
-### Stop asking one AI to improvise as product, engineering, modernization, test, and operations.
+### Zero coding experience should not trap you inside a demo that never ships.
 
-## Install a delivery crew that knows how to work together.
+## Install ExoCrew in Codex and turn your next sentence into software that runs, verifies, and ships.
 
 **[Install in 30 seconds](#install-in-30-seconds) · [Meet the crew](#six-roles-one-delivery-system) · [Star ExoCrew](https://github.com/denelwu-GH/exocrew)**
 

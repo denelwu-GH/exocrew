@@ -3,7 +3,7 @@
   "version": "0.1.6",
   "private": true,
   "type": "module",
-  "description": "Codex-native production delivery harness with delivery, product, engineering, modernization, test, and operations skills for AI coding agents.",
+  "description": "Give beginners and solo builders an AI delivery crew that takes software from a clear task contract through implementation, testing, release, and rollback.",
   "scripts": {
     "generate:launch-svg": "node tools/generate-launch-assets.mjs",
     "generate:launch-copy": "node tools/generate-launch-copy.mjs",

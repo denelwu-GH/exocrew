@@ -1,4 +1,4 @@
 interface:
   display_name: "ExoCrew Delivery"
-  short_description: "Run evidence-gated product delivery end to end"
-  default_prompt: "Use $exocrew-delivery to turn this request into a safe, testable delivery plan and execute it with evidence."
+  short_description: "Ship working software with AI, even if you do not code"
+  default_prompt: "Use $exocrew-delivery to turn this idea into working, tested, releasable software. Explain decisions in plain language, show evidence at each gate, and protect high-risk operations."

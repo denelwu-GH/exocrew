@@ -1,6 +1,6 @@
 ---
 name: exocrew-delivery
-description: Orchestrate evidence-gated AI software delivery from an ambiguous request through product framing, implementation, verification, operational safety, and durable closeout. Use for complex features, cross-module changes, risky fixes, project setup, modernization, migration or release work, or any request that needs product, engineering, modernization, test, and operations perspectives coordinated without losing approval boundaries.
+description: Orchestrate evidence-gated AI software delivery from an ambiguous request through product framing, implementation, verification, operational safety, and durable closeout. Use when a beginner or solo builder wants Codex to turn an idea into working, tested, releasable software with plain-language checkpoints, or for complex features, cross-module changes, risky fixes, project setup, modernization, migration, and release work that needs coordinated product, engineering, test, security, and operations perspectives.
 ---
 
 # ExoCrew Delivery
