@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
   <title id="title">ExoCrew 小红书发布图 2</title>
-  <desc id="desc">这不是 Demo，它真的在企业端运行。真实运营 · 数据治理 · 企业业务信息推送</desc>
+  <desc id="desc">不会写代码，不等于只能，做 Demo。发布 · 迁移 · 修复 · 回滚 · 上线后验证</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -21,27 +21,28 @@
     <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
     <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">02 / 06</text>
     <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">真实生产来源</text>
-    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">这不是 Demo</text>
-<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">它真的在企业端运行</text>
-    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">真实运营 · 数据治理 · 企业业务信息推送</text>
-        <rect x="54" y="414" width="792" height="64" rx="20" fill="#2dd4bf" fill-opacity="0.12" stroke="#2dd4bf"/>
-    <circle cx="92" cy="446" r="12" fill="#2dd4bf"/>
-    <text x="121" y="454" fill="#f8fafc" font-size="22" font-weight="700">PRODUCTION · ACTIVE OPERATIONS</text>
-    <rect x="54" y="520" width="378" height="154" rx="22" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.62"/>
-      <text x="82" y="586" fill="#f8fafc" font-size="42" font-weight="700">361,670</text>
-      <text x="82" y="628" fill="#9aabc2" font-size="19">行运行与测试源码</text>
-<rect x="459" y="520" width="378" height="154" rx="22" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.62"/>
-      <text x="487" y="586" fill="#f8fafc" font-size="42" font-weight="700">1,869</text>
-      <text x="487" y="628" fill="#9aabc2" font-size="19">次主线提交</text>
-<rect x="54" y="704" width="378" height="154" rx="22" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.62"/>
-      <text x="82" y="770" fill="#f8fafc" font-size="42" font-weight="700">466</text>
-      <text x="82" y="812" fill="#9aabc2" font-size="19">个测试文件</text>
-<rect x="459" y="704" width="378" height="154" rx="22" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.62"/>
-      <text x="487" y="770" fill="#f8fafc" font-size="42" font-weight="700">125 + 145</text>
-      <text x="487" y="812" fill="#9aabc2" font-size="19">数据模型 + 数据库迁移</text>
-    <text x="54" y="951" fill="#f8fafc" font-size="23" font-weight="700">每一个数字，都是系统真正运行过的痕迹。</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">不会写代码</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">不等于只能</text>
+<text x="54" y="322" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">做 Demo</text>
+    <text x="54" y="404" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">发布 · 迁移 · 修复 · 回滚 · 上线后验证</text>
+        <rect x="54" y="452" width="792" height="64" rx="20" fill="#2dd4bf" fill-opacity="0.12" stroke="#2dd4bf"/>
+    <circle cx="92" cy="484" r="12" fill="#2dd4bf"/>
+    <text x="121" y="492" fill="#f8fafc" font-size="22" font-weight="700">PRODUCTION · ACTIVE OPERATIONS</text>
+    <rect x="54" y="540" width="378" height="154" rx="22" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.62"/>
+      <text x="82" y="606" fill="#f8fafc" font-size="42" font-weight="700">139</text>
+      <text x="82" y="648" fill="#9aabc2" font-size="19">天 Git 首尾跨度</text>
+<rect x="459" y="540" width="378" height="154" rx="22" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.62"/>
+      <text x="487" y="606" fill="#f8fafc" font-size="42" font-weight="700">1,869</text>
+      <text x="487" y="648" fill="#9aabc2" font-size="19">次主线提交</text>
+<rect x="54" y="724" width="378" height="154" rx="22" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.62"/>
+      <text x="82" y="790" fill="#f8fafc" font-size="42" font-weight="700">145</text>
+      <text x="82" y="832" fill="#9aabc2" font-size="19">份数据库迁移</text>
+<rect x="459" y="724" width="378" height="154" rx="22" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.62"/>
+      <text x="487" y="790" fill="#f8fafc" font-size="42" font-weight="700">466</text>
+      <text x="487" y="832" fill="#9aabc2" font-size="19">个自动化测试/规格文件</text>
+    <text x="54" y="971" fill="#f8fafc" font-size="22" font-weight="700">每一个数字，都能回到仓库审计基线。</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
-    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">Git 首尾留痕 139 个自然日</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">真实证据 · 不靠口号</text>
   </g>
 </svg>

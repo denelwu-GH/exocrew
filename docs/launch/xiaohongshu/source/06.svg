@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
   <title id="title">ExoCrew 小红书发布图 6</title>
-  <desc id="desc">把四个月踩过的坑，变成你的第一天。装上 ExoCrew，让 AI 会问、会验、会停、会回滚。</desc>
+  <desc id="desc">把你的下一句话，变成可运行项目。ExoCrew = 安装进 Codex 的开源 AI 交付团队</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -21,9 +21,9 @@
     <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
     <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">06 / 06</text>
     <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">MIT 开源</text>
-    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">把四个月踩过的坑</text>
-<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">变成你的第一天</text>
-    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">装上 ExoCrew，让 AI 会问、会验、会停、会回滚。</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">把你的下一句话</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">变成可运行项目</text>
+    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">ExoCrew = 安装进 Codex 的开源 AI 交付团队</text>
         <rect x="54" y="470" width="792" height="238" rx="24" fill="#050b14" stroke="#2a3b57" filter="url(#shadow)"/>
     <circle cx="88" cy="516" r="7" fill="#fb7185"/><circle cx="112" cy="516" r="7" fill="#f59e0b"/><circle cx="136" cy="516" r="7" fill="#2dd4bf"/>
     <text x="82" y="576" fill="#9aabc2" font-size="16">$ codex plugin marketplace add</text>
@@ -36,9 +36,9 @@
       <rect x="608" y="764" width="238" height="72" rx="36" fill="#f59e0b" fill-opacity="0.16" stroke="#f59e0b"/><text x="727" y="808" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle">MIT License</text>
     </g>
     <text x="450" y="922" fill="#f8fafc" font-size="29" font-weight="700" text-anchor="middle">github.com/denelwu-GH/exocrew</text>
-    <text x="450" y="976" fill="#9aabc2" font-size="18" text-anchor="middle">收藏 · Star · 从一个真实需求开始</text>
+    <text x="450" y="976" fill="#9aabc2" font-size="18" text-anchor="middle">从一个真实需求开始 · 最终发布仍由你确认</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
-    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">Install the team you don’t have.</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">0 代码起步 · 有证据地交付</text>
   </g>
 </svg>

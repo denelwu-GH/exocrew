@@ -7,6 +7,8 @@
 - `xiaohongshu/01-cover.png` 至 `06-cta.png`：按编号顺序上传的 6 张 3:4 成品图
 - `xiaohongshu/caption.md`：短标题、完整正文、话题和图片顺序
 - `xiaohongshu/source/`：可继续修改的 SVG 源文件
+- `xiaohongshu/ASSET-PROVENANCE.md`：图片来源、权属和发布前检查记录
+- `xiaohongshu/writing-archetypes.json`：成稿的写作流派、多标签权重和证据范围
 
 ## 微信公众号
 

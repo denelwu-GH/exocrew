@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
   <title id="title">ExoCrew 小红书发布图 1</title>
-  <desc id="desc">不懂代码，，我把一支 AI 团队，开源了。1 个人 + Codex · 约 4 个月 · 真实生产系统</desc>
+  <desc id="desc">0 基础代码小白，用这个 Skill，项目质量超过，市面 99% 外包软件。测试 · 迁移 · 回滚 · 上线证据齐全</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -20,23 +20,19 @@
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
     <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
     <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">01 / 06</text>
-    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">开源 AI 交付外骨骼</text>
-    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">不懂代码，</text>
-<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">我把一支 AI 团队</text>
-<text x="54" y="322" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">开源了</text>
-    <text x="54" y="404" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">1 个人 + Codex · 约 4 个月 · 真实生产系统</text>
-        <circle cx="364.5" cy="555.0" r="48" fill="#8b5cf6" fill-opacity="0.16" stroke="#8b5cf6" stroke-width="2"/><text x="364.5" y="562.0" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">交付</text><line x1="364.5" y1="603.0" x2="450" y2="760" stroke="#2a3b57" stroke-width="2"/>
-<circle cx="593.4" cy="574.8" r="48" fill="#22d3ee" fill-opacity="0.16" stroke="#22d3ee" stroke-width="2"/><text x="593.4" y="581.8" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">产品</text><line x1="593.4" y1="622.8" x2="450" y2="760" stroke="#2a3b57" stroke-width="2"/>
-<circle cx="700.0" cy="710.0" r="48" fill="#3b82f6" fill-opacity="0.16" stroke="#3b82f6" stroke-width="2"/><text x="700.0" y="717.0" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">研发</text><line x1="700.0" y1="758.0" x2="450" y2="760" stroke="#2a3b57" stroke-width="2"/>
-<circle cx="593.4" cy="845.2" r="48" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf" stroke-width="2"/><text x="593.4" y="852.2" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">测试</text><line x1="593.4" y1="893.2" x2="450" y2="760" stroke="#2a3b57" stroke-width="2"/>
-<circle cx="364.5" cy="865.0" r="48" fill="#f59e0b" fill-opacity="0.16" stroke="#f59e0b" stroke-width="2"/><text x="364.5" y="872.0" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">运维</text><line x1="364.5" y1="913.0" x2="450" y2="760" stroke="#2a3b57" stroke-width="2"/>
-    <circle cx="450" cy="760" r="90" fill="#13233d" stroke="#8b5cf6" stroke-width="4" filter="url(#shadow)"/>
-    <text x="450" y="750" fill="#f8fafc" font-size="28" font-weight="700" text-anchor="middle">EXO</text>
-    <text x="450" y="786" fill="#9aabc2" font-size="20" text-anchor="middle">CREW</text>
-    <rect x="188" y="924" width="524" height="72" rx="36" fill="#8b5cf6"/>
-    <text x="450" y="969" fill="#f8fafc" font-size="24" font-weight="700" text-anchor="middle">装上你还没有的那支团队</text>
+    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">0 代码真实交付</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">0 基础代码小白</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">用这个 Skill</text>
+<text x="54" y="322" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">项目质量超过</text>
+<text x="54" y="392" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">市面 99% 外包软件</text>
+    <text x="54" y="474" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">测试 · 迁移 · 回滚 · 上线证据齐全</text>
+        <rect x="54" y="512" width="792" height="286" rx="28" fill="#101d33" stroke="#8b5cf6" stroke-width="3" filter="url(#shadow)"/>
+    <text x="450" y="605" fill="#9aabc2" font-size="20" font-weight="700" text-anchor="middle">GIT 首尾跨度</text>
+    <text x="450" y="716" fill="#f8fafc" font-size="90" font-weight="700" text-anchor="middle">139 天</text>
+    <rect x="148" y="866" width="604" height="78" rx="39" fill="#2dd4bf" fill-opacity="0.15" stroke="#2dd4bf"/>
+    <text x="450" y="915" fill="#f8fafc" font-size="24" font-weight="700" text-anchor="middle">完整交付方法已开源</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
-    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">github.com/denelwu-GH/exocrew</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">真实生产项目验证 · 完整方法已开源</text>
   </g>
 </svg>

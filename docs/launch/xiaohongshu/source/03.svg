@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
   <title id="title">ExoCrew 小红书发布图 3</title>
-  <desc id="desc">AI 会写代码，但不会自动替你负责。生成代码只需要一句话，交付真实产品需要一支团队的纪律。</desc>
+  <desc id="desc">AI 项目最危险的，不是写不出来，是看起来能跑。功能能点开，不代表需求、数据和上线已经安全。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -21,9 +21,10 @@
     <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
     <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">03 / 06</text>
     <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">代码生成 ≠ 真实交付</text>
-    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">AI 会写代码</text>
-<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">但不会自动替你负责</text>
-    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">生成代码只需要一句话，交付真实产品需要一支团队的纪律。</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">AI 项目最危险的</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">不是写不出来</text>
+<text x="54" y="322" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">是看起来能跑</text>
+    <text x="54" y="404" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">功能能点开，不代表需求、数据和上线已经安全。</text>
         <rect x="54" y="490" width="792" height="96" rx="20" fill="#101d33"/>
       <circle cx="102" cy="538" r="24" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
       <path d="M94 530 L110 546 M110 530 L94 546" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
@@ -45,9 +46,9 @@
       <text x="148" y="897" fill="#f8fafc" font-size="22" font-weight="700">生产发布</text>
       <text x="148" y="926" fill="#9aabc2" font-size="18">没有预演和回滚</text>
     <rect x="54" y="1000" width="792" height="58" rx="29" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
-    <text x="450" y="1037" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">真正缺的，不是代码生成器，是完整交付团队。</text>
+    <text x="450" y="1037" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">真正的难点，是把项目安全交出去。</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
-    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">让 AI 知道什么时候必须停下来</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">从“能跑”走到“敢上线”</text>
   </g>
 </svg>

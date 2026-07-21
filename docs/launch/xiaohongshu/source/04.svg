@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
   <title id="title">ExoCrew 小红书发布图 4</title>
-  <desc id="desc">你缺的不是更多提示词，是六个交付角色。不是六个聊天人格，是六套真正能执行的交付动作。</desc>
+  <desc id="desc">从需求到上线，按这 9 步检查。下一次让 AI 改项目时，按顺序走一遍。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f"/>
@@ -20,42 +20,59 @@
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
     <rect x="54" y="54" width="118" height="38" rx="19" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
     <text x="113" y="80" fill="#f8fafc" font-size="16" font-weight="700" text-anchor="middle">04 / 06</text>
-    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">六个可安装 Skills</text>
-    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">你缺的不是更多提示词</text>
-<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">是六个交付角色</text>
-    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">不是六个聊天人格，是六套真正能执行的交付动作。</text>
-    <rect x="54" y="432" width="792" height="76" rx="18" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.45"/>
-      <circle cx="98" cy="470" r="23" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
-      <text x="98" y="476" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">DL</text>
-      <text x="140" y="464" fill="#f8fafc" font-size="20" font-weight="700">交付负责人</text>
-      <text x="140" y="489" fill="#9aabc2" font-size="16">拆任务 · 控风险 · 盯收尾</text>
-<rect x="54" y="528" width="792" height="76" rx="18" fill="#101d33" stroke="#22d3ee" stroke-opacity="0.45"/>
-      <circle cx="98" cy="566" r="23" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
-      <text x="98" y="572" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">PM</text>
-      <text x="140" y="560" fill="#f8fafc" font-size="20" font-weight="700">产品经理</text>
-      <text x="140" y="585" fill="#9aabc2" font-size="16">问清用户 · 价值 · 边界 · 验收</text>
-<rect x="54" y="624" width="792" height="76" rx="18" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.45"/>
-      <circle cx="98" cy="662" r="23" fill="#3b82f6" fill-opacity="0.18" stroke="#3b82f6"/>
-      <text x="98" y="668" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">EN</text>
-      <text x="140" y="656" fill="#f8fafc" font-size="20" font-weight="700">研发负责人</text>
-      <text x="140" y="681" fill="#9aabc2" font-size="16">守住架构 · 契约 · 单一真值</text>
-<rect x="54" y="720" width="792" height="76" rx="18" fill="#101d33" stroke="#fb7185" stroke-opacity="0.45"/>
-      <circle cx="98" cy="758" r="23" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
-      <text x="98" y="764" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">MD</text>
-      <text x="140" y="752" fill="#f8fafc" font-size="20" font-weight="700">现代化负责人</text>
-      <text x="140" y="777" fill="#9aabc2" font-size="16">迁移 · 等价 · 提炼 · 切换</text>
-<rect x="54" y="816" width="792" height="76" rx="18" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.45"/>
-      <circle cx="98" cy="854" r="23" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf"/>
-      <text x="98" y="860" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">QA</text>
-      <text x="140" y="848" fill="#f8fafc" font-size="20" font-weight="700">测试负责人</text>
-      <text x="140" y="873" fill="#9aabc2" font-size="16">识别假绿 · 证明关键链路</text>
-<rect x="54" y="912" width="792" height="76" rx="18" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.45"/>
-      <circle cx="98" cy="950" r="23" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b"/>
-      <text x="98" y="956" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle">OP</text>
-      <text x="140" y="944" fill="#f8fafc" font-size="20" font-weight="700">运维负责人</text>
-      <text x="140" y="969" fill="#9aabc2" font-size="16">预演 · 发布 · 回滚 · 验证</text>
+    <text x="846" y="80" fill="#9aabc2" font-size="16" text-anchor="end">建议直接收藏</text>
+    <text x="54" y="182" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">从需求到上线</text>
+<text x="54" y="252" fill="#f8fafc" font-size="54" font-weight="700" text-anchor="start">按这 9 步检查</text>
+    <text x="54" y="334" fill="#9aabc2" font-size="22" font-weight="400" text-anchor="start">下一次让 AI 改项目时，按顺序走一遍。</text>
+        <rect x="54" y="458" width="252" height="142" rx="20" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.52"/>
+      <rect x="72" y="476" width="46" height="28" rx="14" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+      <text x="95" y="496" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">01</text>
+      <text x="72" y="540" fill="#f8fafc" font-size="20" font-weight="700">任务合同</text>
+      <text x="72" y="571" fill="#9aabc2" font-size="14">目标与验收</text>
+<rect x="324" y="458" width="252" height="142" rx="20" fill="#101d33" stroke="#22d3ee" stroke-opacity="0.52"/>
+      <rect x="342" y="476" width="46" height="28" rx="14" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
+      <text x="365" y="496" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">02</text>
+      <text x="342" y="540" fill="#f8fafc" font-size="20" font-weight="700">只读勘察</text>
+      <text x="342" y="571" fill="#9aabc2" font-size="14">架构与影响面</text>
+<rect x="594" y="458" width="252" height="142" rx="20" fill="#101d33" stroke="#fb7185" stroke-opacity="0.52"/>
+      <rect x="612" y="476" width="46" height="28" rx="14" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+      <text x="635" y="496" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">03</text>
+      <text x="612" y="540" fill="#f8fafc" font-size="20" font-weight="700">安全边界</text>
+      <text x="612" y="571" fill="#9aabc2" font-size="14">数据与外部写入</text>
+<rect x="54" y="622" width="252" height="142" rx="20" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.52"/>
+      <rect x="72" y="640" width="46" height="28" rx="14" fill="#3b82f6" fill-opacity="0.18" stroke="#3b82f6"/>
+      <text x="95" y="660" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">04</text>
+      <text x="72" y="704" fill="#f8fafc" font-size="20" font-weight="700">最小实现</text>
+      <text x="72" y="735" fill="#9aabc2" font-size="14">先守住真相源</text>
+<rect x="324" y="622" width="252" height="142" rx="20" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.52"/>
+      <rect x="342" y="640" width="46" height="28" rx="14" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf"/>
+      <text x="365" y="660" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">05</text>
+      <text x="342" y="704" fill="#f8fafc" font-size="20" font-weight="700">完整测试</text>
+      <text x="342" y="735" fill="#9aabc2" font-size="14">正常异常边界</text>
+<rect x="594" y="622" width="252" height="142" rx="20" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.52"/>
+      <rect x="612" y="640" width="46" height="28" rx="14" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b"/>
+      <text x="635" y="660" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">06</text>
+      <text x="612" y="704" fill="#f8fafc" font-size="20" font-weight="700">浏览器验收</text>
+      <text x="612" y="735" fill="#9aabc2" font-size="14">控制台与移动端</text>
+<rect x="54" y="786" width="252" height="142" rx="20" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.52"/>
+      <rect x="72" y="804" width="46" height="28" rx="14" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+      <text x="95" y="824" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">07</text>
+      <text x="72" y="868" fill="#f8fafc" font-size="20" font-weight="700">交叉审核</text>
+      <text x="72" y="899" fill="#9aabc2" font-size="14">架构测试安全</text>
+<rect x="324" y="786" width="252" height="142" rx="20" fill="#101d33" stroke="#22d3ee" stroke-opacity="0.52"/>
+      <rect x="342" y="804" width="46" height="28" rx="14" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/>
+      <text x="365" y="824" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">08</text>
+      <text x="342" y="868" fill="#f8fafc" font-size="20" font-weight="700">Git 发布</text>
+      <text x="342" y="899" fill="#9aabc2" font-size="14">小提交与回滚点</text>
+<rect x="594" y="786" width="252" height="142" rx="20" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.52"/>
+      <rect x="612" y="804" width="46" height="28" rx="14" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf"/>
+      <text x="635" y="824" fill="#f8fafc" font-size="13" font-weight="700" text-anchor="middle">09</text>
+      <text x="612" y="868" fill="#f8fafc" font-size="20" font-weight="700">线上闭环</text>
+      <text x="612" y="899" fill="#9aabc2" font-size="14">监控回滚复盘</text>
+    <rect x="170" y="974" width="560" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6"/>
+    <text x="450" y="1016" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">少一步，都可能把风险留到上线后</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
-    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">一个目标 · 六种视角 · 一个交付闭环</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">9 段交付闭环</text>
   </g>
 </svg>

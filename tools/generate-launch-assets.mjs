@@ -326,39 +326,29 @@ function xhsFrame({ index, total = 6, kicker, headline, subhead, body, footer })
 }
 
 function xhsCards() {
-  const roleColors = [colors.purple, colors.cyan, colors.blue, colors.teal, colors.amber];
-  const card1Roles = ["交付", "产品", "研发", "测试", "运维"]
-    .map((role, index) => {
-      const angle = (-110 + index * 55) * (Math.PI / 180);
-      const cx = 450 + Math.cos(angle) * 250;
-      const cy = 710 + Math.sin(angle) * 165;
-      return `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="48" fill="${roleColors[index]}" fill-opacity="0.16" stroke="${roleColors[index]}" stroke-width="2"/><text x="${cx.toFixed(1)}" y="${(cy + 7).toFixed(1)}" fill="${colors.white}" font-size="20" font-weight="700" text-anchor="middle">${role}</text><line x1="${cx.toFixed(1)}" y1="${(cy + 48).toFixed(1)}" x2="450" y2="760" stroke="${colors.line}" stroke-width="2"/>`;
-    })
-    .join("\n");
   const card1 = xhsFrame({
     index: 1,
-    kicker: "开源 AI 交付外骨骼",
-    headline: ["不懂代码，", "我把一支 AI 团队", "开源了"],
-    subhead: "1 个人 + Codex · 约 4 个月 · 真实生产系统",
-    body: `    ${card1Roles}
-    <circle cx="450" cy="760" r="90" fill="${colors.panel2}" stroke="${colors.purple}" stroke-width="4" filter="url(#shadow)"/>
-    <text x="450" y="750" fill="${colors.white}" font-size="28" font-weight="700" text-anchor="middle">EXO</text>
-    <text x="450" y="786" fill="${colors.muted}" font-size="20" text-anchor="middle">CREW</text>
-    <rect x="188" y="924" width="524" height="72" rx="36" fill="${colors.purple}"/>
-    <text x="450" y="969" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">装上你还没有的那支团队</text>`,
-    footer: "github.com/denelwu-GH/exocrew",
+    kicker: "0 代码真实交付",
+    headline: ["0 基础代码小白", "用这个 Skill", "项目质量超过", "市面 99% 外包软件"],
+    subhead: "测试 · 迁移 · 回滚 · 上线证据齐全",
+    body: `    <rect x="54" y="512" width="792" height="286" rx="28" fill="${colors.panel}" stroke="${colors.purple}" stroke-width="3" filter="url(#shadow)"/>
+    <text x="450" y="605" fill="${colors.muted}" font-size="20" font-weight="700" text-anchor="middle">GIT 首尾跨度</text>
+    <text x="450" y="716" fill="${colors.white}" font-size="90" font-weight="700" text-anchor="middle">139 天</text>
+    <rect x="148" y="866" width="604" height="78" rx="39" fill="${colors.teal}" fill-opacity="0.15" stroke="${colors.teal}"/>
+    <text x="450" y="915" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">完整交付方法已开源</text>`,
+    footer: "真实生产项目验证 · 完整方法已开源",
   });
 
   const metricData = [
-    ["361,670", "行运行与测试源码", colors.purple],
+    ["139", "天 Git 首尾跨度", colors.purple],
     ["1,869", "次主线提交", colors.blue],
-    ["466", "个测试文件", colors.teal],
-    ["125 + 145", "数据模型 + 数据库迁移", colors.amber],
+    ["145", "份数据库迁移", colors.amber],
+    ["466", "个自动化测试/规格文件", colors.teal],
   ];
   const card2Metrics = metricData
     .map((item, index) => {
       const x = 54 + (index % 2) * 405;
-      const y = 520 + Math.floor(index / 2) * 184;
+      const y = 540 + Math.floor(index / 2) * 184;
       return `<rect x="${x}" y="${y}" width="378" height="154" rx="22" fill="${colors.panel}" stroke="${item[2]}" stroke-opacity="0.62"/>
       <text x="${x + 28}" y="${y + 66}" fill="${colors.white}" font-size="42" font-weight="700">${item[0]}</text>
       <text x="${x + 28}" y="${y + 108}" fill="${colors.muted}" font-size="19">${item[1]}</text>`;
@@ -367,14 +357,14 @@ function xhsCards() {
   const card2 = xhsFrame({
     index: 2,
     kicker: "真实生产来源",
-    headline: ["这不是 Demo", "它真的在企业端运行"],
-    subhead: "真实运营 · 数据治理 · 企业业务信息推送",
-    body: `    <rect x="54" y="414" width="792" height="64" rx="20" fill="${colors.teal}" fill-opacity="0.12" stroke="${colors.teal}"/>
-    <circle cx="92" cy="446" r="12" fill="${colors.teal}"/>
-    <text x="121" y="454" fill="${colors.white}" font-size="22" font-weight="700">PRODUCTION · ACTIVE OPERATIONS</text>
+    headline: ["不会写代码", "不等于只能", "做 Demo"],
+    subhead: "发布 · 迁移 · 修复 · 回滚 · 上线后验证",
+    body: `    <rect x="54" y="452" width="792" height="64" rx="20" fill="${colors.teal}" fill-opacity="0.12" stroke="${colors.teal}"/>
+    <circle cx="92" cy="484" r="12" fill="${colors.teal}"/>
+    <text x="121" y="492" fill="${colors.white}" font-size="22" font-weight="700">PRODUCTION · ACTIVE OPERATIONS</text>
     ${card2Metrics}
-    <text x="54" y="951" fill="${colors.white}" font-size="23" font-weight="700">每一个数字，都是系统真正运行过的痕迹。</text>`,
-    footer: "Git 首尾留痕 139 个自然日",
+    <text x="54" y="971" fill="${colors.white}" font-size="22" font-weight="700">每一个数字，都能回到仓库审计基线。</text>`,
+    footer: "真实证据 · 不靠口号",
   });
 
   const problems = [
@@ -396,69 +386,83 @@ function xhsCards() {
   const card3 = xhsFrame({
     index: 3,
     kicker: "代码生成 ≠ 真实交付",
-    headline: ["AI 会写代码", "但不会自动替你负责"],
-    subhead: "生成代码只需要一句话，交付真实产品需要一支团队的纪律。",
+    headline: ["AI 项目最危险的", "不是写不出来", "是看起来能跑"],
+    subhead: "功能能点开，不代表需求、数据和上线已经安全。",
     body: `    ${problemRows}
     <rect x="54" y="1000" width="792" height="58" rx="29" fill="${colors.purple}" fill-opacity="0.18" stroke="${colors.purple}"/>
-    <text x="450" y="1037" fill="${colors.white}" font-size="20" font-weight="700" text-anchor="middle">真正缺的，不是代码生成器，是完整交付团队。</text>`,
-    footer: "让 AI 知道什么时候必须停下来",
+    <text x="450" y="1037" fill="${colors.white}" font-size="20" font-weight="700" text-anchor="middle">真正的难点，是把项目安全交出去。</text>`,
+    footer: "从“能跑”走到“敢上线”",
   });
 
-  const roleRows = [
-    ["交付负责人", "拆任务 · 控风险 · 盯收尾", colors.purple, "DL"],
-    ["产品经理", "问清用户 · 价值 · 边界 · 验收", colors.cyan, "PM"],
-    ["研发负责人", "守住架构 · 契约 · 单一真值", colors.blue, "EN"],
-    ["现代化负责人", "迁移 · 等价 · 提炼 · 切换", colors.rose, "MD"],
-    ["测试负责人", "识别假绿 · 证明关键链路", colors.teal, "QA"],
-    ["运维负责人", "预演 · 发布 · 回滚 · 验证", colors.amber, "OP"],
+  const deliverySteps = [
+    ["01", "任务合同", "目标与验收", colors.purple],
+    ["02", "只读勘察", "架构与影响面", colors.cyan],
+    ["03", "安全边界", "数据与外部写入", colors.rose],
+    ["04", "最小实现", "先守住真相源", colors.blue],
+    ["05", "完整测试", "正常异常边界", colors.teal],
+    ["06", "浏览器验收", "控制台与移动端", colors.amber],
+    ["07", "交叉审核", "架构测试安全", colors.purple],
+    ["08", "Git 发布", "小提交与回滚点", colors.cyan],
+    ["09", "线上闭环", "监控回滚复盘", colors.teal],
   ];
-  const roleRowsSvg = roleRows
+  const deliveryStepsSvg = deliverySteps
     .map((item, index) => {
-      const y = 432 + index * 96;
-      return `<rect x="54" y="${y}" width="792" height="76" rx="18" fill="${colors.panel}" stroke="${item[2]}" stroke-opacity="0.45"/>
-      <circle cx="98" cy="${y + 38}" r="23" fill="${item[2]}" fill-opacity="0.18" stroke="${item[2]}"/>
-      <text x="98" y="${y + 44}" fill="${colors.white}" font-size="14" font-weight="700" text-anchor="middle">${item[3]}</text>
-      <text x="140" y="${y + 32}" fill="${colors.white}" font-size="20" font-weight="700">${item[0]}</text>
-      <text x="140" y="${y + 57}" fill="${colors.muted}" font-size="16">${item[1]}</text>`;
+      const column = index % 3;
+      const row = Math.floor(index / 3);
+      const x = 54 + column * 270;
+      const y = 458 + row * 164;
+      return `<rect x="${x}" y="${y}" width="252" height="142" rx="20" fill="${colors.panel}" stroke="${item[3]}" stroke-opacity="0.52"/>
+      <rect x="${x + 18}" y="${y + 18}" width="46" height="28" rx="14" fill="${item[3]}" fill-opacity="0.18" stroke="${item[3]}"/>
+      <text x="${x + 41}" y="${y + 38}" fill="${colors.white}" font-size="13" font-weight="700" text-anchor="middle">${item[0]}</text>
+      <text x="${x + 18}" y="${y + 82}" fill="${colors.white}" font-size="20" font-weight="700">${item[1]}</text>
+      <text x="${x + 18}" y="${y + 113}" fill="${colors.muted}" font-size="14">${item[2]}</text>`;
     })
     .join("\n");
   const card4 = xhsFrame({
     index: 4,
-    kicker: "六个可安装 Skills",
-    headline: ["你缺的不是更多提示词", "是六个交付角色"],
-    subhead: "不是六个聊天人格，是六套真正能执行的交付动作。",
-    body: roleRowsSvg,
-    footer: "一个目标 · 六种视角 · 一个交付闭环",
+    kicker: "建议直接收藏",
+    headline: ["从需求到上线", "按这 9 步检查"],
+    subhead: "下一次让 AI 改项目时，按顺序走一遍。",
+    body: `    ${deliveryStepsSvg}
+    <rect x="170" y="974" width="560" height="66" rx="33" fill="${colors.purple}" fill-opacity="0.18" stroke="${colors.purple}"/>
+    <text x="450" y="1016" fill="${colors.white}" font-size="20" font-weight="700" text-anchor="middle">少一步，都可能把风险留到上线后</text>`,
+    footer: "9 段交付闭环",
   });
 
+  const beginnerAnswers = [
+    ["01", "到底要改什么？", "先把目标说清楚", colors.purple],
+    ["02", "哪些绝对不能动？", "锁住不可退化项", colors.rose],
+    ["03", "完成证据在哪里？", "测试与浏览器验收", colors.teal],
+    ["04", "出问题怎么回来？", "保留提交与回滚点", colors.amber],
+  ];
+  const beginnerAnswersSvg = beginnerAnswers
+    .map((item, index) => {
+      const column = index % 2;
+      const row = Math.floor(index / 2);
+      const x = 54 + column * 405;
+      const y = 476 + row * 208;
+      return `<rect x="${x}" y="${y}" width="378" height="178" rx="22" fill="${colors.panel}" stroke="${item[3]}" stroke-opacity="0.56"/>
+      <text x="${x + 26}" y="${y + 42}" fill="${item[3]}" font-size="15" font-weight="700">${item[0]}</text>
+      <text x="${x + 26}" y="${y + 91}" fill="${colors.white}" font-size="22" font-weight="700">${item[1]}</text>
+      <text x="${x + 26}" y="${y + 132}" fill="${colors.muted}" font-size="16">${item[2]}</text>`;
+    })
+    .join("\n");
   const card5 = xhsFrame({
     index: 5,
-    kicker: "透明重建模型",
-    headline: ["1 个人 + Codex", "约 4 个月"],
-    subhead: "传统团队完整重建同等工作面，需要多大投入？",
-    body: `    <text x="54" y="510" fill="${colors.muted}" font-size="18">实际推进</text>
-    <rect x="54" y="540" width="72" height="70" rx="18" fill="${colors.purple}"/>
-    <text x="90" y="585" fill="${colors.white}" font-size="28" font-weight="700" text-anchor="middle">1</text>
-    <text x="151" y="582" fill="${colors.white}" font-size="24" font-weight="700">个人 + Codex</text>
-    <text x="54" y="678" fill="${colors.muted}" font-size="18">基础完整重建估算</text>
-    <rect x="54" y="710" width="650" height="86" rx="22" fill="${colors.blue}"/>
-    <text x="379" y="763" fill="${colors.white}" font-size="30" font-weight="700" text-anchor="middle">17–27 个跨职能角色</text>
-    <text x="729" y="746" fill="${colors.white}" font-size="22" font-weight="700">1,320–</text>
-    <text x="729" y="775" fill="${colors.white}" font-size="22" font-weight="700">2,160 人天</text>
-    <g text-anchor="middle">
-      <text x="176" y="895" fill="${colors.white}" font-size="32" font-weight="700">36.17 万</text><text x="176" y="928" fill="${colors.muted}" font-size="16">行运行与测试源码</text>
-      <text x="450" y="895" fill="${colors.white}" font-size="32" font-weight="700">466</text><text x="450" y="928" fill="${colors.muted}" font-size="16">个测试文件</text>
-      <text x="724" y="895" fill="${colors.white}" font-size="32" font-weight="700">1,869</text><text x="724" y="928" fill="${colors.muted}" font-size="16">次主线提交</text>
-    </g>
-    <text x="54" y="1017" fill="${colors.muted}" font-size="15">传统团队重建估算，不是 ExoCrew 安装后的实测提速。</text>`,
-    footer: "完整公式已公开",
+    kicker: "小白也能判断进度",
+    headline: ["不必看懂", "每一行代码"],
+    subhead: "先盯住这 4 个答案，AI 就不容易带偏项目。",
+    body: `    ${beginnerAnswersSvg}
+    <rect x="112" y="930" width="676" height="80" rx="40" fill="${colors.teal}" fill-opacity="0.14" stroke="${colors.teal}"/>
+    <text x="450" y="980" fill="${colors.white}" font-size="22" font-weight="700" text-anchor="middle">你负责判断 · AI 负责执行</text>`,
+    footer: "把技术过程变成可验收结果",
   });
 
   const card6 = xhsFrame({
     index: 6,
     kicker: "MIT 开源",
-    headline: ["把四个月踩过的坑", "变成你的第一天"],
-    subhead: "装上 ExoCrew，让 AI 会问、会验、会停、会回滚。",
+    headline: ["把你的下一句话", "变成可运行项目"],
+    subhead: "ExoCrew = 安装进 Codex 的开源 AI 交付团队",
     body: `    <rect x="54" y="470" width="792" height="238" rx="24" fill="#050b14" stroke="${colors.line}" filter="url(#shadow)"/>
     <circle cx="88" cy="516" r="7" fill="${colors.rose}"/><circle cx="112" cy="516" r="7" fill="${colors.amber}"/><circle cx="136" cy="516" r="7" fill="${colors.teal}"/>
     <text x="82" y="576" fill="${colors.muted}" font-size="16">$ codex plugin marketplace add</text>
@@ -471,8 +475,8 @@ function xhsCards() {
       <rect x="608" y="764" width="238" height="72" rx="36" fill="${colors.amber}" fill-opacity="0.16" stroke="${colors.amber}"/><text x="727" y="808" fill="${colors.white}" font-size="21" font-weight="700" text-anchor="middle">MIT License</text>
     </g>
     <text x="450" y="922" fill="${colors.white}" font-size="29" font-weight="700" text-anchor="middle">github.com/denelwu-GH/exocrew</text>
-    <text x="450" y="976" fill="${colors.muted}" font-size="18" text-anchor="middle">收藏 · Star · 从一个真实需求开始</text>`,
-    footer: "Install the team you don’t have.",
+    <text x="450" y="976" fill="${colors.muted}" font-size="18" text-anchor="middle">从一个真实需求开始 · 最终发布仍由你确认</text>`,
+    footer: "0 代码起步 · 有证据地交付",
   });
 
   return [card1, card2, card3, card4, card5, card6];

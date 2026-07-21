@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "writing_archetype_labels.v1",
+  "taxonomyVersion": "content-marketing-archetypes.v2",
+  "classifierVersion": "content-marketing-archetypes.v2+deterministic-signals.v2",
+  "classificationKind": "derived_from_finished_content",
+  "analyzedAt": "2026-07-21T02:35:53Z",
+  "inputFingerprint": "65d8f950a5829f28d14730ee6410e2a19720351aeaf0dbc3af1aea87a86a7839",
+  "contentVersionId": "1763d1de-deab-4b92-a5f8-4be8c4bcab7c",
+  "contentTitle": "0基础小白，做出超过99%外包的软件",
+  "contentPath": "docs/launch/xiaohongshu/caption.md",
+  "evidenceScope": "full_text",
+  "labels": [
+    {
+      "archetypeId": "case_proof",
+      "nameZh": "案例实证流",
+      "weight": 0.3008,
+      "weightPercent": 30.08
+    },
+    {
+      "archetypeId": "user_story",
+      "nameZh": "用户故事流",
+      "weight": 0.2355,
+      "weightPercent": 23.55
+    },
+    {
+      "archetypeId": "resource_toolkit",
+      "nameZh": "资源工具流",
+      "weight": 0.2318,
+      "weightPercent": 23.18
+    },
+    {
+      "archetypeId": "opinion_insight",
+      "nameZh": "观点认知流",
+      "weight": 0.2319,
+      "weightPercent": 23.19
+    }
+  ],
+  "planned": [],
+  "alignment": {
+    "status": "not_declared",
+    "reason": "The published draft was classified after completion; no target archetype weights were declared before generation."
+  },
+  "confidence": 0.9065,
+  "boundary": "This is a structural classification of the finished local content, not an official Xiaohongshu label or a performance claim."
+}
