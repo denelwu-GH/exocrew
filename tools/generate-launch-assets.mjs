@@ -329,7 +329,7 @@ function xhsCards() {
   const card1 = xhsFrame({
     index: 1,
     kicker: "0 代码真实交付",
-    headline: ["0 基础代码小白", "也能把项目做成", "专业级软件"],
+    headline: ["0 基础代码小白", "项目质量超过", "市面 99% 外包软件"],
     subhead: "用 ExoCrew 把专业交付标准装进 AI 工作流",
     body: `    <rect x="54" y="512" width="792" height="286" rx="28" fill="${colors.panel}" stroke="${colors.purple}" stroke-width="3" filter="url(#shadow)"/>
     <text x="450" y="592" fill="${colors.muted}" font-size="20" font-weight="700" text-anchor="middle">这才是重点</text>
@@ -337,7 +337,7 @@ function xhsCards() {
     <text x="450" y="756" fill="${colors.muted}" font-size="20" font-weight="700" text-anchor="middle">市面外包软件</text>
     <rect x="148" y="866" width="604" height="78" rx="39" fill="${colors.teal}" fill-opacity="0.15" stroke="${colors.teal}"/>
     <text x="450" y="915" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">完整交付方法已开源</text>`,
-    footer: "真实生产项目验证 · 可安装 · 可复用",
+    footer: "真实生产项目验证 · 完整方法已开源",
   });
 
   const metricData = [
@@ -427,7 +427,7 @@ function xhsCards() {
     body: `    ${deliveryStepsSvg}
     <rect x="170" y="974" width="560" height="66" rx="33" fill="${colors.purple}" fill-opacity="0.18" stroke="${colors.purple}"/>
     <text x="450" y="1016" fill="${colors.white}" font-size="20" font-weight="700" text-anchor="middle">少一步，都可能把风险留到上线后</text>`,
-    footer: "每一步都有验收与回滚",
+    footer: "9 段交付闭环",
   });
 
   const beginnerAnswers = [
@@ -461,9 +461,9 @@ function xhsCards() {
 
   const card6 = xhsFrame({
     index: 6,
-    kicker: "立即安装",
-    headline: ["把 AI 写代码", "升级成专业交付"],
-    subhead: "ExoCrew = 安装进 Codex 的开源交付团队",
+    kicker: "MIT 开源",
+    headline: ["把你的下一句话", "变成可运行项目"],
+    subhead: "ExoCrew = 安装进 Codex 的开源 AI 交付团队",
     body: `    <rect x="54" y="470" width="792" height="238" rx="24" fill="#050b14" stroke="${colors.line}" filter="url(#shadow)"/>
     <circle cx="88" cy="516" r="7" fill="${colors.rose}"/><circle cx="112" cy="516" r="7" fill="${colors.amber}"/><circle cx="136" cy="516" r="7" fill="${colors.teal}"/>
     <text x="82" y="576" fill="${colors.muted}" font-size="16">$ codex plugin marketplace add</text>

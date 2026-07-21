@@ -73,6 +73,6 @@
     <text x="450" y="1016" fill="#f8fafc" font-size="20" font-weight="700" text-anchor="middle">少一步，都可能把风险留到上线后</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
-    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">每一步都有验收与回滚</text>
+    <text x="846" y="1144" fill="#9aabc2" font-size="16" text-anchor="end">9 段交付闭环</text>
   </g>
 </svg>

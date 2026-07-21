@@ -4,8 +4,8 @@
   "classifierVersion": "content-marketing-archetypes.v2+deterministic-signals.v2",
   "classificationKind": "derived_from_finished_content",
   "analyzedAt": "2026-07-21T02:35:53Z",
-  "inputFingerprint": "be421e49206acd35ef7301ffba663b0ee6167f865c98839c3bf572bbea3afd0a",
-  "contentVersionId": "33b5601b-9b80-4a2f-a8e6-16e79a9ee35c",
+  "inputFingerprint": "419bb5e82b636fe36029cc6c256f0f3591fc8d518e3db4e5a1102255056805b8",
+  "contentVersionId": "3585b981-5016-47b0-83a6-ac7c5227f5ef",
   "contentTitle": "0基础小白，做出超过99%外包的软件",
   "contentPath": "docs/launch/xiaohongshu/caption.md",
   "evidenceScope": "full_text",
@@ -13,26 +13,26 @@
     {
       "archetypeId": "case_proof",
       "nameZh": "案例实证流",
-      "weight": 0.3147,
-      "weightPercent": 31.47
+      "weight": 0.3008,
+      "weightPercent": 30.08
+    },
+    {
+      "archetypeId": "user_story",
+      "nameZh": "用户故事流",
+      "weight": 0.2355,
+      "weightPercent": 23.55
     },
     {
       "archetypeId": "resource_toolkit",
       "nameZh": "资源工具流",
-      "weight": 0.2425,
-      "weightPercent": 24.25
+      "weight": 0.2318,
+      "weightPercent": 23.18
     },
     {
       "archetypeId": "opinion_insight",
       "nameZh": "观点认知流",
-      "weight": 0.2425,
-      "weightPercent": 24.25
-    },
-    {
-      "archetypeId": "tutorial_steps",
-      "nameZh": "教程步骤流",
-      "weight": 0.2003,
-      "weightPercent": 20.03
+      "weight": 0.2319,
+      "weightPercent": 23.19
     }
   ],
   "planned": [],
@@ -40,6 +40,6 @@
     "status": "not_declared",
     "reason": "The published draft was classified after completion; no target archetype weights were declared before generation."
   },
-  "confidence": 0.9072,
+  "confidence": 0.9065,
   "boundary": "This is a structural classification of the finished local content, not an official Xiaohongshu label or a performance claim."
 }
