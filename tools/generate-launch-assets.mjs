@@ -329,21 +329,22 @@ function xhsCards() {
   const card1 = xhsFrame({
     index: 1,
     kicker: "0 代码真实交付",
-    headline: ["0 基础代码小白", "用这个 Skill", "项目质量超过", "市面 99% 外包软件"],
-    subhead: "测试 · 迁移 · 回滚 · 上线证据齐全",
+    headline: ["0 基础代码小白", "项目质量超过", "市面 99% 外包软件"],
+    subhead: "用 ExoCrew 把专业交付标准装进 AI 工作流",
     body: `    <rect x="54" y="512" width="792" height="286" rx="28" fill="${colors.panel}" stroke="${colors.purple}" stroke-width="3" filter="url(#shadow)"/>
-    <text x="450" y="605" fill="${colors.muted}" font-size="20" font-weight="700" text-anchor="middle">GIT 首尾跨度</text>
-    <text x="450" y="716" fill="${colors.white}" font-size="90" font-weight="700" text-anchor="middle">139 天</text>
+    <text x="450" y="592" fill="${colors.muted}" font-size="20" font-weight="700" text-anchor="middle">这才是重点</text>
+    <text x="450" y="704" fill="${colors.white}" font-size="104" font-weight="700" text-anchor="middle">超过 99%</text>
+    <text x="450" y="756" fill="${colors.muted}" font-size="20" font-weight="700" text-anchor="middle">市面外包软件</text>
     <rect x="148" y="866" width="604" height="78" rx="39" fill="${colors.teal}" fill-opacity="0.15" stroke="${colors.teal}"/>
     <text x="450" y="915" fill="${colors.white}" font-size="24" font-weight="700" text-anchor="middle">完整交付方法已开源</text>`,
     footer: "真实生产项目验证 · 完整方法已开源",
   });
 
   const metricData = [
-    ["139", "天 Git 首尾跨度", colors.purple],
-    ["1,869", "次主线提交", colors.blue],
-    ["145", "份数据库迁移", colors.amber],
-    ["466", "个自动化测试/规格文件", colors.teal],
+    ["1,869", "次主线提交", colors.purple],
+    ["145", "份数据库迁移", colors.blue],
+    ["466", "个自动化测试/规格文件", colors.amber],
+    ["64", "份正式操作手册", colors.teal],
   ];
   const card2Metrics = metricData
     .map((item, index) => {

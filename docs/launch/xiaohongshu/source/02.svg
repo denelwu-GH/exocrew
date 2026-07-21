@@ -29,17 +29,17 @@
     <circle cx="92" cy="484" r="12" fill="#2dd4bf"/>
     <text x="121" y="492" fill="#f8fafc" font-size="22" font-weight="700">PRODUCTION · ACTIVE OPERATIONS</text>
     <rect x="54" y="540" width="378" height="154" rx="22" fill="#101d33" stroke="#8b5cf6" stroke-opacity="0.62"/>
-      <text x="82" y="606" fill="#f8fafc" font-size="42" font-weight="700">139</text>
-      <text x="82" y="648" fill="#9aabc2" font-size="19">天 Git 首尾跨度</text>
+      <text x="82" y="606" fill="#f8fafc" font-size="42" font-weight="700">1,869</text>
+      <text x="82" y="648" fill="#9aabc2" font-size="19">次主线提交</text>
 <rect x="459" y="540" width="378" height="154" rx="22" fill="#101d33" stroke="#3b82f6" stroke-opacity="0.62"/>
-      <text x="487" y="606" fill="#f8fafc" font-size="42" font-weight="700">1,869</text>
-      <text x="487" y="648" fill="#9aabc2" font-size="19">次主线提交</text>
+      <text x="487" y="606" fill="#f8fafc" font-size="42" font-weight="700">145</text>
+      <text x="487" y="648" fill="#9aabc2" font-size="19">份数据库迁移</text>
 <rect x="54" y="724" width="378" height="154" rx="22" fill="#101d33" stroke="#f59e0b" stroke-opacity="0.62"/>
-      <text x="82" y="790" fill="#f8fafc" font-size="42" font-weight="700">145</text>
-      <text x="82" y="832" fill="#9aabc2" font-size="19">份数据库迁移</text>
+      <text x="82" y="790" fill="#f8fafc" font-size="42" font-weight="700">466</text>
+      <text x="82" y="832" fill="#9aabc2" font-size="19">个自动化测试/规格文件</text>
 <rect x="459" y="724" width="378" height="154" rx="22" fill="#101d33" stroke="#2dd4bf" stroke-opacity="0.62"/>
-      <text x="487" y="790" fill="#f8fafc" font-size="42" font-weight="700">466</text>
-      <text x="487" y="832" fill="#9aabc2" font-size="19">个自动化测试/规格文件</text>
+      <text x="487" y="790" fill="#f8fafc" font-size="42" font-weight="700">64</text>
+      <text x="487" y="832" fill="#9aabc2" font-size="19">份正式操作手册</text>
     <text x="54" y="971" fill="#f8fafc" font-size="22" font-weight="700">每一个数字，都能回到仓库审计基线。</text>
     <line x1="54" y1="1094" x2="846" y2="1094" stroke="#2a3b57"/>
     <text x="54" y="1144" fill="#f8fafc" font-size="20" font-weight="700">EXOCREW</text>
